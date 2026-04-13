@@ -1,0 +1,20 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+public class InventorySystem : MonoBehaviour
+{
+    public static InventorySystem Instance;
+
+    public List<ItemData> items = new List<ItemData>();
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public void AddItem(ItemData item)
+    {
+        items.Add(item);
+        Debug.Log("Added: " + item.itemName);
+    }
+}

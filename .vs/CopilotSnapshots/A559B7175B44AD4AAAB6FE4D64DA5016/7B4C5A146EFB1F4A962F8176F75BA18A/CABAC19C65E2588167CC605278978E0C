@@ -1,0 +1,126 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class DialogueSystem : MonoBehaviour
+{
+    public static DialogueSystem Instance;
+    public bool isDialogueActive = false;
+
+    private DialogueData currentDialogue;
+    private int currentIndex;
+    bool hasChoice = false;
+    private InteractableObject currentSource;
+
+    public DialogueUI dialogueUI;
+
+    public event System.Action OnDialogueEnded;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public bool HasChoice()
+    {
+        return hasChoice;
+    }
+
+    public void StartDialogue(DialogueData data, InteractableObject source = null)
+    {
+        currentDialogue = data;
+        currentIndex = 0;
+        currentSource = source;
+
+        isDialogueActive = true;
+        ShowLine();
+    }
+
+    void ShowLine()
+    {
+        var line = currentDialogue.lines[currentIndex];
+
+        hasChoice = line.choices != null && line.choices.Count > 0;
+
+        dialogueUI.Show(line.text);
+
+        if (hasChoice)
+        {
+            dialogueUI.ShowChoices(line.choices);
+        }
+    }
+
+    public void Next()
+    {
+        currentIndex++;
+
+        if (currentIndex >= currentDialogue.lines.Count)
+        {
+            EndDialogue();
+            return;
+        }
+
+        ShowLine();
+    }
+
+    public void EndDialogue()
+    {
+        dialogueUI.Hide();
+        currentDialogue = null;
+        isDialogueActive = false;
+
+        // KHÔNG tự động DisableAfterLeave ở đây nữa
+        // để sau khi lấy chìa khóa vẫn còn tương tác (emptyDialogue)
+
+        if (OnDialogueEnded != null)
+        {
+            OnDialogueEnded.Invoke();
+        }
+    }
+
+    public void Choose(DialogueChoice choice)
+    {
+        // Nhánh lấy item
+        if (choice.type == ChoiceType.PickupItem)
+        {
+            if (InventorySystem.Instance != null)
+            {
+                InventorySystem.Instance.AddItem(choice.rewardItem);
+            }
+
+            ClearItemFromSource();
+
+            // Sau khi xử lý xong, thường sẽ kết thúc hội thoại
+            EndDialogue();
+            return;
+        }
+
+        // Nếu bạn vẫn dùng ChoiceType.LeaveLocket để "không cho tương tác nữa"
+        if (choice.type == ChoiceType.LeaveLocket)
+        {
+            if (currentSource != null)
+            {
+                currentSource.DisableAfterLeave();
+            }
+
+            EndDialogue();
+            return;
+        }
+
+        if (choice.type == ChoiceType.End)
+        {
+            EndDialogue();
+            return;
+        }
+
+        // Continue sang câu kế
+        Next();
+    }
+
+    void ClearItemFromSource()
+    {
+        if (currentSource != null)
+        {
+            currentSource.hasItem = false;
+        }
+    }
+}

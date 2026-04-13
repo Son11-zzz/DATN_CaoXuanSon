@@ -1,0 +1,675 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|c:\\dacn_caoxuanson\\datn2026\\svsimulator\\assets\\scripts\\ui\\quest\\questpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\quest\\questpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\ui\\hud\\hudui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\hud\\hudui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\camera\\camerazone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\camera\\camerazone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\interactableobject\\questgivernpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\interactableobject\\questgivernpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\ui\\dialogue\\dialoguesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\dialogue\\dialoguesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\rendering\\ysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\rendering\\ysort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\time\\gametimemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\time\\gametimemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\managers\\statmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\statmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\managers\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\eventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\inventory\\inventorysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventory\\inventorysystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\inventory\\itemcombinerecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventory\\itemcombinerecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\inventory\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventory\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\interactableobject\\interactableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\interactableobject\\interactableobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\interactableobject\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\interactableobject\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\ui\\dialogue\\dialoguedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\dialogue\\dialoguedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\interactablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\interactablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\ui\\dialogue\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\dialogue\\dialogueui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\managers\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\iinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\iinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\interaction\\stairtriggeri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interaction\\stairtriggeri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\DialogueUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UI\\DialogueUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\ui\\dialogue\\dialoguenodedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\dialogue\\dialoguenodedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\quest\\questdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\quest\\questdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\quest\\queststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\quest\\queststate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\quest\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\ui\\quest\\questhelperui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\quest\\questhelperui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\inventory\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventory\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\core\\inventory\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\inventory\\inventoryslotui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\assets\\scripts\\ui\\quest\\questuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5651D581-742A-43F2-D3BD-49C444ED46B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\quest\\questuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "QuestUIManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Quest\\QuestUIManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\Quest\\QuestUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T19:13:28.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestPanelUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestPanelUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Quest\\QuestPanelUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestPanelUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\Quest\\QuestPanelUI.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAuwAUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T18:25:19.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "InventorySlotUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventorySlotUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\InventorySlotUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventorySlotUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\InventorySlotUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T18:22:46.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\InventoryUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\InventoryUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwI8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T18:22:40.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestGiverNPC.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\QuestGiverNPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\InteractableObject\\QuestGiverNPC.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\QuestGiverNPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\InteractableObject\\QuestGiverNPC.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAtwBMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:56.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HUDUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\HUD\\HUDUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\HUD\\HUDUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\HUD\\HUDUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\HUD\\HUDUI.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T18:01:47.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DialogueSystem.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Dialogue\\DialogueSystem.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueSystem.cs",
+              "RelativeToolTip": "Assets\\UI\\Dialogue\\DialogueSystem.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAABBwGgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:25:51.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraZone.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Camera\\CameraZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Camera\\CameraZone.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Camera\\CameraZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Camera\\CameraZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:41:31.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YSort.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Rendering\\YSort.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Rendering\\YSort.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Rendering\\YSort.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Rendering\\YSort.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:52.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "QuestData.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Quest\\QuestData.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Quest\\QuestData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:05.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "QuestState.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Quest\\QuestState.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Quest\\QuestState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:12.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "QuestManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Quest\\QuestManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Quest\\QuestManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Quest\\QuestManager.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAIBJwDMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:33.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "QuestHelperUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestHelperUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\Quest\\QuestHelperUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\UI\\Quest\\QuestHelperUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\Quest\\QuestHelperUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:45:49.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\StatManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\StatManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\StatManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\StatManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIBJwA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T08:02:42.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NPC.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\NPC.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\InteractableObject\\NPC.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\NPC.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\InteractableObject\\NPC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:09:11.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameTimeManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Time\\GameTimeManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Time\\GameTimeManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Time\\GameTimeManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Time\\GameTimeManager.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAADgv1UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T03:07:41.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DialogueNodeDatabase.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueNodeDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Dialogue\\DialogueNodeDatabase.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueNodeDatabase.cs",
+              "RelativeToolTip": "Assets\\UI\\Dialogue\\DialogueNodeDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T03:15:07.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IventorySystem.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\IventorySystem.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T16:43:42.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ItemCombineRecipe1.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T02:14:15.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\EventManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\EventManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\EventManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\EventManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T07:59:28.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventorySystem.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventorySystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\InventorySystem.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\InventorySystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\InventorySystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T17:25:52.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemCombineRecipe.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\ItemCombineRecipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T02:15:45.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "InteractionDetector.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractionDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\InteractionDetector.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractionDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\InteractionDetector.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwGQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:19:25.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InteractableObject.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\InteractableObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\InteractableObject\\InteractableObject.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableObject\\InteractableObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\InteractableObject\\InteractableObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:00:13.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DialogueData.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueData.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Dialogue\\DialogueData.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueData.cs",
+              "RelativeToolTip": "Assets\\UI\\Dialogue\\DialogueData.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:24:13.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Inventory\\ItemData.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Inventory\\ItemData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Inventory\\ItemData.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:32:46.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\UIManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\UIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T08:02:57.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InteractableBase.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\InteractableBase.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\InteractableBase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\InteractableBase.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:03:43.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DialogueUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueUI.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\Dialogue\\DialogueUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\Dialogue\\DialogueUI.cs",
+              "RelativeToolTip": "Assets\\UI\\Dialogue\\DialogueUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:26:16.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Managers\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T07:56:00.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IInterface.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\IInterface.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\IInterface.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\IInterface.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\IInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:27:41.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\IInteractable.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:28:12.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InteractionUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\InteractionUI.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\InteractionUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\InteractionUI.cs",
+              "RelativeToolTip": "Assets\\UI\\InteractionUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:05:21.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StairTriggerI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\StairTriggerI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interaction\\StairTriggerI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Interaction\\StairTriggerI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interaction\\StairTriggerI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:19:36.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DialogueUI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\DialogueUI.cs",
+              "RelativeDocumentMoniker": "Assets\\UI\\DialogueUI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\UI\\DialogueUI.cs",
+              "RelativeToolTip": "Assets\\UI\\DialogueUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T07:05:16.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StairTriggerI.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Interaction\\StairTriggerI.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:57:30.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Camera\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Camera\\CameraFollow.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Camera\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Camera\\CameraFollow.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T08:43:01.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\DACN_CaoXuanSon\\DATN2026\\SVSimulator\\Assets\\Scripts\\Core\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T08:06:06.92Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 152,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

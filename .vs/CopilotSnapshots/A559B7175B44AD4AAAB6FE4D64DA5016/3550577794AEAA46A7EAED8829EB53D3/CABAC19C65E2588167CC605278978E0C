@@ -1,0 +1,205 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class DialogueSystem : MonoBehaviour
+{
+    public static DialogueSystem Instance;
+    public bool isDialogueActive = false;
+
+    [Header("Node System")]
+    [SerializeField] private DialogueNodeDatabase nodeDatabase;
+
+    private DialogueData currentDialogue;
+    private int currentIndex;
+    bool hasChoice = false;
+    private InteractableObject currentSource;
+
+    public DialogueUI dialogueUI;
+
+    public event System.Action OnDialogueEnded;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    public bool HasChoice()
+    {
+        return hasChoice;
+    }
+
+    public void StartDialogue(DialogueData data, InteractableObject source = null)
+    {
+        currentDialogue = data;
+        currentIndex = 0;
+        currentSource = source;
+
+        isDialogueActive = true;
+        ShowLine();
+    }
+
+    void ShowLine()
+    {
+        var line = currentDialogue.lines[currentIndex];
+
+        hasChoice = line.choices != null && line.choices.Count > 0;
+
+        dialogueUI.Show(line.text);
+
+        if (hasChoice)
+        {
+            dialogueUI.ShowChoices(line.choices);
+        }
+    }
+
+    public void Next()
+    {
+        currentIndex++;
+
+        if (currentIndex >= currentDialogue.lines.Count)
+        {
+            EndDialogue();
+            return;
+        }
+
+        ShowLine();
+    }
+
+    public void EndDialogue()
+    {
+        dialogueUI.Hide();
+        currentDialogue = null;
+        isDialogueActive = false;
+
+        // KHÔNG tự động DisableAfterLeave ở đây nữa
+        // để sau khi lấy chìa khóa vẫn còn tương tác (emptyDialogue)
+
+        if (OnDialogueEnded != null)
+        {
+            OnDialogueEnded.Invoke();
+        }
+    }
+
+    public void Choose(DialogueChoice choice)
+    {
+        // Quest actions (can optionally branch to success/fail nodes)
+        if (choice != null && (choice.type == ChoiceType.AcceptQuest || choice.type == ChoiceType.TurnInQuest))
+        {
+            bool success = HandleQuestChoice(choice);
+            string nodeId = success ? choice.nextNodeOnSuccess : choice.nextNodeOnFail;
+
+            if (!string.IsNullOrWhiteSpace(nodeId) && nodeDatabase != null)
+            {
+                var next = nodeDatabase.GetNode(nodeId);
+                if (next != null)
+                {
+                    StartDialogue(next, currentSource);
+                    return;
+                }
+
+                Debug.LogWarning($"DialogueSystem: node '{nodeId}' not found in database.");
+            }
+
+            EndDialogue();
+            return;
+        }
+
+        if (choice != null && !string.IsNullOrWhiteSpace(choice.nextNode))
+        {
+            DialogueData next = null;
+
+            if (nodeDatabase != null)
+            {
+                next = nodeDatabase.GetNode(choice.nextNode);
+            }
+
+            if (next != null)
+            {
+                StartDialogue(next, currentSource);
+                return;
+            }
+
+            Debug.LogWarning($"DialogueSystem: nextNode '{choice.nextNode}' not found in database.");
+        }
+
+        // Nhánh lấy item
+        if (choice.type == ChoiceType.PickupItem)
+        {
+            if (InventorySystem.Instance != null)
+            {
+                InventorySystem.Instance.AddItem(choice.rewardItem);
+            }
+
+            ClearItemFromSource();
+
+            // Sau khi xử lý xong, thường sẽ kết thúc hội thoại
+            EndDialogue();
+            return;
+        }
+
+        // Nếu bạn vẫn dùng ChoiceType.LeaveLocket để "không cho tương tác nữa"
+        if (choice.type == ChoiceType.LeaveLocket)
+        {
+            if (currentSource != null)
+            {
+                currentSource.DisableAfterLeave();
+            }
+
+            EndDialogue();
+            return;
+        }
+
+        if (choice.type == ChoiceType.End)
+        {
+            EndDialogue();
+            return;
+        }
+
+        // Continue sang câu kế
+        Next();
+    }
+
+    private bool HandleQuestChoice(DialogueChoice choice)
+    {
+        if (choice == null || choice.quest == null) return false;
+        if (QuestManager.Instance == null) return false;
+
+        if (choice.type == ChoiceType.AcceptQuest)
+        {
+            if (!QuestManager.Instance.IsAccepted(choice.quest))
+            {
+                QuestManager.Instance.AcceptQuest(choice.quest);
+            }
+            return true;
+        }
+
+        // Turn-in: require objectives met, then complete (rewards + unlock)
+        if (choice.type == ChoiceType.TurnInQuest)
+        {
+            if (!QuestManager.Instance.IsAccepted(choice.quest))
+            {
+                return false;
+            }
+
+            // ensure up-to-date objective check
+            QuestManager.Instance.Recalculate();
+            if (!QuestManager.Instance.IsReadyToTurnIn(choice.quest))
+            {
+                return false;
+            }
+
+            QuestManager.Instance.CompleteQuest(choice.quest);
+            return true;
+        }
+
+        return false;
+    }
+
+    void ClearItemFromSource()
+    {
+        if (currentSource != null)
+        {
+            currentSource.hasItem = false;
+        }
+    }
+}

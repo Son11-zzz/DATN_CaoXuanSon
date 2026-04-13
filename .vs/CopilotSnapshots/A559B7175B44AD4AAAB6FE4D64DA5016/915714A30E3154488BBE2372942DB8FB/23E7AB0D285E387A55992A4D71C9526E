@@ -1,0 +1,21 @@
+﻿using UnityEngine;
+
+public class StatManager : MonoBehaviour
+{
+    public float gpa;
+    public float stress;
+    public float money;
+
+    private void Start()
+    {
+        EventManager.Instance.OnChoiceSelected += UpdateStat;
+    }
+
+    void UpdateStat()
+    {
+        gpa += 0.1f;
+        stress -= 1f;
+
+        EventManager.Instance.NotifyStatChanged();
+    }
+}

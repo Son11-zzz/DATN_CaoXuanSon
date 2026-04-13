@@ -1,0 +1,302 @@
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class QuestManager : MonoBehaviour
+{
+    public static QuestManager Instance;
+
+    [Header("Available Quests")]
+    [SerializeField] private List<QuestData> allQuests = new List<QuestData>();
+
+    [Header("Active")]
+    [SerializeField] private List<QuestData> activeQuests = new List<QuestData>();
+
+    private readonly Dictionary<string, QuestProgress> progress = new Dictionary<string, QuestProgress>();
+
+    private readonly HashSet<string> readyToTurnIn = new HashSet<string>();
+
+    public event Action OnQuestUpdated;
+
+    private bool subscribed;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnEnable()
+    {
+        TrySubscribe();
+    }
+
+    private void OnDisable()
+    {
+        Unsubscribe();
+    }
+
+    private void Update()
+    {
+        // In case singletons spawn after QuestManager
+        if (!subscribed)
+        {
+            TrySubscribe();
+        }
+    }
+
+    private void TrySubscribe()
+    {
+        if (subscribed) return;
+
+        bool hasInv = InventorySystem.Instance != null;
+        bool hasEvt = EventManager.Instance != null;
+
+        if (hasInv)
+        {
+            InventorySystem.Instance.OnInventoryChanged -= Recalculate;
+            InventorySystem.Instance.OnInventoryChanged += Recalculate;
+        }
+
+        if (hasEvt)
+        {
+            EventManager.Instance.OnStatChanged -= Recalculate;
+            EventManager.Instance.OnStatChanged += Recalculate;
+        }
+
+        subscribed = hasInv || hasEvt;
+    }
+
+    private void Unsubscribe()
+    {
+        if (InventorySystem.Instance != null)
+        {
+            InventorySystem.Instance.OnInventoryChanged -= Recalculate;
+        }
+
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged -= Recalculate;
+        }
+
+        subscribed = false;
+    }
+
+    public IReadOnlyList<QuestData> ActiveQuests => activeQuests;
+
+    public bool IsAccepted(QuestData quest)
+    {
+        if (quest == null) return false;
+        return progress.TryGetValue(quest.GetId(), out var p) && p.accepted;
+    }
+
+    public bool IsCompleted(QuestData quest)
+    {
+        if (quest == null) return false;
+        return progress.TryGetValue(quest.GetId(), out var p) && p.completed;
+    }
+
+    public bool IsReadyToTurnIn(QuestData quest)
+    {
+        if (quest == null) return false;
+        return readyToTurnIn.Contains(quest.GetId());
+    }
+
+    public void AcceptQuest(QuestData quest)
+    {
+        if (quest == null) return;
+
+        Debug.Log($"QuestManager: AcceptQuest quest='{quest.GetId()}'");
+
+        var id = quest.GetId();
+        if (!progress.TryGetValue(id, out var p))
+        {
+            p = new QuestProgress { questId = id, accepted = true, completed = false };
+            progress[id] = p;
+        }
+        else
+        {
+            p.accepted = true;
+        }
+
+        if (!activeQuests.Contains(quest))
+        {
+            activeQuests.Add(quest);
+        }
+
+        // Do not immediately move quest state during accept; objectives will be evaluated by Recalculate
+        // when inventory/stats change.
+        OnQuestUpdated?.Invoke();
+    }
+
+    public void CompleteQuest(QuestData quest)
+    {
+        if (quest == null) return;
+
+        Debug.Log($"QuestManager: CompleteQuest quest='{quest.GetId()}'");
+
+        var id = quest.GetId();
+        if (!progress.TryGetValue(id, out var p))
+        {
+            p = new QuestProgress { questId = id, accepted = true, completed = false };
+            progress[id] = p;
+        }
+
+        // Ensure the quest is marked accepted on turn-in, even if the entry already exists.
+        // (If it was created on AcceptQuest this is already true.)
+        p.accepted = true;
+
+        // If it was already completed earlier, don't re-consume objectives or re-apply rewards.
+        if (p.completed) return;
+
+        // Consume required items on turn-in
+        ConsumeObjectives(quest);
+
+        p.completed = true;
+
+        readyToTurnIn.Remove(id);
+
+        ApplyRewards(quest);
+        UnlockNext(quest);
+
+        OnQuestUpdated?.Invoke();
+
+        // keep it in active list (UI can show completed) or remove if you prefer
+    }
+
+    private void ConsumeObjectives(QuestData quest)
+    {
+        if (quest == null || quest.objectives == null) return;
+        if (InventorySystem.Instance == null) return;
+
+        for (int i = 0; i < quest.objectives.Count; i++)
+        {
+            var obj = quest.objectives[i];
+            if (obj == null) continue;
+            if (obj.type != QuestObjectiveType.CollectItem) continue;
+            if (obj.item == null) continue;
+
+            int need = Mathf.Max(1, obj.amount);
+            bool removed = InventorySystem.Instance.RemoveItem(obj.item, need);
+            Debug.Log($"QuestManager: Turn-in consume '{obj.item.itemName}' x{need} removed={removed}");
+        }
+    }
+
+    private void ApplyRewards(QuestData quest)
+    {
+        var sm = StatManager.Instance;
+        if (sm == null) return;
+
+        sm.money += quest.rewardMoney;
+        sm.gpa += quest.rewardGpa;
+        sm.stress += quest.rewardStress;
+        sm.health += quest.rewardHealth;
+        sm.energy += quest.rewardEnergy;
+
+        // if these stats don't exist in your StatManager yet, keep rewards at 0 or add fields
+        sm.social += quest.rewardSocial;
+        sm.skill += quest.rewardSkill;
+
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.NotifyStatChanged();
+        }
+    }
+
+    private void UnlockNext(QuestData quest)
+    {
+        if (quest.unlockQuests == null) return;
+
+        foreach (var q in quest.unlockQuests)
+        {
+            if (q == null) continue;
+            // Make it available but don't auto-accept
+            if (allQuests != null && !allQuests.Contains(q))
+            {
+                allQuests.Add(q);
+            }
+        }
+    }
+
+    public void Recalculate()
+    {
+        // Mark quests as ready-to-turn-in when objectives are met.
+        for (int i = 0; i < activeQuests.Count; i++)
+        {
+            var quest = activeQuests[i];
+            if (quest == null) continue;
+
+            if (IsCompleted(quest))
+            {
+                continue;
+            }
+
+            if (IsQuestObjectivesMet(quest))
+            {
+                readyToTurnIn.Add(quest.GetId());
+            }
+            else
+            {
+                readyToTurnIn.Remove(quest.GetId());
+            }
+        }
+
+        OnQuestUpdated?.Invoke();
+    }
+
+    private bool IsQuestObjectivesMet(QuestData quest)
+    {
+        if (quest.objectives == null || quest.objectives.Count == 0) return true;
+
+        for (int i = 0; i < quest.objectives.Count; i++)
+        {
+            var obj = quest.objectives[i];
+            if (obj == null || !obj.IsValid()) return false;
+
+            if (obj.type == QuestObjectiveType.CollectItem)
+            {
+                if (InventorySystem.Instance == null) return false;
+                int have = InventorySystem.Instance.GetAmount(obj.item);
+                if (have < obj.amount) return false;
+            }
+            else if (obj.type == QuestObjectiveType.ReachStatValue)
+            {
+                if (!IsStatReached(obj.stat, obj.targetValue)) return false;
+            }
+        }
+
+        return true;
+    }
+
+    private bool IsStatReached(StatType stat, float target)
+    {
+        var sm = StatManager.Instance;
+        if (sm == null) return false;
+
+        switch (stat)
+        {
+            case StatType.GPA:
+                return sm.gpa >= target;
+            case StatType.Stress:
+                return sm.stress >= target;
+            case StatType.Money:
+                return sm.money >= target;
+            case StatType.Health:
+                return sm.health >= target;
+            case StatType.Energy:
+                return sm.energy >= target;
+            case StatType.Social:
+                return sm.social >= target;
+            case StatType.Skill:
+                return sm.skill >= target;
+            default:
+                return false;
+        }
+    }
+}

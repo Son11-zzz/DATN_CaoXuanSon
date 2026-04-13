@@ -1,0 +1,1000 @@
+fileFormatVersion: 2
+guid: 123a77e4b6c5cb14aad86a5b2bbe5f38
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7042604957128990768
+    second: Pixel art inventory and dialogue UI_0
+  - first:
+      213: -6524405575460539806
+    second: Pixel art inventory and dialogue UI_1
+  - first:
+      213: 5395747942338611679
+    second: Pixel art inventory and dialogue UI_2
+  - first:
+      213: -1989011074244224455
+    second: Pixel art inventory and dialogue UI_3
+  - first:
+      213: -4375494108288062299
+    second: Pixel art inventory and dialogue UI_4
+  - first:
+      213: 2970763888802583858
+    second: Pixel art inventory and dialogue UI_5
+  - first:
+      213: -7490576722340793264
+    second: Pixel art inventory and dialogue UI_6
+  - first:
+      213: -459761730478595362
+    second: Pixel art inventory and dialogue UI_7
+  - first:
+      213: -1752972818154332227
+    second: Pixel art inventory and dialogue UI_8
+  - first:
+      213: -5720354073203305199
+    second: Pixel art inventory and dialogue UI_9
+  - first:
+      213: 5639070980338232562
+    second: Pixel art inventory and dialogue UI_10
+  - first:
+      213: 8143532692404979253
+    second: Pixel art inventory and dialogue UI_11
+  - first:
+      213: -8669799359448537174
+    second: Pixel art inventory and dialogue UI_12
+  - first:
+      213: -6165303254754228841
+    second: Pixel art inventory and dialogue UI_13
+  - first:
+      213: -5286721730850996900
+    second: Pixel art inventory and dialogue UI_14
+  - first:
+      213: 5568852955673261054
+    second: Pixel art inventory and dialogue UI_15
+  - first:
+      213: 4167402511428474378
+    second: Pixel art inventory and dialogue UI_16
+  - first:
+      213: -5200237738535017669
+    second: Pixel art inventory and dialogue UI_17
+  - first:
+      213: 7264001510840084540
+    second: Pixel art inventory and dialogue UI_18
+  - first:
+      213: 1295823948983260795
+    second: Pixel art inventory and dialogue UI_19
+  - first:
+      213: 5401417614798382918
+    second: Pixel art inventory and dialogue UI_20
+  - first:
+      213: 5253347849028212523
+    second: Pixel art inventory and dialogue UI_21
+  - first:
+      213: -7125721890661467669
+    second: Pixel art inventory and dialogue UI_22
+  - first:
+      213: -1524305045293070927
+    second: Pixel art inventory and dialogue UI_23
+  - first:
+      213: 8259068469323891140
+    second: Pixel art inventory and dialogue UI_24
+  - first:
+      213: -8683798718768950519
+    second: Pixel art inventory and dialogue UI_25
+  - first:
+      213: -36833303196381220
+    second: Pixel art inventory and dialogue UI_26
+  - first:
+      213: -1044963559347194619
+    second: Pixel art inventory and dialogue UI_27
+  - first:
+      213: 546104718241730524
+    second: Pixel art inventory and dialogue UI_28
+  - first:
+      213: 8518065680594250513
+    second: Pixel art inventory and dialogue UI_29
+  - first:
+      213: 6051871141976034802
+    second: Pixel art inventory and dialogue UI_30
+  - first:
+      213: 7562719688415133798
+    second: Pixel art inventory and dialogue UI_31
+  - first:
+      213: 7995178297691366808
+    second: Pixel art inventory and dialogue UI_32
+  - first:
+      213: -2412907963338795793
+    second: Pixel art inventory and dialogue UI_33
+  - first:
+      213: -1850275385623451671
+    second: Pixel art inventory and dialogue UI_34
+  - first:
+      213: -8900178554047736194
+    second: Pixel art inventory and dialogue UI_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 403
+        width: 556
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262b81862b7a475a0800000000000000
+      internalID: -6524405575460539806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 117
+        width: 548
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd943a86a2c81ea40800000000000000
+      internalID: 5395747942338611679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 358
+        width: 143
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ada5957fc9564e0800000000000000
+      internalID: -1989011074244224455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 350
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aceca67a4f1743c0800000000000000
+      internalID: -4375494108288062299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 813
+        width: 145
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235d2af54064a3920800000000000000
+      internalID: 2970763888802583858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_6
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 366
+        width: 68
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054311668202c0890800000000000000
+      internalID: -7490576722340793264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 815
+        width: 103
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2218d54299e99f0800000000000000
+      internalID: -459761730478595362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 413
+        width: 177
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115124537483d90b0800000000000000
+      internalID: -5720354073203305199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_10
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 237
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc2646fd21024e40800000000000000
+      internalID: 5639070980338232562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_11
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 511
+        width: 125
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536449366d3a30170800000000000000
+      internalID: 8143532692404979253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 387
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7292aca6faea780800000000000000
+      internalID: -8669799359448537174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_13
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 359
+        width: 82
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79580dfda51707aa0800000000000000
+      internalID: -6165303254754228841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_14
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 409
+        width: 199
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5db946989ac1a6b0800000000000000
+      internalID: -5286721730850996900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_15
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 235
+        width: 409
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3f945124a884d40800000000000000
+      internalID: 5568852955673261054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_16
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 357
+        width: 70
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06d3c9118695d930800000000000000
+      internalID: 4167402511428474378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_17
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 354
+        width: 81
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b332a0f245b05d7b0800000000000000
+      internalID: -5200237738535017669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_19
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 423
+        width: 146
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76579a1401bbf110800000000000000
+      internalID: 1295823948983260795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_20
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 491
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6476895e3b0b5fa40800000000000000
+      internalID: 5401417614798382918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_21
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 567
+        width: 285
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2793e60904a7e840800000000000000
+      internalID: 5253347849028212523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_22
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 423
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9f5e2b1b95c1d90800000000000000
+      internalID: -7125721890661467669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_23
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 495
+        width: 87
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b588fd23a498dae0800000000000000
+      internalID: -1524305045293070927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_24
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 240
+        width: 107
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c10ea1b30b1e9270800000000000000
+      internalID: 8259068469323891140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_25
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 423
+        width: 69
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903d8c2f213fc7780800000000000000
+      internalID: -8683798718768950519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_26
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 228
+        width: 72
+        height: 308
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf431f4e442d7ff0800000000000000
+      internalID: -36833303196381220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_27
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 235
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505f1e1ed2b8f71f0800000000000000
+      internalID: -1044963559347194619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_28
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 0
+        width: 206
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf86fc0957249700800000000000000
+      internalID: 546104718241730524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_29
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 115
+        width: 106
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b24491b9f363670800000000000000
+      internalID: 8518065680594250513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_30
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 131
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd4beb4db09cf350800000000000000
+      internalID: 6051871141976034802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_31
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 135
+        width: 97
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66046d3dc7d24f860800000000000000
+      internalID: 7562719688415133798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_32
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 0
+        width: 97
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8956ecd2d4494fe60800000000000000
+      internalID: 7995178297691366808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_33
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 0
+        width: 132
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4da71ddf0a38ed0800000000000000
+      internalID: -2412907963338795793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_34
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 67
+        width: 109
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7e34707508256e0800000000000000
+      internalID: -1850275385623451671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel art inventory and dialogue UI_35
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 11
+        width: 120
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e765f60a2c63c7480800000000000000
+      internalID: -8900178554047736194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 81cf6275d979d9340803f8c34254b2bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel art inventory and dialogue UI_0: 7042604957128990768
+      Pixel art inventory and dialogue UI_1: -6524405575460539806
+      Pixel art inventory and dialogue UI_10: 5639070980338232562
+      Pixel art inventory and dialogue UI_11: 8143532692404979253
+      Pixel art inventory and dialogue UI_12: -8669799359448537174
+      Pixel art inventory and dialogue UI_13: -6165303254754228841
+      Pixel art inventory and dialogue UI_14: -5286721730850996900
+      Pixel art inventory and dialogue UI_15: 5568852955673261054
+      Pixel art inventory and dialogue UI_16: 4167402511428474378
+      Pixel art inventory and dialogue UI_17: -5200237738535017669
+      Pixel art inventory and dialogue UI_18: 7264001510840084540
+      Pixel art inventory and dialogue UI_19: 1295823948983260795
+      Pixel art inventory and dialogue UI_2: 5395747942338611679
+      Pixel art inventory and dialogue UI_20: 5401417614798382918
+      Pixel art inventory and dialogue UI_21: 5253347849028212523
+      Pixel art inventory and dialogue UI_22: -7125721890661467669
+      Pixel art inventory and dialogue UI_23: -1524305045293070927
+      Pixel art inventory and dialogue UI_24: 8259068469323891140
+      Pixel art inventory and dialogue UI_25: -8683798718768950519
+      Pixel art inventory and dialogue UI_26: -36833303196381220
+      Pixel art inventory and dialogue UI_27: -1044963559347194619
+      Pixel art inventory and dialogue UI_28: 546104718241730524
+      Pixel art inventory and dialogue UI_29: 8518065680594250513
+      Pixel art inventory and dialogue UI_3: -1989011074244224455
+      Pixel art inventory and dialogue UI_30: 6051871141976034802
+      Pixel art inventory and dialogue UI_31: 7562719688415133798
+      Pixel art inventory and dialogue UI_32: 7995178297691366808
+      Pixel art inventory and dialogue UI_33: -2412907963338795793
+      Pixel art inventory and dialogue UI_34: -1850275385623451671
+      Pixel art inventory and dialogue UI_35: -8900178554047736194
+      Pixel art inventory and dialogue UI_4: -4375494108288062299
+      Pixel art inventory and dialogue UI_5: 2970763888802583858
+      Pixel art inventory and dialogue UI_6: -7490576722340793264
+      Pixel art inventory and dialogue UI_7: -459761730478595362
+      Pixel art inventory and dialogue UI_8: -1752972818154332227
+      Pixel art inventory and dialogue UI_9: -5720354073203305199
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

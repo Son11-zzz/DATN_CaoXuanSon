@@ -1,0 +1,79 @@
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+[DisallowMultipleComponent]
+public class QuestGiverNPC : InteractableBase
+{
+    [Header("Quest")]
+    [SerializeField] private QuestData quest;
+
+    [Header("Identity")]
+    [SerializeField] private string npcId;
+
+    [Header("Dialogue")]
+    [SerializeField] private DialogueData firstTimeDialogue;
+    [SerializeField] private DialogueData notAcceptedDialogue;
+    [SerializeField] private DialogueData inProgressDialogue;
+    [SerializeField] private DialogueData completedDialogue;
+
+    private string firstTimeKey;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        var scene = SceneManager.GetActiveScene().name;
+        var id = string.IsNullOrWhiteSpace(npcId) ? gameObject.name : npcId;
+        firstTimeKey = $"QuestGiverNPC.FirstTime.{scene}.{id}";
+    }
+
+    public override void Interact()
+    {
+        // Fallback: if no quest assigned, treat firstTimeDialogue as a normal dialogue.
+        if (quest == null)
+        {
+            if (firstTimeDialogue != null)
+            {
+                DialogueSystem.Instance.StartDialogue(firstTimeDialogue);
+            }
+            return;
+        }
+
+        if (QuestManager.Instance == null) return;
+
+        if (firstTimeDialogue != null && PlayerPrefs.GetInt(firstTimeKey, 0) == 0)
+        {
+            PlayerPrefs.SetInt(firstTimeKey, 1);
+            PlayerPrefs.Save();
+            DialogueSystem.Instance.StartDialogue(firstTimeDialogue);
+            return;
+        }
+
+        DialogueData data = notAcceptedDialogue;
+
+        bool accepted = QuestManager.Instance.IsAccepted(quest);
+        bool completed = QuestManager.Instance.IsCompleted(quest);
+        bool ready = QuestManager.Instance.IsReadyToTurnIn(quest);
+        Debug.Log($"QuestGiverNPC '{name}': accepted={accepted}, readyToTurnIn={ready}, completed={completed}");
+
+        if (completed)
+        {
+            data = completedDialogue != null ? completedDialogue : data;
+        }
+        else if (accepted)
+        {
+            // quest ?ã nh?n nh?ng ch?a turn-in => luôn hi?n th? in-progress
+            data = inProgressDialogue != null ? inProgressDialogue : data;
+        }
+
+        if (data != null)
+        {
+            DialogueSystem.Instance.StartDialogue(data);
+        }
+    }
+
+    public override string GetInteractText()
+    {
+        if (quest == null) return string.Empty;
+        return "Press E";
+    }
+}

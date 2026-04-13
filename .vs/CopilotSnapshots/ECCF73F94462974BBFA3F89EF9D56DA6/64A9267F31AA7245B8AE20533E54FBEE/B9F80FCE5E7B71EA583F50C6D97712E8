@@ -1,0 +1,206 @@
+﻿using System;
+using System.Text;
+using TMPro;
+using UnityEngine;
+
+public class QuestPanelUI : MonoBehaviour
+{
+    [Header("Root")]
+    [SerializeField] private GameObject panelRoot;
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI titleText;
+    [SerializeField] private TextMeshProUGUI bodyText;
+
+    [Header("Behavior")]
+    [SerializeField] private KeyCode toggleKey = KeyCode.J;
+    [SerializeField] private bool showCompletedInBody;
+    [SerializeField] private bool showOnlyFirstQuest = true;
+
+    private string lastTitle = "Quest";
+    private string lastBody = string.Empty;
+
+    private bool subscribed;
+
+    private void OnEnable()
+    {
+        TrySubscribe();
+        Refresh();
+    }
+
+    private void OnDisable()
+    {
+        Unsubscribe();
+    }
+
+    private void Update()
+    {
+        // In case singletons spawn after this UI.
+        TrySubscribe();
+
+        if (Input.GetKeyDown(toggleKey))
+        {
+            Toggle();
+        }
+    }
+
+    private void TrySubscribe()
+    {
+        if (subscribed) return;
+
+        bool did = false;
+
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.OnQuestUpdated -= Refresh;
+            QuestManager.Instance.OnQuestUpdated += Refresh;
+            did = true;
+        }
+
+        if (InventorySystem.Instance != null)
+        {
+            InventorySystem.Instance.OnInventoryChanged -= Refresh;
+            InventorySystem.Instance.OnInventoryChanged += Refresh;
+            did = true;
+        }
+
+        subscribed = did;
+    }
+
+    private void Unsubscribe()
+    {
+        if (QuestManager.Instance != null)
+        {
+            QuestManager.Instance.OnQuestUpdated -= Refresh;
+        }
+
+        if (InventorySystem.Instance != null)
+        {
+            InventorySystem.Instance.OnInventoryChanged -= Refresh;
+        }
+
+        subscribed = false;
+    }
+
+    public void Toggle()
+    {
+        if (panelRoot == null) return;
+        bool next = !panelRoot.activeSelf;
+        panelRoot.SetActive(next);
+        if (next)
+        {
+            Refresh();
+        }
+    }
+
+    public void Show()
+    {
+        if (panelRoot == null) return;
+        panelRoot.SetActive(true);
+        Refresh();
+    }
+
+    public void Hide()
+    {
+        if (panelRoot == null) return;
+        panelRoot.SetActive(false);
+    }
+
+    public void Refresh()
+    {
+        var qm = QuestManager.Instance;
+        if (qm == null)
+        {
+            SetTexts(lastTitle, lastBody);
+            return;
+        }
+
+        var quests = qm.ActiveQuests;
+        if (quests == null || quests.Count == 0)
+        {
+            // Keep displaying last quest info (useful after completion) unless there's nothing yet.
+            if (!string.IsNullOrWhiteSpace(lastBody))
+            {
+                SetTexts(lastTitle, lastBody);
+            }
+            else
+            {
+                SetTexts("Quest", "No active quests");
+            }
+            return;
+        }
+
+        int count = showOnlyFirstQuest ? Mathf.Min(1, quests.Count) : quests.Count;
+
+        string headerTitle = "Quest";
+        if (showOnlyFirstQuest && quests.Count > 0 && quests[0] != null)
+        {
+            headerTitle = string.IsNullOrWhiteSpace(quests[0].title) ? quests[0].GetId() : quests[0].title;
+        }
+
+        var sb = new StringBuilder();
+        for (int i = 0; i < count; i++)
+        {
+            var q = quests[i];
+            if (q == null) continue;
+
+            bool completed = qm.IsCompleted(q);
+
+            // When showing a single quest, still indicate completion state.
+            if (showOnlyFirstQuest)
+            {
+                sb.AppendLine(completed ? "[DONE]" : "[TODO]");
+            }
+
+            if (!showOnlyFirstQuest)
+            {
+                sb.Append(completed ? "[DONE] " : "[TODO] ");
+                sb.AppendLine(string.IsNullOrWhiteSpace(q.title) ? q.GetId() : q.title);
+            }
+
+            if (!string.IsNullOrWhiteSpace(q.description)) sb.AppendLine(q.description);
+
+            if (q.objectives != null)
+            {
+                for (int j = 0; j < q.objectives.Count; j++)
+                {
+                    var o = q.objectives[j];
+                    if (o == null || !o.IsValid()) continue;
+
+                    if (o.type == QuestObjectiveType.CollectItem)
+                    {
+                        int have = InventorySystem.Instance != null ? InventorySystem.Instance.GetAmount(o.item) : 0;
+                        int need = Mathf.Max(1, o.amount);
+                        string itemName = o.item != null ? o.item.itemName : "(missing item)";
+                        sb.AppendLine($"- {itemName}: {have}/{need}");
+                    }
+                    else if (o.type == QuestObjectiveType.ReachStatValue)
+                    {
+                        sb.AppendLine($"- {o.stat} >= {o.targetValue}");
+                    }
+                }
+            }
+
+            if (i < count - 1)
+            {
+                sb.AppendLine();
+            }
+        }
+
+        if (sb.Length == 0)
+        {
+            SetTexts(headerTitle, showCompletedInBody ? "" : "No active quests");
+            return;
+        }
+
+        SetTexts(headerTitle, sb.ToString().TrimEnd());
+    }
+
+    private void SetTexts(string title, string body)
+    {
+        lastTitle = title;
+        lastBody = body;
+        if (titleText != null) titleText.text = title;
+        if (bodyText != null) bodyText.text = body;
+    }
+}

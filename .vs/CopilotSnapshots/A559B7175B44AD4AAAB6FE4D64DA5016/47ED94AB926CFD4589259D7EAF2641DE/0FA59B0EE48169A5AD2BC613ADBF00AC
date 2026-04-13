@@ -1,0 +1,49 @@
+﻿using TMPro;
+using UnityEngine;
+
+public class HUDUI : MonoBehaviour
+{
+    [Header("Text References")]
+    [SerializeField] private TextMeshProUGUI dayTimeText;
+    [SerializeField] private TextMeshProUGUI gpaText;
+    [SerializeField] private TextMeshProUGUI moneyText;
+    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private TextMeshProUGUI stressText;
+    [SerializeField] private TextMeshProUGUI socialText;
+    [SerializeField] private TextMeshProUGUI skillText;
+
+    private void OnEnable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged += Refresh;
+        }
+        Refresh();
+    }
+
+    private void OnDisable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged -= Refresh;
+        }
+    }
+
+    public void Refresh()
+    {
+        var sm = StatManager.Instance;
+        if (sm == null) return;
+
+        if (dayTimeText != null)
+        {
+            dayTimeText.text = $"Day {sm.day}  Time {sm.time:00}:00";
+        }
+
+        if (gpaText != null) gpaText.text = $"GPA: {sm.gpa:0.00}";
+        if (moneyText != null) moneyText.text = $"Money: {sm.money:0}";
+        if (healthText != null) healthText.text = $"Health: {sm.health:0}";
+        if (stressText != null) stressText.text = $"Stress: {sm.stress:0}";
+        if (socialText != null) socialText.text = $"Social: {sm.social:0}";
+        if (skillText != null) skillText.text = $"Skill: {sm.skill:0}";
+    }
+}

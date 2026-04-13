@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deec2e8134dc6d04695b4d724ec0f883, type: 3}
+  m_Name: NemChuaRan
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemName: Nem Chua Ran
+  icon: {fileID: -3553221590548053313, guid: 69a765e83e3365745ad1a9db6a203a0a, type: 3}
+  description: 
+  type: 0
+  combineWith: []

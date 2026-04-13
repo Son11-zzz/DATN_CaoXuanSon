@@ -1,0 +1,41 @@
+﻿using UnityEngine;
+
+public class StatManager : MonoBehaviour
+{
+    public static StatManager Instance;
+
+    [Header("Timeline")]
+    public int day = 1;
+    public int time = 8;
+
+    [Header("Stats")]
+    public float gpa;
+    public float stress;
+    public float money;
+    public float health;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        EventManager.Instance.OnChoiceSelected += UpdateStat;
+    }
+
+    void UpdateStat()
+    {
+        gpa += 0.1f;
+        stress -= 1f;
+
+        time += 1;
+        if (time >= 24)
+        {
+            time = 0;
+            day += 1;
+        }
+
+        EventManager.Instance.NotifyStatChanged();
+    }
+}

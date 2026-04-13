@@ -1,0 +1,43 @@
+﻿using NUnit.Framework.Interfaces;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "DialogueData", menuName = "Scriptable Objects/DialogueData")]
+public class DialogueData : ScriptableObject
+{
+    public List<DialogueLine> lines;
+}
+[System.Serializable]
+public class DialogueLine
+{
+    [TextArea]
+    public string text;
+
+    public List<DialogueChoice> choices;
+}
+
+[System.Serializable]
+public class DialogueChoice
+{
+    public string choiceText;
+
+    public ChoiceType type;
+
+    public string nextNode; // dùng sau (branching)
+    public ItemData rewardItem; // nếu có
+
+    public QuestData quest; // nếu có (Accept/TurnIn)
+
+    public string nextNodeOnSuccess;
+    public string nextNodeOnFail;
+}
+
+public enum ChoiceType
+{
+    Continue,
+    End,
+    PickupItem,
+    LeaveLocket,
+    AcceptQuest,
+    TurnInQuest
+}

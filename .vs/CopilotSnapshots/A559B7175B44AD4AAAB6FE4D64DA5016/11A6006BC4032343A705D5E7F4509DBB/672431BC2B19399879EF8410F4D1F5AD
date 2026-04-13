@@ -1,0 +1,92 @@
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class HUDUI : MonoBehaviour
+{
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI dayText;
+    [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI moneyText;
+
+    [Header("Sliders")]
+    [SerializeField] private Slider gpaSlider;
+    [SerializeField] private Slider stressSlider;
+    [SerializeField] private Slider energySlider;
+    [SerializeField] private Slider healthSlider;
+
+    [Header("Slider Ranges")]
+    [SerializeField] private float gpaMax = 4f;
+    [SerializeField] private float stressMax = 100f;
+    [SerializeField] private float energyMax = 100f;
+    [SerializeField] private float healthMax = 100f;
+
+    private void OnEnable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged += Refresh;
+        }
+
+        if (GameTimeManager.Instance != null)
+        {
+            GameTimeManager.Instance.OnTimeChanged += Refresh;
+        }
+        Refresh();
+    }
+
+    private void OnDisable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged -= Refresh;
+        }
+
+        if (GameTimeManager.Instance != null)
+        {
+            GameTimeManager.Instance.OnTimeChanged -= Refresh;
+        }
+    }
+
+    public void Refresh()
+    {
+        var sm = StatManager.Instance;
+        if (sm == null) return;
+
+        var tm = GameTimeManager.Instance;
+        if (tm != null)
+        {
+            if (dayText != null)
+            {
+                dayText.text = $"Day {tm.DayInSemester}  Semester {tm.Semester}";
+            }
+
+            if (timeText != null)
+            {
+                timeText.text = $"Time {tm.Hour:00}:00";
+            }
+        }
+        else
+        {
+            // fallback n?u ch?a có GameTimeManager trong scene
+            if (dayText != null) dayText.text = $"Day {sm.day}  Semester 1";
+            if (timeText != null) timeText.text = $"Time {sm.time:00}:00";
+        }
+
+        if (moneyText != null)
+        {
+            moneyText.text = $"Money: {sm.money:0}";
+        }
+
+        if (gpaSlider != null) gpaSlider.value = Normalize(sm.gpa, gpaMax);
+        if (stressSlider != null) stressSlider.value = Normalize(sm.stress, stressMax);
+        if (energySlider != null) energySlider.value = Normalize(sm.health, energyMax);
+        if (healthSlider != null) healthSlider.value = Normalize(sm.health, healthMax);
+    }
+
+    private static float Normalize(float value, float max)
+    {
+        if (max <= 0f) return 0f;
+        return Mathf.Clamp01(value / max);
+    }
+}

@@ -1,0 +1,73 @@
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class HUDUI : MonoBehaviour
+{
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI dayText;
+    [SerializeField] private TextMeshProUGUI timeText;
+    [SerializeField] private TextMeshProUGUI moneyText;
+
+    [Header("Sliders")]
+    [SerializeField] private Slider gpaSlider;
+    [SerializeField] private Slider stressSlider;
+    [SerializeField] private Slider energySlider;
+
+    [Header("Slider Ranges")]
+    [SerializeField] private float gpaMax = 4f;
+    [SerializeField] private float stressMax = 100f;
+    [SerializeField] private float energyMax = 100f;
+
+    private void OnEnable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged += Refresh;
+        }
+        Refresh();
+    }
+
+    private void OnDisable()
+    {
+        if (EventManager.Instance != null)
+        {
+            EventManager.Instance.OnStatChanged -= Refresh;
+        }
+    }
+
+    public void Refresh()
+    {
+        var sm = StatManager.Instance;
+        if (sm == null) return;
+
+        // Day display: "day 1 semester 1" (semester calc: 30 days per semester)
+        int semester = Mathf.Max(1, ((sm.day - 1) / 30) + 1);
+        int dayInSemester = Mathf.Max(1, ((sm.day - 1) % 30) + 1);
+
+        if (dayText != null)
+        {
+            dayText.text = $"Day {dayInSemester}  Semester {semester}";
+        }
+
+        if (timeText != null)
+        {
+            timeText.text = $"Time {sm.time:00}:00";
+        }
+
+        if (moneyText != null)
+        {
+            moneyText.text = $"Money: {sm.money:0}";
+        }
+
+        if (gpaSlider != null) gpaSlider.value = Normalize(sm.gpa, gpaMax);
+        if (stressSlider != null) stressSlider.value = Normalize(sm.stress, stressMax);
+        if (energySlider != null) energySlider.value = Normalize(sm.health, energyMax);
+    }
+
+    private static float Normalize(float value, float max)
+    {
+        if (max <= 0f) return 0f;
+        return Mathf.Clamp01(value / max);
+    }
+}

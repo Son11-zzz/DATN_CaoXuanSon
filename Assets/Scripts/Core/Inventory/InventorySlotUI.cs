@@ -1,0 +1,61 @@
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;   
+
+public class InventorySlotUI : MonoBehaviour
+{
+    [SerializeField] private Image iconImage;
+    [SerializeField] private TextMeshProUGUI amountText;
+    [SerializeField] private Image selectedBorder;
+    [SerializeField] private Button button;
+
+    private ItemData itemData;
+    private InventoryUI owner;
+
+    public ItemData ItemData => itemData;
+
+    public void Setup(ItemData data, int amount, InventoryUI ui)
+    {
+        itemData = data;
+        owner = ui;
+
+        if (iconImage != null) iconImage.sprite = data.icon;
+        if (amountText != null) amountText.text = "x" + amount;
+        SetSelected(false);
+
+        if (button == null)
+        {
+            button = GetComponent<Button>();
+        }
+
+        if (button != null)
+        {
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(OnClicked);
+        }
+    }
+
+    public void SetSelected(bool selected)
+    {
+        if (selectedBorder == null) return;
+
+        selectedBorder.enabled = selected;
+        if (selectedBorder.gameObject.activeSelf != selected)
+        {
+            selectedBorder.gameObject.SetActive(selected);
+        }
+
+        var c = selectedBorder.color;
+        c.a = 1f;
+        selectedBorder.color = c;
+    }
+
+    private void OnClicked()
+    {
+        Debug.Log("CLICKED SLOT");
+        if (owner != null)
+        {
+            owner.ToggleSelection(this);
+        }
+    }
+}

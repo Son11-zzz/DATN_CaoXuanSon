@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: LTTStart
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: You must be new student from Thanh Hoa right?
+    choices:
+    - choiceText: 'Yes '
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: Nigga shut up
+      type: 1
+      nextNode: LTTEnding
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: You have any friend yet? Please be my friend, i dont have friend, pls speed
+      i need this.
+    choices:
+    - choiceText: 'Ok ok what tf wrong with this guy... '
+      type: 1
+      nextNode: LTTQuestAccept
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: Nigga shut up
+      type: 1
+      nextNode: LTTEnding
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

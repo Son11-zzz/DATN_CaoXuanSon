@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+
+public class QuestGiverNPC : InteractableBase
+{
+    [SerializeField] private QuestData quest;
+
+    [Header("Dialogue Nodes")]
+    [SerializeField] private DialogueData notAcceptedDialogue;
+    [SerializeField] private DialogueData inProgressDialogue;
+    [SerializeField] private DialogueData completedDialogue;
+
+    public override void Interact()
+    {
+        if (quest == null) return;
+        if (QuestManager.Instance == null) return;
+
+        DialogueData data = notAcceptedDialogue;
+
+        if (QuestManager.Instance.IsCompleted(quest))
+        {
+            data = completedDialogue != null ? completedDialogue : data;
+        }
+        else if (QuestManager.Instance.IsAccepted(quest))
+        {
+            data = inProgressDialogue != null ? inProgressDialogue : data;
+        }
+
+        if (data != null)
+        {
+            DialogueSystem.Instance.StartDialogue(data);
+        }
+    }
+
+    public override string GetInteractText()
+    {
+        if (quest == null) return string.Empty;
+        return "Press E";
+    }
+}

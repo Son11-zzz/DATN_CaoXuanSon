@@ -1,0 +1,65 @@
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+[DisallowMultipleComponent]
+public class QuestGiverNPC : InteractableBase
+{
+    [Header("Quest")]
+    [SerializeField] private QuestData quest;
+
+    [Header("Identity")]
+    [SerializeField] private string npcId;
+
+    [Header("Dialogue")]
+    [SerializeField] private DialogueData firstTimeDialogue;
+    [SerializeField] private DialogueData notAcceptedDialogue;
+    [SerializeField] private DialogueData inProgressDialogue;
+    [SerializeField] private DialogueData completedDialogue;
+
+    private string firstTimeKey;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        var scene = SceneManager.GetActiveScene().name;
+        var id = string.IsNullOrWhiteSpace(npcId) ? gameObject.name : npcId;
+        firstTimeKey = $"QuestGiverNPC.FirstTime.{scene}.{id}";
+    }
+
+    public override void Interact()
+    {
+        if (quest == null) return;
+        if (QuestManager.Instance == null) return;
+
+        if (firstTimeDialogue != null && PlayerPrefs.GetInt(firstTimeKey, 0) == 0)
+        {
+            PlayerPrefs.SetInt(firstTimeKey, 1);
+            PlayerPrefs.Save();
+            DialogueSystem.Instance.StartDialogue(firstTimeDialogue);
+            return;
+        }
+
+        DialogueData data = notAcceptedDialogue;
+
+        if (QuestManager.Instance.IsCompleted(quest))
+        {
+            data = completedDialogue != null ? completedDialogue : data;
+        }
+        else if (QuestManager.Instance.IsAccepted(quest))
+        {
+            // quest đã nhận nhưng chưa turn-in => luôn hiển thị in-progress
+            data = inProgressDialogue != null ? inProgressDialogue : data;
+        }
+
+        if (data != null)
+        {
+            DialogueSystem.Instance.StartDialogue(data);
+        }
+    }
+
+    public override string GetInteractText()
+    {
+        if (quest == null) return string.Empty;
+        return "Press E";
+    }
+}

@@ -1,0 +1,112 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+[DisallowMultipleComponent]
+public class QuestGiverNPC : InteractableBase
+{
+    [Header("Quest")]
+    [SerializeField] private QuestData quest;
+
+    [Header("Identity")]
+    [SerializeField] private string npcId;
+
+    [Header("Dialogue")]
+    [SerializeField] private DialogueData firstTimeDialogue;
+    [SerializeField] private DialogueData inProgressDialogue;
+    [SerializeField] private DialogueData turnInDialogue;
+    [SerializeField] private DialogueData defaultDialogue;
+
+    [Header("Debug")]
+    [SerializeField] private bool resetFirstTimeOnPlay;
+
+    private string firstTimeKey;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        var scene = SceneManager.GetActiveScene().name;
+        var id = string.IsNullOrWhiteSpace(npcId) ? gameObject.name : npcId;
+        firstTimeKey = $"QuestGiverNPC.FirstTime.{scene}.{id}";
+
+        if (resetFirstTimeOnPlay)
+        {
+            PlayerPrefs.DeleteKey(firstTimeKey);
+        }
+    }
+
+    public override void Interact()
+    {
+        // Fallback: if no quest assigned, treat firstTimeDialogue as a normal dialogue.
+        if (quest == null)
+        {
+            if (firstTimeDialogue != null)
+            {
+                DialogueSystem.Instance.StartDialogue(firstTimeDialogue, null);
+            }
+            return;
+        }
+
+        if (QuestManager.Instance == null) return;
+
+        bool accepted = QuestManager.Instance.IsAccepted(quest);
+
+        // If player hasn't accepted quest yet, always show the intro dialogue.
+        // This prevents a player selecting End and losing the ability to accept later.
+        if (!accepted && firstTimeDialogue != null)
+        {
+            DialogueSystem.Instance.StartDialogue(firstTimeDialogue, null);
+            return;
+        }
+
+        bool completed = QuestManager.Instance.IsCompleted(quest);
+        bool ready = QuestManager.Instance.IsReadyToTurnIn(quest);
+        Debug.Log($"QuestGiverNPC '{name}': accepted={accepted}, readyToTurnIn={ready}, completed={completed}");
+
+        // After quest is turned in (completed), show default dialogue.
+        if (completed)
+        {
+            if (defaultDialogue != null)
+            {
+                DialogueSystem.Instance.StartDialogue(defaultDialogue, null);
+            }
+            return;
+        }
+
+        // If quest is accepted and objectives met, show turn-in dialogue.
+        if (accepted && ready)
+        {
+            if (turnInDialogue != null)
+            {
+                DialogueSystem.Instance.StartDialogue(turnInDialogue, null);
+            }
+            return;
+        }
+
+        // If quest accepted but not ready, show in-progress reminder dialogue.
+        if (accepted)
+        {
+            if (inProgressDialogue != null)
+            {
+                DialogueSystem.Instance.StartDialogue(inProgressDialogue, null);
+            }
+            return;
+        }
+
+        // If quest not accepted and intro already consumed, show default dialogue (further prompts to accept via nodes).
+        if (defaultDialogue != null)
+        {
+            DialogueSystem.Instance.StartDialogue(defaultDialogue, null);
+        }
+    }
+
+    public override string GetInteractText()
+    {
+        if (quest == null) return string.Empty;
+        return "Press E";
+    }
+
+    public void MarkQuestAccepted()
+    {
+        // This method is kept for backward compatibility but is no longer required.
+    }
+}

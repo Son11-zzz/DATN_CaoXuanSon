@@ -14,23 +14,31 @@ public class InventoryUI : MonoBehaviour
     [Header("Info")]
     [SerializeField] private TextMeshProUGUI messageText;
 
+    [Header("Use")]
+    [SerializeField] private KeyCode useConsumableKey = KeyCode.U;
+
     private readonly List<InventorySlotUI> slotViews = new List<InventorySlotUI>();
     private readonly List<InventorySlotUI> selectedSlots = new List<InventorySlotUI>();
 
-    private void Start()
+    private void Awake()
     {
-        if (inventoryPanel != null)
-        {
-            inventoryPanel.SetActive(false);
-        }
+        ResolvePanelSafely();
+    }
+
+    private void OnEnable()
+    {
+        ResolvePanelSafely();
 
         if (InventorySystem.Instance != null)
         {
+            InventorySystem.Instance.OnInventoryChanged -= Refresh;
             InventorySystem.Instance.OnInventoryChanged += Refresh;
         }
+
+        HidePanel();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         if (InventorySystem.Instance != null)
         {
@@ -40,6 +48,8 @@ public class InventoryUI : MonoBehaviour
 
     private void Update()
     {
+        ResolvePanelSafely();
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleInventory();
@@ -49,6 +59,26 @@ public class InventoryUI : MonoBehaviour
         if (ctrlPressed && inventoryPanel != null && inventoryPanel.activeSelf)
         {
             TryCombineSelected();
+        }
+
+        if (inventoryPanel != null && inventoryPanel.activeSelf && Input.GetKeyDown(useConsumableKey))
+        {
+            TryUseSingleSelectedConsumable();
+        }
+    }
+
+    public void HidePanel()
+    {
+        if (inventoryPanel == null) return;
+        if (inventoryPanel == gameObject) return; // không bao giờ disable object đang chạy script
+        inventoryPanel.SetActive(false);
+    }
+
+    private void ResolvePanelSafely()
+    {
+        if (inventoryPanel == gameObject && transform.childCount > 0)
+        {
+            inventoryPanel = transform.GetChild(0).gameObject;
         }
     }
 
@@ -62,7 +92,7 @@ public class InventoryUI : MonoBehaviour
         if (active)
         {
             Refresh();
-            SetMessage("Chọn 2 item, nhấn Ctrl để combine.");
+            SetMessage("Chọn 2 ô vật phẩm, nhấn Ctrl để ghép.");
         }
     }
 
@@ -104,12 +134,43 @@ public class InventoryUI : MonoBehaviour
 
         if (selectedSlots.Count >= 2)
         {
-            SetMessage("Chỉ chọn tối đa 2 item.");
+            SetMessage("Chỉ chọn tối đa 2 ô vật phẩm.");
             return;
         }
 
         selectedSlots.Add(slot);
         slot.SetSelected(true);
+    }
+
+    public void ShowItemInfo(InventorySlotUI slot)
+    {
+        if (slot == null || slot.ItemData == null) return;
+
+        var item = slot.ItemData;
+        string description = string.IsNullOrWhiteSpace(item.description)
+            ? string.Empty
+            : "\n" + item.description;
+
+        SetMessage($"{item.itemName} ×{slot.Amount}{description}\nĐồ tiêu thụ (ăn/uống): nhấn phím {useConsumableKey}.");
+    }
+
+    private void TryUseSingleSelectedConsumable()
+    {
+        if (selectedSlots.Count != 1 || InventorySystem.Instance == null)
+        {
+            SetMessage("Hãy chọn một ô trong túi đồ rồi nhấn phím " + useConsumableKey + ".");
+            return;
+        }
+
+        ItemData item = selectedSlots[0].ItemData;
+        if (InventorySystem.Instance.TryConsumeSingle(item, out string fail))
+        {
+            SetMessage("Đã sử dụng.");
+            Refresh();
+            return;
+        }
+
+        SetMessage(fail);
     }
 
     private void TryCombineSelected()
@@ -125,12 +186,12 @@ public class InventoryUI : MonoBehaviour
 
         if (InventorySystem.Instance.TryCombine(first, second, out ItemData result))
         {
-            SetMessage("Combine thành công: " + result.itemName);
+            SetMessage("Ghép thành công: " + result.itemName);
             Refresh();
         }
         else
         {
-            SetMessage("Không có công thức combine phù hợp.");
+            SetMessage("Không có công thức ghép phù hợp.");
         }
     }
 

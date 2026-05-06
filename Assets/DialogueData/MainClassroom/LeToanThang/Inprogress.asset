@@ -13,18 +13,16 @@ MonoBehaviour:
   m_Name: Inprogress
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'Do you have it yet?
-
-'
+  - text: "B\u1EA1n \u0111\xE3 c\xF3 nem chua chi\xEAn ch\u01B0a?\n"
     choices:
-    - choiceText: Yes
+    - choiceText: "R\u1ED3i"
       type: 1
       nextNode: TurnIn
       rewardItem: {fileID: 0}
       quest: {fileID: 0}
       nextNodeOnSuccess: 
       nextNodeOnFail: 
-    - choiceText: No
+    - choiceText: "Ch\u01B0a"
       type: 2
       nextNode: 
       rewardItem: {fileID: 0}

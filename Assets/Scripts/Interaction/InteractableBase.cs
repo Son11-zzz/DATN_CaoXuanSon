@@ -6,7 +6,7 @@ public abstract class InteractableBase : MonoBehaviour, IInteractable
 
     protected virtual void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponentInChildren<SpriteRenderer>(true);
     }
 
     public virtual void Interact()
@@ -28,6 +28,6 @@ public abstract class InteractableBase : MonoBehaviour, IInteractable
 
     public virtual string GetInteractText()
     {
-        return "Press";
+        return "Nhấn E";
     }
 }

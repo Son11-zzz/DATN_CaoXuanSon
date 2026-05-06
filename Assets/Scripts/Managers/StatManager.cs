@@ -8,6 +8,13 @@ public class StatManager : MonoBehaviour
     public int day = 1;
     public int time = 8;
 
+    [Header("New campaign baseline")]
+    [Tooltip("Tiền áp khi bắt đầu New Game (PrepareFreshCampaign). Gán số tiền khởi đầu mong muốn ở đây.")]
+    [SerializeField] private float newCampaignStartingMoney;
+
+    /// <summary>Tiền khi PrepareFreshCampaign — lấy từ Inspector, không phải từ GameSaveService.newMoney.</summary>
+    public float NewCampaignStartingMoney => newCampaignStartingMoney;
+
     [Header("Stats")]
     public float gpa;
     public float stress;
@@ -26,6 +33,13 @@ public class StatManager : MonoBehaviour
         }
 
         Instance = this;
+
+        if (transform.parent != null)
+        {
+            transform.SetParent(null);
+        }
+
+        DontDestroyOnLoad(gameObject);  
     }
 
     private void Start()
@@ -70,5 +84,22 @@ public class StatManager : MonoBehaviour
         }
 
         EventManager.Instance.NotifyStatChanged();
+    }
+
+    public void Persist_Apply(StatPayload p)
+    {
+        if (p == null) return;
+
+        day = Mathf.Max(1, p.day);
+        time = Mathf.Clamp(p.time, 0, 23);
+        gpa = p.gpa;
+        stress = p.stress;
+        money = p.money;
+        health = p.health;
+        energy = Mathf.Max(0f, p.energy);
+        social = p.social;
+        skill = p.skill;
+
+        NotifyInitialStats();
     }
 }

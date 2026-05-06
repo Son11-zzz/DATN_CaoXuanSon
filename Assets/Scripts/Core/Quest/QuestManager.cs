@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestManager : MonoBehaviour
+public partial class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance;
 
@@ -12,11 +12,25 @@ public class QuestManager : MonoBehaviour
     [Header("Active")]
     [SerializeField] private List<QuestData> activeQuests = new List<QuestData>();
 
+    [Header("Auto Assign")]
+    [SerializeField] private bool autoAssignFirstDayQuest = true;
+    [SerializeField] private QuestData firstDayQuest;
+
+    [Header("Debug")]
+    [SerializeField] private bool resetFirstDayOnPlay;
+
     private readonly Dictionary<string, QuestProgress> progress = new Dictionary<string, QuestProgress>();
 
     private readonly HashSet<string> readyToTurnIn = new HashSet<string>();
+    private readonly HashSet<string> firstTimeNpcTalked = new HashSet<string>();
+
+    private bool firstDayQuestChecked;
+    private bool timeSubscribed;
 
     public event Action OnQuestUpdated;
+    public event Action<QuestData> OnQuestCompleted;
+    /// <summary>Fired once per NPC id when <see cref="RegisterFirstTimeDialogueCompleted"/> first records that id.</summary>
+    public event Action<string> OnFirstTimeNpcTalked;
 
     private bool subscribed;
 
@@ -29,17 +43,29 @@ public class QuestManager : MonoBehaviour
         }
 
         Instance = this;
+        if (transform.parent != null)
+        {
+            transform.SetParent(null);
+        }
         DontDestroyOnLoad(gameObject);
+
+        if (resetFirstDayOnPlay)
+        {
+            ResetFirstDayAssignment();
+        }
     }
 
     private void OnEnable()
     {
         TrySubscribe();
+        TrySubscribeTime();
+        TryAutoAssignFirstDayQuest();
     }
 
     private void OnDisable()
     {
         Unsubscribe();
+        UnsubscribeTime();
     }
 
     private void Update()
@@ -49,6 +75,40 @@ public class QuestManager : MonoBehaviour
         {
             TrySubscribe();
         }
+
+        if (!timeSubscribed)
+        {
+            TrySubscribeTime();
+        }
+
+        if (!firstDayQuestChecked)
+        {
+            TryAutoAssignFirstDayQuest();
+        }
+    }
+
+    private void TrySubscribeTime()
+    {
+        if (timeSubscribed) return;
+
+        if (GameTimeManager.Instance != null)
+        {
+            GameTimeManager.Instance.OnTimeChanged -= TryAutoAssignFirstDayQuest;
+            GameTimeManager.Instance.OnTimeChanged += TryAutoAssignFirstDayQuest;
+            timeSubscribed = true;
+        }
+    }
+
+    private void UnsubscribeTime()
+    {
+        if (!timeSubscribed) return;
+
+        if (GameTimeManager.Instance != null)
+        {
+            GameTimeManager.Instance.OnTimeChanged -= TryAutoAssignFirstDayQuest;
+        }
+
+        timeSubscribed = false;
     }
 
     private void TrySubscribe()
@@ -135,6 +195,32 @@ public class QuestManager : MonoBehaviour
         OnQuestUpdated?.Invoke();
     }
 
+    public bool HasTalkedToNpc(string npcId)
+    {
+        if (string.IsNullOrWhiteSpace(npcId)) return false;
+        npcId = npcId.Trim();
+        if (firstTimeNpcTalked.Contains(npcId)) return true;
+        string alias = NpcFirstMeetDialogueState.LegacyTalkAliasFor(npcId);
+        return !string.IsNullOrEmpty(alias) && firstTimeNpcTalked.Contains(alias);
+    }
+
+    public void RegisterFirstTimeDialogueCompleted(string npcId)
+    {
+        if (string.IsNullOrWhiteSpace(npcId)) return;
+
+        npcId = npcId.Trim();
+        bool anyNew = firstTimeNpcTalked.Add(npcId);
+        string alias = NpcFirstMeetDialogueState.LegacyTalkAliasFor(npcId);
+        if (!string.IsNullOrEmpty(alias))
+            anyNew |= firstTimeNpcTalked.Add(alias);
+
+        if (anyNew)
+        {
+            OnFirstTimeNpcTalked?.Invoke(npcId);
+            Recalculate();
+        }
+    }
+
     public void CompleteQuest(QuestData quest)
     {
         if (quest == null) return;
@@ -164,10 +250,30 @@ public class QuestManager : MonoBehaviour
 
         ApplyRewards(quest);
         UnlockNext(quest);
+        OnQuestCompleted?.Invoke(quest);
 
         OnQuestUpdated?.Invoke();
 
         // keep it in active list (UI can show completed) or remove if you prefer
+    }
+
+    public void RemoveCompletedQuests()
+    {
+        if (activeQuests == null || activeQuests.Count == 0) return;
+
+        for (int i = activeQuests.Count - 1; i >= 0; i--)
+        {
+            var quest = activeQuests[i];
+            if (quest == null) continue;
+
+            if (IsCompleted(quest))
+            {
+                activeQuests.RemoveAt(i);
+                readyToTurnIn.Remove(quest.GetId());
+            }
+        }
+
+        OnQuestUpdated?.Invoke();
     }
 
     private void ConsumeObjectives(QuestData quest)
@@ -196,7 +302,13 @@ public class QuestManager : MonoBehaviour
         sm.money += quest.rewardMoney;
         sm.gpa += quest.rewardGpa;
         sm.stress += quest.rewardStress;
-        sm.health += quest.rewardHealth;
+
+        // HP chỉ được hồi qua đồ ăn/uống (consumable). Cho phép sát thương âm về lore nếu cần.
+        if (quest.rewardHealth < 0f)
+        {
+            sm.health = Mathf.Max(0f, sm.health + quest.rewardHealth);
+        }
+
         sm.energy += quest.rewardEnergy;
 
         // if these stats don't exist in your StatManager yet, keep rewards at 0 or add fields
@@ -239,6 +351,12 @@ public class QuestManager : MonoBehaviour
 
             if (IsQuestObjectivesMet(quest))
             {
+                if (quest.autoCompleteWhenReady && !IsCompleted(quest))
+                {
+                    CompleteQuest(quest);
+                    continue;
+                }
+
                 readyToTurnIn.Add(quest.GetId());
             }
             else
@@ -274,9 +392,58 @@ public class QuestManager : MonoBehaviour
             {
                 if (!IsStatReached(obj.stat, obj.targetValue)) return false;
             }
+            else if (obj.type == QuestObjectiveType.TalkToNpc)
+            {
+                if (!HasTalkedToNpc(obj.npcId)) return false;
+            }
+            else if (obj.type == QuestObjectiveType.CompleteLessonQuiz)
+            {
+                if (LessonQuizManager.Instance == null) return false;
+                if (!LessonQuizManager.Instance.WasDeskQuizCompleted(
+                        obj.lessonQuizSemester,
+                        obj.lessonQuizCalendarDay,
+                        obj.lessonQuizContext))
+                {
+                    return false;
+                }
+            }
         }
 
         return true;
+    }
+
+    private void TryAutoAssignFirstDayQuest()
+    {
+        if (!autoAssignFirstDayQuest || firstDayQuest == null) return;
+
+        var time = GameTimeManager.Instance;
+        if (time == null) return;
+
+        if (time.Semester != 1 || time.DayInSemester != 1) return;
+
+        string key = $"QuestManager.FirstDayAssigned.{firstDayQuest.GetId()}";
+        bool alreadyAssigned = PlayerPrefs.GetInt(key, 0) == 1;
+
+        if (!alreadyAssigned || !IsAccepted(firstDayQuest))
+        {
+            AcceptQuest(firstDayQuest);
+        }
+
+        if (!alreadyAssigned)
+        {
+            PlayerPrefs.SetInt(key, 1);
+        }
+
+        firstDayQuestChecked = true;
+    }
+
+    private void ResetFirstDayAssignment()
+    {
+        if (firstDayQuest == null) return;
+
+        string key = $"QuestManager.FirstDayAssigned.{firstDayQuest.GetId()}";
+        PlayerPrefs.DeleteKey(key);
+        firstDayQuestChecked = false;
     }
 
     private bool IsStatReached(StatType stat, float target)

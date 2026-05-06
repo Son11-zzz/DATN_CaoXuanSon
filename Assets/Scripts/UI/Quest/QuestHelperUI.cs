@@ -46,7 +46,7 @@ public class QuestHelperUI : MonoBehaviour
 
         if (quests == null || quests.Count == 0)
         {
-            sb.Append("No active quests");
+            sb.Append("Không có nhiệm vụ đang làm.");
             questText.text = sb.ToString();
             return;
         }
@@ -57,7 +57,7 @@ public class QuestHelperUI : MonoBehaviour
             if (q == null) continue;
 
             bool completed = qm.IsCompleted(q);
-            sb.Append(completed ? "[DONE] " : "[TODO] ");
+            sb.Append(completed ? "[XONG] " : "[ĐANG] ");
             sb.AppendLine(q.title);
 
             if (!string.IsNullOrWhiteSpace(q.description))
@@ -75,12 +75,18 @@ public class QuestHelperUI : MonoBehaviour
                     if (o.type == QuestObjectiveType.CollectItem)
                     {
                         int have = InventorySystem.Instance != null ? InventorySystem.Instance.GetAmount(o.item) : 0;
-                        string itemName = o.item != null ? o.item.itemName : "(missing item)";
-                        sb.AppendLine($"  * Collect {itemName}: {have}/{o.amount}");
+                        string itemName = o.item != null ? o.item.itemName : "(thiếu vật phẩm)";
+                        sb.AppendLine($"  • Thu thập {itemName}: {have}/{o.amount}");
                     }
                     else if (o.type == QuestObjectiveType.ReachStatValue)
                     {
-                        sb.AppendLine($"  * Reach {o.stat}: {o.targetValue}");
+                        sb.AppendLine($"  • {QuestUiLocalization.StatLabelVi(o.stat)} đạt {o.targetValue}");
+                    }
+                    else if (o.type == QuestObjectiveType.TalkToNpc)
+                    {
+                        bool talked = qm.HasTalkedToNpc(o.npcId);
+                        string npcLabel = string.IsNullOrWhiteSpace(o.npcId) ? "(thiếu nhân vật)" : o.npcId;
+                        sb.AppendLine($"  • Trò chuyện với {npcLabel}: {(talked ? 1 : 0)}/1");
                     }
                 }
             }

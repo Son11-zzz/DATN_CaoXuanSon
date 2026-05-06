@@ -10,13 +10,16 @@ public class InventorySlotUI : MonoBehaviour
     [SerializeField] private Button button;
 
     private ItemData itemData;
+    private int amount;
     private InventoryUI owner;
 
     public ItemData ItemData => itemData;
+    public int Amount => amount;
 
     public void Setup(ItemData data, int amount, InventoryUI ui)
     {
         itemData = data;
+        this.amount = amount;
         owner = ui;
 
         if (iconImage != null) iconImage.sprite = data.icon;
@@ -52,9 +55,9 @@ public class InventorySlotUI : MonoBehaviour
 
     private void OnClicked()
     {
-        Debug.Log("CLICKED SLOT");
         if (owner != null)
         {
+            owner.ShowItemInfo(this);
             owner.ToggleSelection(this);
         }
     }

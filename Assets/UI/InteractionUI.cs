@@ -1,11 +1,24 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class InteractionUI : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] private GameObject panel;
     [SerializeField] private TextMeshProUGUI actionText;
+
+    private void Awake()
+    {
+        if (panel == null)
+        {
+            panel = gameObject;
+        }
+
+        if (actionText == null)
+        {
+            actionText = GetComponentInChildren<TextMeshProUGUI>(true);
+        }
+    }
 
     private void Start()
     {
@@ -14,15 +27,15 @@ public class InteractionUI : MonoBehaviour
 
     public void Show(string message)
     {
-        Debug.Log("SHOW UI");
+        if (panel == null || actionText == null) return;
+
         panel.SetActive(true);
         actionText.text = message;
     }
 
     public void Hide()
     {
+        if (panel == null) return;
         panel.SetActive(false);
     }
-
-        
 }

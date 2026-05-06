@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: LocketMainClassEmpty
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'The locker is empty
-
-'
+  - text: "T\u1EE7 kh\xF3a kh\xF4ng c\xF2n g\xEC b\xEAn trong.\n"
     choices: []

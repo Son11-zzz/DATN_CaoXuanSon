@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: TurnIn
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: Oh my god, you really have it!!
+  - text: "Tr\u1EDDi \u01A1i, b\u1EA1n th\u1EADt s\u1EF1 mang \u0111\u01B0\u1EE3c nem
+      cho m\xECnh k\xECa!"
     choices:
-    - choiceText: Ofc
+    - choiceText: "\u0110\xE2y, c\u1EA7m l\u1EA5y nh\xE9"
       type: 6
       nextNode: 
       rewardItem: {fileID: 0}
       quest: {fileID: 11400000, guid: f47472d646adba34fa32712195e08777, type: 2}
       nextNodeOnSuccess: LTTEnding
       nextNodeOnFail: Inprogress
-    - choiceText: Not Yet
+    - choiceText: "Ch\u01B0a mang theo"
       type: 1
       nextNode: 
       rewardItem: {fileID: 0}

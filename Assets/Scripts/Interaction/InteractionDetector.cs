@@ -1,19 +1,28 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class InteractionDetector : MonoBehaviour
 {
-    private List<IInteractable> interactables = new List<IInteractable>();
+    private readonly List<IInteractable> interactables = new List<IInteractable>();
+
+    private readonly Collider2D[] overlapResults = new Collider2D[32];
 
     private IInteractable current;
     private IInteractable previous;
 
+    [Header("UI")]
     [SerializeField] private InteractionUI interactionUI;
 
-    // thêm: khoảng cách tối đa để hiện UI / focus
+    [Header("Detection")]
     [SerializeField] private float maxInteractDistance = 1.5f;
+    [SerializeField] private LayerMask interactableLayers = ~0;
 
-    string lastText = "";
+    private string lastText = "";
+
+    private void Awake()
+    {
+        TryResolveInteractionUI();
+    }
 
     private void OnEnable()
     {
@@ -21,6 +30,8 @@ public class InteractionDetector : MonoBehaviour
         {
             DialogueSystem.Instance.OnDialogueEnded += HandleDialogueEnded;
         }
+
+        TryResolveInteractionUI();
     }
 
     private void OnDisable()
@@ -31,23 +42,60 @@ public class InteractionDetector : MonoBehaviour
         }
     }
 
-    void HandleDialogueEnded()
+    private void HandleDialogueEnded()
     {
-        // Khi vừa thoát hội thoại: mất focus và ẩn UI
         ClearCurrent();
-        interactionUI.Hide();
+
+        if (interactionUI != null)
+        {
+            interactionUI.Hide();
+        }
+
         lastText = "";
     }
 
     private void Update()
     {
-        if (DialogueSystem.Instance != null && DialogueSystem.Instance.isDialogueActive)
+        TryResolveInteractionUI();
+
+        var shop = ShopUI.ResolveInstance();
+        if (shop != null && shop.IsOpen)
         {
             ClearCurrent();
-            interactionUI.Hide();
+
+            if (interactionUI != null)
+            {
+                interactionUI.Hide();
+            }
+
             return;
         }
 
+        if (EventLetterUI.Instance != null && EventLetterUI.Instance.IsOpen)
+        {
+            ClearCurrent();
+
+            if (interactionUI != null)
+            {
+                interactionUI.Hide();
+            }
+
+            return;
+        }
+
+        if (DialogueSystem.Instance != null && DialogueSystem.Instance.IsDialogueActive)
+        {
+            ClearCurrent();
+
+            if (interactionUI != null)
+            {
+                interactionUI.Hide();
+            }
+
+            return;
+        }
+
+        RefreshCandidates();
         UpdateClosest();
         HandleFocus();
         HandleUI();
@@ -56,52 +104,73 @@ public class InteractionDetector : MonoBehaviour
         {
             current.Interact();
         }
+    }
 
-        if (interactables.Count == 0)
+    private void TryResolveInteractionUI()
+    {
+        if (interactionUI != null) return;
+        interactionUI = FindAnyObjectByType<InteractionUI>();
+    }
+
+    private void RefreshCandidates()
+    {
+        interactables.Clear();
+
+        // Use OverlapCircle instead of the obsolete OverlapCircleNonAlloc
+        Collider2D[] foundColliders = Physics2D.OverlapCircleAll(transform.position, maxInteractDistance, interactableLayers);
+        int count = foundColliders.Length;
+        for (int i = 0; i < count; i++)
         {
-            current = null;
+            Collider2D col = foundColliders[i];
+            if (col == null) continue;
+
+            IInteractable interact = FindInteractable(col);
+            if (interact == null) continue;
+            if (!interactables.Contains(interact))
+            {
+                interactables.Add(interact);
+            }
         }
     }
 
-    void UpdateClosest()
+    private static IInteractable FindInteractable(Collider2D col)
+    {
+        if (col == null) return null;
+
+        IInteractable interact = col.GetComponent<IInteractable>();
+        if (interact != null) return interact;
+
+        interact = col.GetComponentInParent<IInteractable>();
+        if (interact != null) return interact;
+
+        return col.GetComponentInChildren<IInteractable>();
+    }
+
+    private void UpdateClosest()
     {
         float minDist = Mathf.Infinity;
         IInteractable closest = null;
 
-        foreach (var i in interactables)
+        for (int i = 0; i < interactables.Count; i++)
         {
-            if (i == null) continue;
-            MonoBehaviour mono = i as MonoBehaviour;
+            IInteractable it = interactables[i];
+            if (it == null) continue;
+
+            MonoBehaviour mono = it as MonoBehaviour;
             if (mono == null) continue;
 
             float dist = Vector2.Distance(transform.position, mono.transform.position);
-
             if (dist < minDist)
             {
                 minDist = dist;
-                closest = i;
-            }
-        }
-
-        // nếu gần nhất mà vẫn xa hơn maxInteractDistance => coi như không có gì
-        if (closest != null)
-        {
-            MonoBehaviour mono = closest as MonoBehaviour;
-            if (mono != null)
-            {
-                float dist = Vector2.Distance(transform.position, mono.transform.position);
-                if (dist > maxInteractDistance)
-                {
-                    closest = null;
-                }
+                closest = it;
             }
         }
 
         current = closest;
-        interactables.RemoveAll(i => i == null);
     }
 
-    void HandleFocus()
+    private void HandleFocus()
     {
         if (current != previous)
         {
@@ -125,8 +194,10 @@ public class InteractionDetector : MonoBehaviour
         }
     }
 
-    void HandleUI()
+    private void HandleUI()
     {
+        if (interactionUI == null) return;
+
         if (current != null)
         {
             string text = current.GetInteractText();
@@ -144,16 +215,7 @@ public class InteractionDetector : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        var interact = col.GetComponent<IInteractable>();
-        if (interact != null && !interactables.Contains(interact))
-        {
-            interactables.Add(interact);
-        }
-    }
-
-    void ClearCurrent()
+    private void ClearCurrent()
     {
         if (current != null)
         {
@@ -168,15 +230,9 @@ public class InteractionDetector : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D col)
+    private void OnDrawGizmosSelected()
     {
-        if (col.CompareTag("Interactable"))
-        {
-            var interact = col.GetComponent<IInteractable>();
-            if (interact != null)
-            {
-                interactables.Remove(interact);
-            }
-        }
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, maxInteractDistance);
     }
 }

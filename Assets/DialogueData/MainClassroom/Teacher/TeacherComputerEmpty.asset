@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: TeacherComputerEmpty
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'This is Teacher''s computer it''s look like 36 years old
-
-'
+  - text: "M\xE1y c\xF3 v\u1EBB \u0111\xE3 d\xF9ng kh\xE1 l\xE2u r\u1ED3i...\n"
     choices: []

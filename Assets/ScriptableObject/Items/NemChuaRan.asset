@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: NemChuaRan
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: Nem Chua Ran
-  icon: {fileID: -3553221590548053313, guid: 69a765e83e3365745ad1a9db6a203a0a, type: 3}
+  icon: {fileID: -9001836723865403850, guid: e58d1b26e38d9b348b3b04dd334f5076, type: 3}
   description: 
-  type: 0
+  type: 2
+  category: 1
+  restoreHealth: 0
+  restoreEnergy: 15
   combineWith: []

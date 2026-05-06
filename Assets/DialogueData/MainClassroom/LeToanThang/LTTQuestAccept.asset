@@ -13,32 +13,33 @@ MonoBehaviour:
   m_Name: LTTQuestAccept
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: I head you have some NCR, can you give me some?
+  - text: "M\xECnh nghe n\xF3i b\u1EA1n c\xF3 m\xF3n nem chi\xEAn, cho m\xECnh xin nh\xE9?"
     choices:
-    - choiceText: What is NCR?
+    - choiceText: "Nem chi\xEAn l\xE0 g\xEC?"
       type: 0
       nextNode: 
       rewardItem: {fileID: 0}
       quest: {fileID: 0}
       nextNodeOnSuccess: 
       nextNodeOnFail: 
-    - choiceText: Nah bro get out
+    - choiceText: "\u0110\u1EC3 sau \u0111\xE3"
       type: 1
       nextNode: LTTEnding
       rewardItem: {fileID: 0}
       quest: {fileID: 0}
       nextNodeOnSuccess: 
       nextNodeOnFail: 
-  - text: It's Nem Chua Thanh Hoa Ran, do you have it?
+  - text: "\u0110\xF3 ch\xEDnh l\xE0 nem chua Thanh H\xF3a chi\xEAn. B\u1EA1n c\xF3
+      mang theo kh\xF4ng?"
     choices:
-    - choiceText: Ofc my niggas
+    - choiceText: "\u0110\u01B0\u1EE3c, \u0111\u1EC3 m\xECnh l\u1EA5y"
       type: 5
       nextNode: 
       rewardItem: {fileID: 0}
       quest: {fileID: 11400000, guid: f47472d646adba34fa32712195e08777, type: 2}
       nextNodeOnSuccess: 
       nextNodeOnFail: 
-    - choiceText: Nah bro get out
+    - choiceText: "M\xECnh ch\u01B0a c\xF3"
       type: 1
       nextNode: LTTEnding
       rewardItem: {fileID: 0}

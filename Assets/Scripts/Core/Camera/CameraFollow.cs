@@ -12,17 +12,28 @@ public class CameraFollow : MonoBehaviour
     public bool isSnapping = false;
 
     private Vector3 velocity = Vector3.zero;
+    private Transform lastResolvedTarget;
+    private float baseZ;
+
+    private void Awake()
+    {
+        baseZ = transform.position.z;
+    }
 
     void LateUpdate()
     {
+        TryResolveTarget();
         if (target == null) return;
 
         Vector3 targetPos = target.position + offset;
 
-        float x = Mathf.Clamp(targetPos.x, minBounds.x, maxBounds.x);
-        float y = Mathf.Clamp(targetPos.y, minBounds.y, maxBounds.y);
+        bool hasValidBounds = maxBounds.x > minBounds.x && maxBounds.y > minBounds.y;
 
-        Vector3 finalPos = new Vector3(x, y, offset.z);
+        float x = hasValidBounds ? Mathf.Clamp(targetPos.x, minBounds.x, maxBounds.x) : targetPos.x;
+        float y = hasValidBounds ? Mathf.Clamp(targetPos.y, minBounds.y, maxBounds.y) : targetPos.y;
+
+        float z = Mathf.Approximately(offset.z, 0f) ? baseZ : offset.z;
+        Vector3 finalPos = new Vector3(x, y, z);
 
         if (isSnapping)
         {
@@ -40,6 +51,21 @@ public class CameraFollow : MonoBehaviour
         }
     }
 
+    private void TryResolveTarget()
+    {
+        if (target != null) return;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
+
+        target = player.transform;
+
+        if (lastResolvedTarget != target)
+        {
+            lastResolvedTarget = target;
+            isSnapping = true;
+        }
+    }
 
     public void SetBounds(Bounds bounds)
     {

@@ -14,12 +14,15 @@ public class HUDUI : MonoBehaviour
     [SerializeField] private Slider stressSlider;
     [SerializeField] private Slider energySlider;
     [SerializeField] private Slider healthSlider;
+    [SerializeField] private Slider socialSlider;
+
 
     [Header("Slider Ranges")]
     [SerializeField] private float gpaMax = 4f;
     [SerializeField] private float stressMax = 100f;
     [SerializeField] private float energyMax = 100f;
     [SerializeField] private float healthMax = 100f;
+    [SerializeField] private float socialMax = 100f;
 
     private bool subscribed;
     private bool warnedMissingRefs;
@@ -66,7 +69,7 @@ public class HUDUI : MonoBehaviour
         if (!subscribed && !warnedMissingRefs)
         {
             warnedMissingRefs = true;
-            Debug.LogWarning("HUDUI: Waiting for EventManager/GameTimeManager to exist in scene.");
+            Debug.LogWarning("HUDUI: Đang chờ EventManager hoặc GameTimeManager xuất hiện trong scene.");
         }
     }
 
@@ -92,12 +95,12 @@ public class HUDUI : MonoBehaviour
             if (dayText == null || timeText == null || moneyText == null)
             {
                 warnedMissingRefs = true;
-                Debug.LogWarning("HUDUI: Missing one or more Text references (Day/Time/Money). Assign them in the Inspector.");
+                Debug.LogWarning("HUDUI: Thiếu một hoặc nhiều tham chiếu chữ (Ngày/Giờ/Tiền). Gán trong Inspector.");
             }
-            else if (gpaSlider == null || stressSlider == null || energySlider == null || healthSlider == null)
+            else if (gpaSlider == null || stressSlider == null || energySlider == null || healthSlider == null || socialSlider == null)
             {
                 warnedMissingRefs = true;
-                Debug.LogWarning("HUDUI: Missing one or more Slider references (GPA/Stress/Energy/Health). Assign them in the Inspector.");
+                Debug.LogWarning("HUDUI: Thiếu một hoặc nhiều thanh Slider (GPA/Căng thẳng/Năng lượng/Sinh lực/Xã hội). Gán trong Inspector.");
             }
         }
 
@@ -107,7 +110,7 @@ public class HUDUI : MonoBehaviour
             if (!warnedMissingRefs)
             {
                 warnedMissingRefs = true;
-                Debug.LogWarning("HUDUI: StatManager.Instance is null. Add StatManager to scene.");
+                Debug.LogWarning("HUDUI: StatManager.Instance đang null. Thêm StatManager vào scene.");
             }
             return;
         }
@@ -117,30 +120,31 @@ public class HUDUI : MonoBehaviour
         {
             if (dayText != null)
             {
-                dayText.text = $"Day {tm.DayInSemester}  Semester {tm.Semester}";
+                dayText.text = $"Ngày {tm.DayInSemester}  ·  Học kỳ {tm.Semester}";
             }
 
             if (timeText != null)
             {
-                timeText.text = $"Time {tm.Hour:00}:00";
+                timeText.text = $"Giờ {tm.Hour:00}:00";
             }
         }
         else
         {
-            // fallback n?u ch?a c� GameTimeManager trong scene
-            if (dayText != null) dayText.text = $"Day {sm.day}  Semester 1";
-            if (timeText != null) timeText.text = $"Time {sm.time:00}:00";
+            // fallback nếu chưa có GameTimeManager trong scene
+            if (dayText != null) dayText.text = $"Ngày {sm.day}  ·  Học kỳ 1";
+            if (timeText != null) timeText.text = $"Giờ {sm.time:00}:00";
         }
 
         if (moneyText != null)
         {
-            moneyText.text = $"Money: {sm.money:0}";
+            moneyText.text = $"Tiền: {sm.money:0}";
         }
 
         if (gpaSlider != null) gpaSlider.value = Normalize(sm.gpa, gpaMax);
         if (stressSlider != null) stressSlider.value = Normalize(sm.stress, stressMax);
         if (energySlider != null) energySlider.value = Normalize(sm.energy, energyMax);
         if (healthSlider != null) healthSlider.value = Normalize(sm.health, healthMax);
+        if (socialSlider != null) socialSlider.value = Normalize(sm.social, socialMax);
     }
 
     private static float Normalize(float value, float max)

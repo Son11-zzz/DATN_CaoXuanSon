@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: NemChua
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   itemName: "Nem Chua Hoa Th\xE1nh"
-  icon: {fileID: 1387407184254157708, guid: 2f7f95a48b68bab48b5e3f0f9efa90c6, type: 3}
-  description: 
-  type: 0
+  icon: {fileID: 2005118609167977475, guid: 267dc7f9d18832946b58d962dad1533a, type: 3}
+  description: 36363636
+  type: 2
+  category: 1
+  restoreHealth: 0
+  restoreEnergy: 10
   combineWith: []

@@ -1,5 +1,4 @@
-﻿using NUnit.Framework.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "DialogueData", menuName = "Scriptable Objects/DialogueData")]
@@ -7,6 +6,7 @@ public class DialogueData : ScriptableObject
 {
     public List<DialogueLine> lines;
 }
+
 [System.Serializable]
 public class DialogueLine
 {

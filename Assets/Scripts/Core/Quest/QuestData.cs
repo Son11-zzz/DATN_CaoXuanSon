@@ -4,7 +4,9 @@ using UnityEngine;
 public enum QuestObjectiveType
 {
     CollectItem,
-    ReachStatValue
+    ReachStatValue,
+    TalkToNpc,
+    CompleteLessonQuiz
 }
 
 [System.Serializable]
@@ -20,11 +22,31 @@ public class QuestObjective
     public StatType stat;
     public float targetValue;
 
+    [Header("TalkToNpc")]
+    public string npcId;
+
+    [Header("CompleteLessonQuiz")]
+    public int lessonQuizSemester = 1;
+
+    [Min(1)] public int lessonQuizCalendarDay = 1;
+
+    public LessonQuizStudyContext lessonQuizContext = LessonQuizStudyContext.EveningHome;
+
     public bool IsValid()
     {
         if (type == QuestObjectiveType.CollectItem)
         {
             return item != null && amount > 0;
+        }
+
+        if (type == QuestObjectiveType.TalkToNpc)
+        {
+            return !string.IsNullOrWhiteSpace(npcId);
+        }
+
+        if (type == QuestObjectiveType.CompleteLessonQuiz)
+        {
+            return lessonQuizSemester >= 1 && lessonQuizCalendarDay >= 1;
         }
 
         return targetValue > 0;
@@ -61,6 +83,9 @@ public class QuestData : ScriptableObject
     public float rewardEnergy;
     public float rewardSocial;
     public float rewardSkill;
+
+    [Header("Behavior")]
+    public bool autoCompleteWhenReady;
 
     [Header("Unlock")]
     public List<QuestData> unlockQuests = new List<QuestData>();

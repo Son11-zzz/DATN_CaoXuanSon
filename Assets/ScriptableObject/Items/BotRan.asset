@@ -16,4 +16,7 @@ MonoBehaviour:
   icon: {fileID: -1456374854, guid: 69a765e83e3365745ad1a9db6a203a0a, type: 3}
   description: "D\xF9ng \u0111\u1EC3 r\xE1n nem chua\n"
   type: 0
+  category: 1
+  restoreHealth: 0
+  restoreEnergy: 0
   combineWith: []

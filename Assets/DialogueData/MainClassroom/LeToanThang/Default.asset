@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: Default
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'Hello Thanh Hoa guy!
-
-'
+  - text: "Ch\xE0o ng\u01B0\u1EDDi b\u1EA1n Thanh H\xF3a!\n"
     choices: []

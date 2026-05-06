@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: TeacherComputerDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: This is teacher's computer
+  - text: "\u0110\xE2y l\xE0 m\xE1y t\xEDnh l\xE0m vi\u1EC7c c\u1EE7a th\u1EA7y."
     choices:
-    - choiceText: Next
+    - choiceText: "Ti\u1EBFp theo"
       type: 0
       nextNode: TeacherComputerEmpty
       rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

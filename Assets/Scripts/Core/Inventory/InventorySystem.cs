@@ -19,6 +19,9 @@ public class InventorySystem : MonoBehaviour
 {
     public static InventorySystem Instance;
 
+    [Header("Capacity")]
+    [SerializeField] private int maxSlots = 20;
+
     [Header("Runtime Inventory")]
     public List<InventoryStack> stacks = new List<InventoryStack>();
 
@@ -36,7 +39,32 @@ public class InventorySystem : MonoBehaviour
         }
 
         Instance = this;
+        if (transform.parent != null)
+        {
+            transform.SetParent(null);
+        }
         DontDestroyOnLoad(gameObject);
+    }
+
+    public int MaxSlots => maxSlots;
+
+    public bool CanAddItem(ItemData item, int amount = 1)
+    {
+        if (item == null || amount <= 0) return false;
+
+        // If already exists, allow stacking regardless of capacity.
+        InventoryStack stack = stacks.Find(s => s != null && s.item == item);
+        if (stack != null) return true;
+
+        // Otherwise, require a free slot.
+        return maxSlots <= 0 || stacks.Count < maxSlots;
+    }
+
+    public bool TryAddItem(ItemData item, int amount = 1)
+    {
+        if (!CanAddItem(item, amount)) return false;
+        AddItem(item, amount);
+        return true;
     }
 
     public void AddItem(ItemData item, int amount = 1)
@@ -78,6 +106,137 @@ public class InventorySystem : MonoBehaviour
     {
         InventoryStack stack = stacks.Find(s => s.item == item);
         return stack != null ? stack.amount : 0;
+    }
+
+    public void ClearStacksForSave()
+    {
+        stacks.Clear();
+        OnInventoryChanged?.Invoke();
+    }
+
+    public void Persist_ApplyInventoryStacks(IReadOnlyList<InventoryPayload> payloads, Func<string, ItemData> resolveByKeyOrNull)
+    {
+        stacks.Clear();
+
+        if (payloads != null && resolveByKeyOrNull != null)
+        {
+            for (int i = 0; i < payloads.Count; i++)
+            {
+                InventoryPayload slot = payloads[i];
+                if (slot == null || string.IsNullOrWhiteSpace(slot.itemKey)) continue;
+
+                ItemData resolved = resolveByKeyOrNull(slot.itemKey.Trim());
+                if (resolved == null || slot.amount <= 0) continue;
+
+                stacks.Add(new InventoryStack(resolved, Mathf.Max(0, slot.amount)));
+            }
+        }
+
+        OnInventoryChanged?.Invoke();
+    }
+
+    /// <summary>Collects referenced items for resolving save keys at load time.</summary>
+    public void Persist_CollectDistinctItems(ICollection<ItemData> into)
+    {
+        if (into == null) return;
+
+        for (int i = 0; i < stacks.Count; i++)
+        {
+            InventoryStack stack = stacks[i];
+            if (stack != null && stack.item != null)
+            {
+                into.Add(stack.item);
+            }
+        }
+
+        foreach (var recipe in combineRecipes)
+        {
+            if (recipe == null || recipe.resultItem == null) continue;
+            into.Add(recipe.resultItem);
+            foreach (ItemData ingredient in GatherRecipeIngredients(recipe))
+            {
+                if (ingredient != null)
+                {
+                    into.Add(ingredient);
+                }
+            }
+        }
+    }
+
+    static IEnumerable<ItemData> GatherRecipeIngredients(ItemCombineRecipe recipe)
+    {
+        if (recipe.itemA != null)
+        {
+            yield return recipe.itemA;
+        }
+
+        if (recipe.itemB != null)
+        {
+            yield return recipe.itemB;
+        }
+    }
+
+    public bool TryConsumeSingle(ItemData item, out string reason)
+    {
+        reason = null;
+
+        if (item == null)
+        {
+            reason = "Item null.";
+            return false;
+        }
+
+        if (item.type != ItemType.Consumable)
+        {
+            reason = "Khong phai do tieu thu.";
+            return false;
+        }
+
+        if (item.category != ItemCategory.Food && item.category != ItemCategory.Drink)
+        {
+            reason = "Chi do an/uong moi dung duoc.";
+            return false;
+        }
+
+        if (item.restoreHealth <= 0f && item.restoreEnergy <= 0f)
+        {
+            reason = "Chua gan gia tri hoi phuc.";
+            return false;
+        }
+
+        if (!RemoveItem(item, 1))
+        {
+            reason = "Khong lay duoc trong tui.";
+            return false;
+        }
+
+        ApplyConsumableEffects(item);
+        return true;
+    }
+
+    static void ApplyConsumableEffects(ItemData item)
+    {
+        if (StatManager.Instance == null) return;
+
+        const float clampTop = 100f;
+
+        if (item.restoreHealth > 0f)
+        {
+            StatManager.Instance.health = Mathf.Clamp(
+                StatManager.Instance.health + item.restoreHealth,
+                0f,
+                clampTop);
+        }
+
+        if (item.restoreEnergy > 0f)
+        {
+            StatManager.Instance.energy = Mathf.Clamp(
+                StatManager.Instance.energy + item.restoreEnergy,
+                0f,
+                clampTop);
+        }
+
+        EventManager.Instance?.NotifyStatChanged();
     }
 
     public bool TryCombine(ItemData first, ItemData second, out ItemData resultItem)

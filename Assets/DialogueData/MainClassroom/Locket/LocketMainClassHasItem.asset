@@ -13,18 +13,16 @@ MonoBehaviour:
   m_Name: LocketMainClassHasItem
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'You found a key
-
-'
+  - text: "B\u1EA1n t\xECm th\u1EA5y m\u1ED9t ch\xECa kh\xF3a trong t\u1EE7.\n"
     choices:
-    - choiceText: Take
+    - choiceText: "L\u1EA5y"
       type: 3
       nextNode: 
       rewardItem: {fileID: 11400000, guid: e15594c889aaf5f44a24e9d8de4d3dfa, type: 2}
       quest: {fileID: 0}
       nextNodeOnSuccess: 
       nextNodeOnFail: 
-    - choiceText: Leave
+    - choiceText: "\u0110\u1EC3 nguy\xEAn"
       type: 2
       nextNode: 
       rewardItem: {fileID: 0}

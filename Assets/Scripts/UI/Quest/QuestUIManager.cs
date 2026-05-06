@@ -8,39 +8,52 @@ public class QuestUIManager : MonoBehaviour
     [Header("Behavior")]
     [SerializeField] private KeyCode toggleKey = KeyCode.Tab;
 
+    private InventoryUI inventoryUI;
+
     private void Awake()
     {
-        if (questPanel == null)
-        {
-            questPanel = FindFirstObjectByType<QuestPanelUI>();
-        }
+        TryResolveQuestPanel();
+        TryResolveInventoryUI();
+    }
+
+    private void OnEnable()
+    {
+        TryResolveQuestPanel();
+        TryResolveInventoryUI();
     }
 
     private void Update()
     {
+        TryResolveQuestPanel();
+        TryResolveInventoryUI();
+
         if (questPanel == null) return;
 
         if (Input.GetKeyDown(toggleKey))
         {
             questPanel.Toggle();
+
+            if (inventoryUI != null)
+            {
+                inventoryUI.HidePanel();
+            }
         }
     }
 
-    public void ShowQuestPanel()
+    private void TryResolveQuestPanel()
     {
-        if (questPanel == null) return;
-        questPanel.Show();
+        if (questPanel != null) return;
+
+        var panels = FindObjectsByType<QuestPanelUI>(FindObjectsInactive.Include);
+        if (panels != null && panels.Length > 0)
+        {
+            questPanel = panels[0];
+        }
     }
 
-    public void HideQuestPanel()
+    private void TryResolveInventoryUI()
     {
-        if (questPanel == null) return;
-        questPanel.Hide();
-    }
-
-    public void ToggleQuestPanel()
-    {
-        if (questPanel == null) return;
-        questPanel.Toggle();
+        if (inventoryUI != null) return;
+        inventoryUI = FindAnyObjectByType<InventoryUI>();
     }
 }

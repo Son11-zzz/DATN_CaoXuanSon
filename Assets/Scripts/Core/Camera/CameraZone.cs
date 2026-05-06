@@ -1,18 +1,54 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class CameraZone : MonoBehaviour
 {
+    private BoxCollider2D col;
+
+    private void Awake()
+    {
+        col = GetComponent<BoxCollider2D>();
+        col.isTrigger = true;
+    }
+
+    private void Start()
+    {
+        // Nếu player spawn sẵn trong zone thì set bounds ngay
+        var player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
+
+        if (col != null && col.OverlapPoint(player.transform.position))
+        {
+            ApplyBounds();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
+        ApplyBounds();
+    }
 
-        CameraFollow cam = Camera.main.GetComponent<CameraFollow>();
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // Hữu ích nếu spawn/teleport không kích hoạt Enter đúng lúc
+        if (!other.CompareTag("Player")) return;
+        ApplyBounds();
+    }
 
-        BoxCollider2D col = GetComponent<BoxCollider2D>();
-        Bounds bounds = col.bounds;
+    private void ApplyBounds()
+    {
+        if (Camera.main == null) return;
 
-        cam.SetBounds(bounds);
+        var camFollow = Camera.main.GetComponent<CameraFollow>();
+        if (camFollow == null) return;
 
-        Debug.Log("Entered zone: " + gameObject.name);
+        if (col == null)
+        {
+            col = GetComponent<BoxCollider2D>();
+            if (col == null) return;
+        }
+
+        camFollow.SetBounds(col.bounds);
     }
 }

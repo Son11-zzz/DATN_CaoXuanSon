@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LTTEnding
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - text: 'OK Goodbye '
+  - text: "\u0110\u01B0\u1EE3c r\u1ED3i, t\u1EA1m bi\u1EC7t b\u1EA1n nh\xE9!"
     choices: []

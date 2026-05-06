@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class DialogueSystem : MonoBehaviour
 {
     public static DialogueSystem Instance;
-    public bool isDialogueActive = false;
+    public bool IsDialogueActive { get; private set; }
 
     [Header("Node System")]
     [SerializeField] private DialogueNodeDatabase nodeDatabase;
@@ -18,9 +18,12 @@ public class DialogueSystem : MonoBehaviour
 
     public event System.Action OnDialogueEnded;
 
+    private System.Func<DialogueChoice, bool> externalChoiceHandler;
+
     private void Awake()
     {
         Instance = this;
+        IsDialogueActive = false;
     }
 
     public bool HasChoice()
@@ -29,6 +32,11 @@ public class DialogueSystem : MonoBehaviour
     }
 
     public void StartDialogue(DialogueData data, InteractableObject source = null)
+    {
+        StartDialogue(data, source, null);
+    }
+
+    public void StartDialogue(DialogueData data, InteractableObject source, System.Func<DialogueChoice, bool> choiceHandler)
     {
         if (data == null)
         {
@@ -55,7 +63,9 @@ public class DialogueSystem : MonoBehaviour
         currentIndex = 0;
         currentSource = source;
 
-        isDialogueActive = true;
+        externalChoiceHandler = choiceHandler;
+
+        IsDialogueActive = true;
         ShowLine();
     }
 
@@ -76,6 +86,12 @@ public class DialogueSystem : MonoBehaviour
         var line = currentDialogue.lines[currentIndex];
 
         hasChoice = line.choices != null && line.choices.Count > 0;
+
+        if (dialogueUI == null)
+        {
+            EndDialogue();
+            return;
+        }
 
         dialogueUI.Show(line.text);
 
@@ -100,9 +116,13 @@ public class DialogueSystem : MonoBehaviour
 
     public void EndDialogue()
     {
-        dialogueUI.Hide();
+        if (dialogueUI != null)
+        {
+            dialogueUI.Hide();
+        }
         currentDialogue = null;
-        isDialogueActive = false;
+        IsDialogueActive = false;
+        externalChoiceHandler = null;
 
         // KHÔNG tự động DisableAfterLeave ở đây nữa
         // để sau khi lấy chìa khóa vẫn còn tương tác (emptyDialogue)
@@ -115,6 +135,25 @@ public class DialogueSystem : MonoBehaviour
 
     public void Choose(DialogueChoice choice)
     {
+        if (externalChoiceHandler != null)
+        {
+            bool handled = false;
+            try
+            {
+                handled = externalChoiceHandler.Invoke(choice);
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogException(ex);
+            }
+
+            if (handled)
+            {
+                EndDialogue();
+                return;
+            }
+        }
+
         Debug.Log($"DialogueSystem.Choose: choiceText='{choice?.choiceText}', type={choice?.type}, nextNode='{choice?.nextNode}', quest='{choice?.quest?.GetId()}'");
 
         if (choice != null && choice.type == ChoiceType.GoToNode)

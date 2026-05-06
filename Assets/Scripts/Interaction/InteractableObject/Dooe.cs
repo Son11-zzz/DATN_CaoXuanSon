@@ -9,6 +9,6 @@ public class Door : InteractableBase
 
     public override string GetInteractText()
     {
-        return "Open (E)";
+        return "Mở (E)";
     }
 }

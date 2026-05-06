@@ -127,17 +127,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.15007782, y: 0.2685604}
+  m_Offset: {x: -0.15007782, y: 0.38790828}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 1.25}
     newSize: {x: 1, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.69984436, y: 0.7128792}
+  m_Size: {x: 0.69984436, y: 0.80381083}
   m_EdgeRadius: 0
 --- !u!114 &5568028120107035797
 MonoBehaviour:
@@ -151,3 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9619b92206f80b4c86a3783a9088c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YSort
+  orderOffset: 0
+  orderMultiplier: 100
+  useRendererBottom: 1

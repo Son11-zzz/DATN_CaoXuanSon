@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: FishTank
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "Li\u1EC7u m\xECnh c\xF3 t\xECm th\u1EA5y g\xEC \u1EDF \u0111\xE2y kh\xF4ng
+      nh\u1EC9?\n"
+    choices: []

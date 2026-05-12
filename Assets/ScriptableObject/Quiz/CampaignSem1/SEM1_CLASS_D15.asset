@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D15
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 3
+  title: "CK cu\u1ED1i k\u1EF3 \u2014 ng\xE0y 15"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 15] Trong thi\u1EBFt k\u1EBF DB, 'kh\xF3a ngo\u1EA1i'
+      (foreign key) nh\u1EB1m\u2026"
+    options:
+    - "R\xE0ng bu\u1ED9c tham chi\u1EBFu gi\u1EEFa b\u1EA3ng"
+    - "T\u0103ng t\u1ED1c sort RAM"
+    - "M\xE3 h\xF3a c\u1ED9t"
+    - "T\u1EA1o index t\u1EF1 \u0111\u1ED9ng m\u1ECDi tr\u01B0\u1EDDng h\u1EE3p"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 15] SQL: 'JOIN' d\xF9ng \u0111\u1EC3 l\xE0m
+      g\xEC?"
+    options:
+    - "K\u1EBFt h\u1EE3p h\xE0ng t\u1EEB nhi\u1EC1u b\u1EA3ng theo \u0111i\u1EC1u
+      ki\u1EC7n"
+    - "X\xF3a b\u1EA3ng"
+    - "T\u1EA1o user"
+    - Backup
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 15] Ch\u1ECDn m\u1EC7nh \u0111\u1EC1 \u0111\xFAng
+      v\u1EC1 'version control' (Git, \xFD t\u01B0\u1EDFng):"
+    options:
+    - "Commit l\u01B0u snapshot l\u1ECBch s\u1EED \u0111\u1EC3 quay lui/merge"
+    - "Branch lu\xF4n l\xE0m m\u1EA5t code"
+    - "Merge kh\xF4ng bao gi\u1EDD conflict"
+    - "Remote lu\xF4n tr\xF9ng local"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 15] M\u1ED9t y\xEAu c\u1EA7u ph\u1EA7n m\u1EC1m
+      'SMART' th\u01B0\u1EDDng nh\u1EA5n m\u1EA1nh ti\xEAu ch\xED n\xE0o?"
+    options:
+    - "C\u1EE5 th\u1EC3, \u0111o \u0111\u01B0\u1EE3c, kh\u1EA3 thi (v\xE0 c\xE1c
+      ti\xEAu ch\xED t\u01B0\u01A1ng t\u1EF1)"
+    - "Lu\xF4n m\u01A1 h\u1ED3 \u0111\u1EC3 linh ho\u1EA1t"
+    - "Kh\xF4ng c\u1EA7n deadline"
+    - "Kh\xF4ng c\u1EA7n stakeholder"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 15] R\u1EE7i ro d\u1EF1 \xE1n: 'mitigation'
+      g\u1EA7n ngh\u0129a l\xE0 g\xEC?"
+    options:
+    - "Gi\u1EA3m x\xE1c su\u1EA5t/t\xE1c \u0111\u1ED9ng"
+    - "T\u0103ng r\u1EE7i ro \u0111\u1EC3 nhanh"
+    - "B\u1ECF qua r\u1EE7i ro"
+    - "Chuy\u1EC3n r\u1EE7i ro cho ng\u01B0\u1EDDi d\xF9ng m\xE0 kh\xF4ng th\xF4ng
+      b\xE1o"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.65
+  gpaOnPass: 0.2
+  gpaPerCorrectPercent: 0.12
+  skillOnPass: 8
+  stressOnFail: 14
+  stressPerWrong: 1.6
+  morningRecapGpaPenaltyPerWrong: 0.12
+  hoursToAdvance: 1

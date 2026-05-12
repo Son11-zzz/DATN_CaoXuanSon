@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Quiz_Day14_Final
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 3
+  title: "Thi cu\u1ED1i k\u1EF3"
+  intro: "Ho\xE0n th\xE0nh \u0111\u1EC3 k\u1EBFt th\xFAc h\u1ECDc k\u1EF3."
+  questions:
+  - prompt: "GPA t\u0103ng nh\u1EDD h\xE0nh \u0111\u1ED9ng n\xE0o?"
+    options:
+    - "B\u1ECF h\u1ECDc"
+    - "H\u1ECDc t\u1EA1i b\xE0n + \u0111i\u1EC3m danh \u0111\u1EA7y \u0111\u1EE7
+      + tr\u1EA3 l\u1EDDi quiz \u0111\xFAng"
+    - "C\xE1 \u0111\u1ED9"
+    - "Ng\u1EE7 c\u1EA3 ng\xE0y"
+    correctIndex: 1
+    explanation: 
+  - prompt: "H\u1EC7 th\u1ED1ng ending x\xE9t d\u1EF1a tr\xEAn?"
+    options:
+    - "Ch\u1EC9 ti\u1EC1n"
+    - GPA, stress, midterm, final, attendance, choices
+    - "Ch\u1EC9 energy"
+    - "Ch\u1EC9 skill"
+    correctIndex: 1
+    explanation: 
+  - prompt: "Energy t\u1ED1i \u0111a khi ng\u1EE7 th\u01B0\u1EDDng v\u1EC1?"
+    options:
+    - 0
+    - 30
+    - 80-100
+    - 200
+    correctIndex: 2
+    explanation: 
+  - prompt: "C\u01A1 ch\u1EBF stress breakdown k\xEDch ho\u1EA1t khi?"
+    options:
+    - "Stress qu\xE1 ng\u01B0\u1EE1ng k\xE9o d\xE0i"
+    - GPA cao
+    - "Ti\u1EC1n \xEDt"
+    - "Ng\u1EE7 qu\xE1 nhi\u1EC1u"
+    correctIndex: 0
+    explanation: 
+  - prompt: "Midterm v\xE0 final l\xE0 lo\u1EA1i quiz n\xE0o?"
+    options:
+    - SmallQuiz
+    - ClassLesson
+    - Midterm / Final
+    - "Kh\xF4ng c\xF3"
+    correctIndex: 2
+    explanation: 
+  - prompt: "Khi h\u1EBFt ng\xE0y 15, b\u1EA1n n\xEAn?"
+    options:
+    - "\u0110i ng\u1EE7 \u0111\u1EC3 xem t\u1ED5ng k\u1EBFt h\u1ECDc k\u1EF3"
+    - "Ti\u1EBFp t\u1EE5c ch\u01A1i"
+    - "Th\u1EE9c"
+    - "Ch\u01A1i game"
+    correctIndex: 0
+    explanation: 
+  - prompt: "M\u1ED9t l\u1EF1a ch\u1ECDn x\u1EA5u ng\xE0y 9 c\xF3 th\u1EC3 d\u1EABn
+      \u0111\u1EBFn?"
+    options:
+    - Bad Habit ending
+    - Excellent ending
+    - "Kh\xF4ng g\xEC"
+    - "GPA t\u1ED1i \u0111a"
+    correctIndex: 0
+    explanation: 
+  - prompt: "B\xE0i quiz n\xE0y thu\u1ED9c lo\u1EA1i?"
+    options:
+    - "Bu\u1ED5i h\u1ECDc"
+    - "Thi cu\u1ED1i k\u1EF3"
+    - "Quiz ng\u1EAFn"
+    - "Ki\u1EC3m tra gi\u1EEFa k\u1EF3"
+    correctIndex: 1
+    explanation: 
+  - prompt: "\u0110i\u1EC7n tho\u1EA1i trong game b\u1EADt b\u1EB1ng?"
+    options:
+    - P
+    - Q
+    - T
+    - R
+    correctIndex: 0
+    explanation: 
+  - prompt: "\u0110\u1EC3 ho\xE0n th\xE0nh objective Go Home, b\u1EA1n c\u1EA7n?"
+    options:
+    - "V\u1EC1 \u0111\u1EBFn nh\xE0 qua portal"
+    - "Ng\u1ED3i trong l\u1EDBp"
+    - "\u1EDE tr\u01B0\u1EDDng"
+    - "Ra th\u1ECB tr\u1EA5n"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.6
+  gpaOnPass: 0.5
+  gpaPerCorrectPercent: 0.3
+  skillOnPass: 15
+  stressOnFail: 25
+  stressPerWrong: 2
+  morningRecapGpaPenaltyPerWrong: 0.13
+  hoursToAdvance: 3

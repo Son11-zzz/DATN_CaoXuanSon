@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D12
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 12"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 12] HTTP status 404 th\u01B0\u1EDDng ngh\u0129a
+      l\xE0 g\xEC?"
+    options:
+    - "Kh\xF4ng t\xECm th\u1EA5y t\xE0i nguy\xEAn"
+    - "L\u1ED7i m\xE1y ch\u1EE7 n\u1ED9i b\u1ED9"
+    - "Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
+    - "Qu\xE1 nhi\u1EC1u request"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 12] JSON h\u1EE3p l\u1EC7 th\u01B0\u1EDDng
+      l\xE0 lo\u1EA1i d\u1EEF li\u1EC7u n\xE0o?"
+    options:
+    - "C\xE2y c\xFA ph\xE1p (object/array/string/number/bool/null)"
+    - "B\u1EA3ng 2 c\u1ED9t duy nh\u1EA5t"
+    - "Chu\u1ED7i nh\u1ECB ph\xE2n kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c"
+    - "\u0110\u1ECBnh d\u1EA1ng \u1EA3nh"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 12] OOP: '\u0111a h\xECnh' (polymorphism) g\u1EA7n
+      v\u1EDBi \xFD n\xE0o nh\u1EA5t?"
+    options:
+    - "C\xF9ng m\u1ED9t interface, nhi\u1EC1u l\u1EDBp th\u1EC3 hi\u1EC7n h\xE0nh
+      vi kh\xE1c nhau"
+    - "\u1EA8n d\u1EEF li\u1EC7u b\u1EB1ng private"
+    - "K\u1EBF th\u1EEBa nhi\u1EC1u l\u1EDBp cha trong C# (m\u1EB7c \u0111\u1ECBnh)"
+    - "Bi\xEAn d\u1ECBch AOT"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 12] Trong C#, 'async/await' ch\u1EE7 y\u1EBFu
+      ph\u1EE5c v\u1EE5 m\u1EE5c ti\xEAu n\xE0o?"
+    options:
+    - "Vi\u1EBFt b\u1EA5t \u0111\u1ED3ng b\u1ED9 d\u1EC5 \u0111\u1ECDc h\u01A1n m\xE0
+      kh\xF4ng ch\u1EB7n thread m\u1ED9t c\xE1ch l\xE3ng ph\xED"
+    - "T\u0103ng t\u1ED1c CPU single-thread tuy\u1EC7t \u0111\u1ED1i"
+    - "Thay th\u1EBF GC"
+    - "Bi\u1EBFn m\u1ECDi h\xE0m th\xE0nh song song ho\xE0n h\u1EA3o"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 12] Kh\xE1i ni\u1EC7m 'idempotency' trong API
+      th\u01B0\u1EDDng nh\u1EAFm t\u1EDBi \u0111i\u1EC1u g\xEC?"
+    options:
+    - "G\u1ECDi l\u1EB7p l\u1EA1i m\u1ED9t thao t\xE1c kh\xF4ng l\xE0m thay \u0111\u1ED5i
+      tr\u1EA1ng th\xE1i th\xEAm l\u1EA7n n\u1EEFa (\xFD t\u01B0\u1EDFng)"
+    - "M\xE3 h\xF3a m\u1EADt kh\u1EA9u"
+    - "Lu\xF4n tr\u1EA3 200 OK"
+    - "Kh\xF4ng c\u1EA7n authentication"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

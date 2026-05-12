@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day1_GoToSchool
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 1
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 1 \u2014 \u0110i h\u1ECDc"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 0
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 1
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 10
+  lateStressPenalty: 15
+  lateDialogue: {fileID: 0}
+  lateMessage: You are late.
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 30
+  missStressPenalty: 15
+  missGpaPenalty: 0.3
+  missedDialogue: {fileID: 11400000, guid: 01242ed698a1961429c06452d5c1542b, type: 2}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 11400000, guid: e7c3f0a1b2d4567890abcdef12345678, type: 2}
+  showLetterOnStart: 1
+  letterTitle: "Ng\xE0y \u0111\u1EA7u \u0111\u1EBFn tr\u01B0\u1EDDng"
+  letterBody: "\u0110\xE2y l\xE0 ng\xE0y \u0111\u1EA7u ti\xEAn \u0111i h\u1ECDc c\u1EE7a
+    b\u1EA1n. C\u1ED1 g\u1EAFng \u0111\u1EEBng \u0111i h\u1ECDc mu\u1ED9n ho\u1EB7c
+    b\u1ECF h\u1ECDc. L\u1EDBp c\u1EE7a b\u1EA1n l\xE0 l\u1EDBp th\u1EE9 2. \u0110\u1EEBng
+    qu\xEAn mua s\xE1ch v\u1EDF \u1EDF c\u1EEDa h\xE0ng trong th\u1ECB tr\u1EA5n"
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: BuySupplies
+    description: "Mua b\xFAt v\xE0 v\u1EDF \u0111\u1EC3 c\xF3 th\u1EC3 \u0111i h\u1ECDc"
+    unlockAfterObjectiveId: 
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: BuySupplies
+  - id: StudyMorning
+    description: "H\u1ECDc t\u1EA1i b\xE0n trong bu\u1ED5i s\xE1ng"
+    unlockAfterObjectiveId: AttendClass
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: StudyMorning
+  - id: LeaveSchool
+    description: "R\u1EDDi tr\u01B0\u1EDDng v\u1EC1 th\u1ECB tr\u1EA5n"
+    unlockAfterObjectiveId: AttendAfternoon
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 k\u1EBFt th\xFAc ng\xE0y"
+    unlockAfterObjectiveId: LeaveSchool
+  skipClassAttendanceToday: 0
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: 40b183653ae726649b2c593b717c3d16, type: 2}
+  - {fileID: 11400000, guid: fc64ed2f9625e0541bc050c2e63db972, type: 2}
+  - {fileID: 11400000, guid: b9b3237affcc49f385140ff1c6722393, type: 2}
+  questCompletionToObjective: []

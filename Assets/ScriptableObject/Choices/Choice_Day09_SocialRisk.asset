@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Choice_Day09_SocialRisk
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceEventData
+  eventId: Day09_SocialRisk
+  title: "L\u1EF1a ch\u1ECDn t\u1ED1i nay"
+  prompt: "B\u1EA1n b\xE8 r\u1EE7 ra s\xE2n bi-a c\xE1 \u0111\u1ED9. B\u1EA1n l\xE0m
+    g\xEC?"
+  options:
+  - label: "T\u1EEB ch\u1ED1i, v\u1EC1 nh\xE0 h\u1ECDc b\xE0i"
+    flavorText: "L\u1EF1a ch\u1ECDn t\u1ED1t cho h\u1ECDc k\u1EF3."
+    tone: 1
+    tonePoints: 2
+    gpaDelta: 0.1
+    stressDelta: -3
+    moneyDelta: 0
+    healthDelta: 0
+    energyDelta: -5
+    socialDelta: 0
+    skillDelta: 2
+    completeStoryObjectiveId: SocialChoice
+    acceptQuest: {fileID: 0}
+    choiceFlagId: Day09_GoodChoice
+    forceEnding: 0
+    forcedEnding: 0
+  - label: "G\u1EB7p b\u1EA1n b\xE8 nh\u01B0ng kh\xF4ng c\xE1 \u0111\u1ED9"
+    flavorText: "Gi\u1EEF quan h\u1EC7 nh\u01B0ng v\u1EABn an to\xE0n."
+    tone: 0
+    tonePoints: 1
+    gpaDelta: 0
+    stressDelta: -5
+    moneyDelta: -20
+    healthDelta: 0
+    energyDelta: -5
+    socialDelta: 5
+    skillDelta: 0
+    completeStoryObjectiveId: SocialChoice
+    acceptQuest: {fileID: 0}
+    choiceFlagId: Day09_Neutral
+    forceEnding: 0
+    forcedEnding: 0
+  - label: "Tham gia c\xE1 \u0111\u1ED9"
+    flavorText: "C\xF3 th\u1EC3 ki\u1EBFm ti\u1EC1n, nh\u01B0ng t\u0103ng stress v\xE0
+      m\u1EDF nh\xE1nh x\u1EA5u."
+    tone: 2
+    tonePoints: 3
+    gpaDelta: -0.2
+    stressDelta: 15
+    moneyDelta: 80
+    healthDelta: -5
+    energyDelta: -10
+    socialDelta: -3
+    skillDelta: 0
+    completeStoryObjectiveId: SocialChoice
+    acceptQuest: {fileID: 0}
+    choiceFlagId: Day09_BadChoice
+    forceEnding: 0
+    forcedEnding: 0
+  onceOnly: 1

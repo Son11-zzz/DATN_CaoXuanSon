@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: bbda38c402f39e84789f65b745014a62
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2488970677307045151
+    second: Cafeteria sprites in pixel art-Photoroom_0
+  - first:
+      213: 4051523307129430850
+    second: Cafeteria sprites in pixel art-Photoroom_1
+  - first:
+      213: -7048486826358294246
+    second: Cafeteria sprites in pixel art-Photoroom_2
+  - first:
+      213: 3458020050544637186
+    second: Cafeteria sprites in pixel art-Photoroom_3
+  - first:
+      213: 6054259273717703531
+    second: Cafeteria sprites in pixel art-Photoroom_4
+  - first:
+      213: -3671248412078037391
+    second: Cafeteria sprites in pixel art-Photoroom_5
+  - first:
+      213: -3607240646658859878
+    second: Cafeteria sprites in pixel art-Photoroom_6
+  - first:
+      213: -7144855283740220198
+    second: Cafeteria sprites in pixel art-Photoroom_7
+  - first:
+      213: -305565111829099909
+    second: Cafeteria sprites in pixel art-Photoroom_8
+  - first:
+      213: -92906033342785550
+    second: Cafeteria sprites in pixel art-Photoroom_9
+  - first:
+      213: 2494275267164796592
+    second: Cafeteria sprites in pixel art-Photoroom_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 712
+        width: 308
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15ff35d4a99a8220800000000000000
+      internalID: 2488970677307045151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 612
+        width: 76
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2436aa06bf6e93830800000000000000
+      internalID: 4051523307129430850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 556
+        width: 200
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19b4ee639ebe2e90800000000000000
+      internalID: -7048486826358294246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 556
+        width: 195
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20534e22aea5dff20800000000000000
+      internalID: 3458020050544637186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 547
+        width: 202
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63ee0c8bbc050450800000000000000
+      internalID: 6054259273717703531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 709
+        width: 293
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1762fd3350b1d0dc0800000000000000
+      internalID: -3671248412078037391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 602
+        width: 78
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c5c8c6eb180fdc0800000000000000
+      internalID: -3607240646658859878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 151
+        width: 194
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4671979ff58dc90800000000000000
+      internalID: -7144855283740220198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 244
+        width: 271
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a8ca5562a62cbf0800000000000000
+      internalID: -305565111829099909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 241
+        width: 238
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7dc15747ee5bef0800000000000000
+      internalID: -92906033342785550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cafeteria sprites in pixel art-Photoroom_10
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 154
+        width: 197
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b67667e3227d9220800000000000000
+      internalID: 2494275267164796592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ec394259fe75f544a919839c8d76821d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cafeteria sprites in pixel art-Photoroom_0: 2488970677307045151
+      Cafeteria sprites in pixel art-Photoroom_1: 4051523307129430850
+      Cafeteria sprites in pixel art-Photoroom_10: 2494275267164796592
+      Cafeteria sprites in pixel art-Photoroom_2: -7048486826358294246
+      Cafeteria sprites in pixel art-Photoroom_3: 3458020050544637186
+      Cafeteria sprites in pixel art-Photoroom_4: 6054259273717703531
+      Cafeteria sprites in pixel art-Photoroom_5: -3671248412078037391
+      Cafeteria sprites in pixel art-Photoroom_6: -3607240646658859878
+      Cafeteria sprites in pixel art-Photoroom_7: -7144855283740220198
+      Cafeteria sprites in pixel art-Photoroom_8: -305565111829099909
+      Cafeteria sprites in pixel art-Photoroom_9: -92906033342785550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

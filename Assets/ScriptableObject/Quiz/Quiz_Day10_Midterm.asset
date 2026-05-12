@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Quiz_Day10_Midterm
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 2
+  title: "Ki\u1EC3m tra gi\u1EEFa k\u1EF3"
+  intro: "B\xE0i ki\u1EC3m tra tr\u1ECDng t\xE2m n\u1EEDa k\u1EF3 \u0111\u1EA7u."
+  questions:
+  - prompt: "H\u1ECDc k\u1EF3 k\xE9o d\xE0i bao nhi\xEAu ng\xE0y?"
+    options:
+    - 7
+    - 15
+    - 30
+    - 60
+    correctIndex: 1
+    explanation: 
+  - prompt: "Nh\u1EEFng y\u1EBFu t\u1ED1 \u1EA3nh h\u01B0\u1EDFng x\u1EBFp h\u1EA1ng
+      h\u1ECDc k\u1EF3?"
+    options:
+    - "Ch\u1EC9 GPA"
+    - "Ch\u1EC9 stress"
+    - "\u0110i\u1EC3m danh, GPA, midterm, final, l\u1EF1a ch\u1ECDn"
+    - "Ti\u1EC1n"
+    correctIndex: 2
+    explanation: 
+  - prompt: "\u0110i\u1EC1u n\xE0o sau \u0111\xE2y gi\u1EA3m stress?"
+    options:
+    - "B\u1ECF b\u1EEFa"
+    - "Ng\u1EE7 \u0111\u1EE7, \u0103n u\u1ED1ng, giao l\u01B0u"
+    - "Th\u1EE9c \u0111\xEAm h\u1ECDc"
+    - "C\xE1 \u0111\u1ED9"
+    correctIndex: 1
+    explanation: 
+  - prompt: "K\u1EF9 n\u0103ng (skill) t\u0103ng t\u1ED1t nh\u1EA5t nh\u1EDD?"
+    options:
+    - "H\u1ECDc t\u1EA1i b\xE0n, tr\u1EA3 l\u1EDDi quiz \u0111\xFAng"
+    - "B\u1ECF h\u1ECDc"
+    - "\u0102n nhi\u1EC1u"
+    - "Ch\u01A1i"
+    correctIndex: 0
+    explanation: 
+  - prompt: "Khi stress qu\xE1 ng\u01B0\u1EE1ng?"
+    options:
+    - "K\u1EBFt th\xFAc x\u1EA5u (Stress Breakdown)"
+    - "T\u1EF1 h\u1EBFt"
+    - "Nh\u1EADn th\u01B0\u1EDFng"
+    - "Kh\xF4ng g\xEC"
+    correctIndex: 0
+    explanation: 
+  - prompt: "Ngh\u1EC9 h\u1ECDc qu\xE1 4 bu\u1ED5i s\u1EBD?"
+    options:
+    - "T\u0103ng GPA"
+    - "Bu\u1ED9c th\xF4i h\u1ECDc"
+    - "Gi\u1EA3m stress"
+    - "Kh\xF4ng sao"
+    correctIndex: 1
+    explanation: 
+  - prompt: "L\u1ECBch h\u1ECDc bu\u1ED5i s\xE1ng th\u01B0\u1EDDng b\u1EAFt \u0111\u1EA7u?"
+    options:
+    - "7 gi\u1EDD"
+    - "9 gi\u1EDD"
+    - "11 gi\u1EDD"
+    - "14 gi\u1EDD"
+    correctIndex: 1
+    explanation: 
+  - prompt: "Cu\u1ED1i ng\xE0y b\u1EA1n n\xEAn?"
+    options:
+    - "\u0110i ng\u1EE7 \u0111\u1EC3 t\u1ED5ng k\u1EBFt v\xE0 sang ng\xE0y m\u1EDBi"
+    - "Th\u1EE9c c\u1EA3 \u0111\xEAm"
+    - "\u0110i ch\u01A1i"
+    - "Kh\xF4ng l\xE0m g\xEC"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.6
+  gpaOnPass: 0.3
+  gpaPerCorrectPercent: 0.2
+  skillOnPass: 10
+  stressOnFail: 15
+  stressPerWrong: 2
+  morningRecapGpaPenaltyPerWrong: 0.11
+  hoursToAdvance: 2

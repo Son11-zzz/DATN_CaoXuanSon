@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day06_FreeDay
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 6
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 6 \u2014 Ng\xE0y t\u1EF1 do"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 0
+  skipClassAttendanceToday: 1
+  applyLatePenalty: 0
+  lateHour: 10
+  lateObjectiveId: 
+  lateEnergyPenalty: 0
+  lateStressPenalty: 0
+  lateDialogue: {fileID: 0}
+  lateMessage: ""
+  lateOkText: OK
+  failIfMissed: 0
+  missHour: 24
+  missObjectiveId: 
+  missEnergyPenalty: 0
+  missStressPenalty: 0
+  missGpaPenalty: 0
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 1
+  letterTitle: "Ng\xE0y cu\u1ED1i tu\u1EA7n"
+  letterBody: "H\xF4m nay kh\xF4ng c\xF3 ti\u1EBFt h\u1ECDc. B\u1EA1n c\xF3 th\u1EC3
+    h\u1ECDc t\u1EA1i nh\xE0, ngh\u1EC9 ng\u01A1i, \u0103n u\u1ED1ng, \u0111i d\u1EA1o
+    th\u1ECB tr\u1EA5n ho\u1EB7c g\u1EB7p b\u1EA1n b\xE8 \u0111\u1EC3 gi\u1EA3m stress."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: BuyMeal
+    description: "(T\xF9y ch\u1ECDn) Mua th\u1EE9c \u0103n ho\u1EB7c \u0103n u\u1ED1ng"
+    unlockAfterObjectiveId: 
+    optional: 1
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 ngh\u1EC9 ng\u01A1i"
+    unlockAfterObjectiveId:
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: 67d6d808005516640a90dd162c0c5637, type: 2}
+  - {fileID: 11400000, guid: e62449c86e6e80c4baa428acc4843f73, type: 2}
+  questCompletionToObjective: []

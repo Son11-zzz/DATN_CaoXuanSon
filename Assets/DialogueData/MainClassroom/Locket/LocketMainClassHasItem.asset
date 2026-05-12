@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: LocketMainClassHasItem
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "B\u1EA1n t\xECm th\u1EA5y m\u1ED9t ch\xECa kh\xF3a trong t\u1EE7.\n"
+    choices:
+    - choiceText: "L\u1EA5y"
+      type: 3
+      nextNode: 
+      rewardItem: {fileID: 11400000, guid: e15594c889aaf5f44a24e9d8de4d3dfa, type: 2}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "\u0110\u1EC3 nguy\xEAn"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

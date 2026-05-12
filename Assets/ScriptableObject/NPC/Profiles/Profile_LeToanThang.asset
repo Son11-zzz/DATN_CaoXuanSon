@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f2a3b4c5d64758696a7b8c9d0e1f2a, type: 3}
+  m_Name: Profile_LeToanThang
+  m_EditorClassIdentifier: Assembly-CSharp::NpcCharacterProfile
+  characterId: npc_LeToanThang
+  displayName: "L\xEA To\xE0n Th\u1EAFng"
+  worldSprite: {fileID: 0}
+  spriteTint: {r: 1, g: 1, b: 1, a: 1}
+  quest: {fileID: 11400000, guid: f47472d646adba34fa32712195e08777, type: 2}
+  firstTimeDialogue: {fileID: 11400000, guid: cdbd9c57ce1d18a49b40c3739b8062a9, type: 2}
+  inProgressDialogue: {fileID: 11400000, guid: c2c8b9e1c07fea340adcbdf63a5ddab6, type: 2}
+  turnInDialogue: {fileID: 11400000, guid: 099561ab4d394c3429ecb908d83c6fdf, type: 2}
+  defaultDialogue: {fileID: 11400000, guid: dcaa7d2a4cbd6b540939746e8a3b3992, type: 2}
+  preAcceptDialogue: {fileID: 11400000, guid: f59cc1efbfa9a3d4e9accfab0d5694c9, type: 2}
+  routineArchetype: 0
+  routineData: {fileID: 11400000, guid: f00df00df00df00df00df00df00df001, type: 2}

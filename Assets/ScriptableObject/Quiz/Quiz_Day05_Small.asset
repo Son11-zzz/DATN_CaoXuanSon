@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Quiz_Day05_Small
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Quiz ng\u1EAFn ng\xE0y 5"
+  intro: "5 c\xE2u h\u1ECFi ng\u1EAFn d\u1EF1a tr\xEAn b\xE0i tu\u1EA7n 1."
+  questions:
+  - prompt: "\u0110\u1EC3 \u0111\u1EA1t GPA t\u1ED1t, y\u1EBFu t\u1ED1 quan tr\u1ECDng
+      nh\u1EA5t?"
+    options:
+    - "\u0110i\u1EC3m danh + h\u1ECDc \u0111\u1EC1u"
+    - "Ch\u1EC9 h\u1ECDc \u0111\xEAm tr\u01B0\u1EDBc thi"
+    - "B\u1ECF c\xE1c bu\u1ED5i s\xE1ng"
+    - "Ch\u01A1i game"
+    correctIndex: 0
+  - prompt: "Khi stress cao, b\u1EA1n n\xEAn?"
+    options:
+    - "H\u1ECDc ti\u1EBFp t\u1EDBi khi m\u1EC7t l\u1EBD"
+    - "C\xE2n b\u1EB1ng ngh\u1EC9, \u0103n u\u1ED1ng, giao l\u01B0u"
+    - "B\u1ECF h\u1ECDc"
+    - "C\xE1 \u0111\u1ED9 \u0111\u1EC3 gi\u1EA3i tr\xED"
+    correctIndex: 1
+  - prompt: "N\u0103ng l\u01B0\u1EE3ng h\u1ED3i l\u1EA1i t\u1ED1t nh\u1EA5t nh\u1EDD?"
+    options:
+    - "Ng\u1EE7 \u0111\u1EE7 gi\u1EA5c"
+    - "U\u1ED1ng nhi\u1EC1u c\xE0 ph\xEA"
+    - "B\u1ECF b\u1EEFa"
+    - "Th\u1EE9c tr\u1AF7ng \u0111\xEAm"
+    correctIndex: 0
+  - prompt: "Ngh\u1EC9 h\u1ECDc qu\xE1 4 bu\u1ED5i d\u1EABn \u0111\u1EBFn?"
+    options:
+    - "Nh\u1EADn th\u01B0\u1EDFng"
+    - "Bu\u1ED9c th\xF4i h\u1ECDc"
+    - "Gi\u1EA3m stress"
+    - "T\u0103ng GPA"
+    correctIndex: 1
+  - prompt: "\u0110i h\u1ECDc mu\u1ED9n nhi\u1EC1u s\u1EBD?"
+    options:
+    - "Kh\xF4ng sao"
+    - "Gi\u1EA3m GPA v\xE0 t\u0103ng stress"
+    - "T\u0103ng GPA"
+    - "Gi\u1EA3i quy\u1EBFt m\u1ECDi th\u1EE9"
+    correctIndex: 1
+  passScore: 0.6
+  gpaOnPass: 0.15
+  gpaPerCorrectPercent: 0.15
+  skillOnPass: 5
+  stressOnFail: 8
+  stressPerWrong: 1
+  hoursToAdvance: 1

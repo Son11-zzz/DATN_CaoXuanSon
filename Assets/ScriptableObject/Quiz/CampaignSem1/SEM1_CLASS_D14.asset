@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D14
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 14"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 14] Kh\xE1i ni\u1EC7m 'CAP' (t\xF3m t\u1EAFt)
+      trong h\u1EC7 ph\xE2n t\xE1n th\u01B0\u1EDDng nh\u1EA5n m\u1EA1nh \u0111i\u1EC1u
+      g\xEC?"
+    options:
+    - "C\xF3 s\u1EF1 \u0111\xE1nh \u0111\u1ED5i gi\u1EEFa consistency/availability/partition
+      tolerance trong th\u1EF1c t\u1EBF"
+    - "Lu\xF4n \u0111\u1EA1t c\u1EA3 3 ho\xE0n h\u1EA3o"
+    - "Ch\u1EC9 \xE1p d\u1EE5ng cho SQL"
+    - "Kh\xF4ng li\xEAn quan microservices"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 14] M\u1ED9t 'unit test' t\u1ED1t th\u01B0\u1EDDng:"
+    options:
+    - "Nhanh, \u0111\u1ED9c l\u1EADp, l\u1EB7p l\u1EA1i \u0111\u01B0\u1EE3c, ki\u1EC3m
+      tra \u0111\u01A1n v\u1ECB nh\u1ECF"
+    - "Lu\xF4n c\u1EA7n m\u1EA1ng"
+    - "Lu\xF4n ch\u1EA1y production DB"
+    - "Kh\xF4ng c\u1EA7n assert"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 14] Refactor an to\xE0n th\u01B0\u1EDDng \u0111i
+      k\xE8m g\xEC?"
+    options:
+    - "Test/lint + thay \u0111\u1ED5i nh\u1ECF t\u1EEBng b\u01B0\u1EDBc"
+    - "X\xF3a h\u1EBFt code c\u0169 m\u1ED9t l\u1EA7n"
+    - "Kh\xF4ng c\u1EA7n review"
+    - "Kh\xF4ng c\u1EA7n build"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 14] Ch\u1ECDn ph\xE1t bi\u1EC3u \u0111\xFAng
+      v\u1EC1 'regular expression' (regex) trong th\u1EF1c h\xE0nh:"
+    options:
+    - "H\u1EEFu \xEDch nh\u01B0ng d\u1EC5 ph\u1EE9c t\u1EA1p \u2014 c\u1EA7n ki\u1EC3m
+      th\u1EED m\u1EABu"
+    - "Lu\xF4n O(1)"
+    - "Thay th\u1EBF parser m\u1ECDi ng\xF4n ng\u1EEF"
+    - "Kh\xF4ng bao gi\u1EDD backtracking"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 14] Trong UI/UX, 'affordance' g\u1EA7n ngh\u0129a
+      l\xE0 g\xEC?"
+    options:
+    - "G\u1EE3i \xFD c\xE1ch d\xF9ng qua h\xECnh d\u1EA1ng/nh\xE3n"
+    - "S\u1ED1 l\u01B0\u1EE3ng m\xE0u t\u1ED1i \u0111a"
+    - FPS
+    - "\u0110\u1ED9 ph\xE2n gi\u1EA3i texture"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

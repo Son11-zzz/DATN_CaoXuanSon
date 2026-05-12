@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day09_SocialRiskEvent
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 9
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 9 \u2014 L\u1EF1a ch\u1ECDn x\xE3 h\u1ED9i"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 0
+  skipClassAttendanceToday: 0
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 10
+  lateStressPenalty: 12
+  lateDialogue: {fileID: 0}
+  lateMessage: "B\u1EA1n \u0111ang \u0111i h\u1ECDc mu\u1ED9n!"
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 20
+  missStressPenalty: 15
+  missGpaPenalty: 0.2
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 0
+  letterTitle: "M\u1EDDi tham gia bu\u1ED5i t\u1EE5 t\u1EADp"
+  letterBody: "Ai \u0111\xF3 r\u1EE7 b\u1EA1n tham gia tr\xF2 ch\u01A1i c\xE1 \u0111\u1ED9.
+    H\xE3y c\xE2n nh\u1EAFc: c\xF3 th\u1EC3 ki\u1EBFm ti\u1EC1n ng\u1EAFn h\u1EA1n
+    nh\u01B0ng s\u1EBD t\u0103ng stress v\xE0 \u1EA3nh h\u01B0\u1EDFng k\u1EBFt qu\u1EA3
+    cu\u1ED1i k\u1EF3."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: 
+    optional: 0
+    completeObjectiveWhenNpcFirstTalkId: 
+  - id: StudyMorning
+    description: "H\u1ECDc t\u1EA1i b\xE0n bu\u1ED5i s\xE1ng"
+    unlockAfterObjectiveId: AttendClass
+    optional: 0
+    completeObjectiveWhenNpcFirstTalkId: 
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: StudyMorning
+    optional: 0
+    completeObjectiveWhenNpcFirstTalkId: 
+  - id: SocialChoice
+    description: "(T\xF9y ch\u1ECDn) L\u1EF1a ch\u1ECDn: h\u1ECDc b\xE0i, g\u1EB7p
+      b\u1EA1n hay c\xE1 \u0111\u1ED9"
+    unlockAfterObjectiveId: 
+    optional: 0
+    completeObjectiveWhenNpcFirstTalkId: 
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 k\u1EBFt th\xFAc ng\xE0y"
+    unlockAfterObjectiveId: AttendAfternoon
+    optional: 0
+    completeObjectiveWhenNpcFirstTalkId: 
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: 72cec491892a4014b9f4ee73d393459c, type: 2}
+  - {fileID: 11400000, guid: f1f5f0da0f92d1b42a00a9f3b20bbc4d, type: 2}
+  questCompletionToObjective: []

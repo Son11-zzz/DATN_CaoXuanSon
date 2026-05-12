@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day03_HomeworkDay
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 3
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 3 \u2014 B\xE0i t\u1EADp \u0111\u1EA7u ti\xEAn"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 0
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 8
+  lateStressPenalty: 10
+  lateDialogue: {fileID: 0}
+  lateMessage: "B\u1EA1n \u0111ang \u0111i h\u1ECDc mu\u1ED9n!"
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 20
+  missStressPenalty: 15
+  missGpaPenalty: 0.2
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 11400000, guid: 11223344556677889900aabbccddee01, type: 2}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 1
+  letterTitle: "B\xE0i t\u1EADp \u0111\u1EA7u ti\xEAn"
+  letterBody: "H\xF4m nay khi ng\u1ED3i v\xE0o b\xE0n h\u1ECDc, b\u1EA1n s\u1EBD l\xE0m
+    b\xE0i t\u1EADp ng\u1EAFn. Tr\u1EA3 l\u1EDDi \u0111\xFAng s\u1EBD gi\xFAp t\u0103ng
+    k\u1EF9 n\u0103ng v\xE0 GPA."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: 
+  - id: StudyMorning
+    description: "L\xE0m b\xE0i t\u1EADp t\u1EA1i b\xE0n h\u1ECDc"
+    unlockAfterObjectiveId: AttendClass
+  - id: PayTuitionCTSV
+    description: "\u0110\xF3ng h\u1ECDc ph\xED t\u1EA1i ph\xF2ng CTSV (12h\u201313h)"
+    unlockAfterObjectiveId: StudyMorning
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: PayTuitionCTSV
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 k\u1EBFt th\xFAc ng\xE0y"
+    unlockAfterObjectiveId: AttendAfternoon
+  skipClassAttendanceToday: 0
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: a7058e55dc776c1489c13ea3282d229a, type: 2}
+  - {fileID: 11400000, guid: 39a0d640103224843920350083952e61, type: 2}
+  questCompletionToObjective: []

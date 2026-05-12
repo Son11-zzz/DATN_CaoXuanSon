@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: NhatNinhFirstTime
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "Ch\xE0o b\u1EA1n, cho m\xECnh h\u1ECFi b\u1EA1n l\xE0 ai nh\xE9?"
+    choices:
+    - choiceText: "M\xECnh l\xE0 b\u1EA1n c\xF9ng l\u1EDBp m\u1EDBi"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "Xin l\u1ED7i, m\xECnh ch\u01B0a mu\u1ED1n tr\xF2 chuy\u1EC7n l\xFAc n\xE0y"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: "V\u1EADy b\u1EA1n t\xEAn l\xE0 g\xEC?"
+    choices:
+    - choiceText: "Xu\xE2n S\u01A1n"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "M\xECnh kh\xF4ng ti\u1EC7n n\xF3i"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

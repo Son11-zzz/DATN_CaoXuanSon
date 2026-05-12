@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Quiz_Day02
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ch\u1EE7 \u0111\u1EC1 ng\u00E0y 2"
+  intro: "Tr\u00F9ng ND \u00F4n t\u1ED1i nh\u00E0 (ng\u00E0y 1) v\u00E0 ki\u1EC3m tra s\u00E1ng ng\u00E0y 2."
+  questions:
+  - prompt: "\u0110i\u1EC3m danh \u0111\u00fang gi\u1EDD gi\u00FAp g\xEC?"
+    options:
+    - "Tr\xE1nh b\u1ECB tr\u1EEB \u0111i\u1EC3m / k\u1EF9 lu\u1EADt do mu\u1ED9n"
+    - "L\xE0m gi\u1EA3m GPA t\u1EF1 \u0111\u1ED9ng"
+    - "Kh\xF4ng \xFD ngh\u0129a"
+    - "Khuy\u1EBFn kh\xEDch ngh\u1EC9 h\u1ECDc"
+    correctIndex: 0
+    explanation:
+  passScore: 0.6
+  gpaOnPass: 0.08
+  gpaPerCorrectPercent: 0.04
+  skillOnPass: 5
+  stressOnFail: 0
+  stressPerWrong: 0
+  morningRecapGpaPenaltyPerWrong: 0.07
+  hoursToAdvance: 1

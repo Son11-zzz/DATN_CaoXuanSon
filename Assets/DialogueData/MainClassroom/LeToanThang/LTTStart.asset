@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: LTTStart
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "B\u1EA1n l\xE0 h\u1ECDc sinh m\u1EDBi \u0111\u1EBFn t\u1EEB Thanh H\xF3a
+      ph\u1EA3i kh\xF4ng?"
+    choices:
+    - choiceText: "\u0110\xFAng r\u1ED3i"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "\u0110\u1EEBng \u0111o\xE1n m\xECnh nh\u01B0 v\u1EADy"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: "B\u1EA1n \u0111\xE3 c\xF3 b\u1EA1n b\xE8 trong l\u1EDBp ch\u01B0a? L\xE0m
+      b\u1EA1n v\u1EDBi m\xECnh nh\xE9!"
+    choices:
+    - choiceText: "\u0110\u01B0\u1EE3c, m\xECnh s\u1EBD c\u1ED1."
+      type: 1
+      nextNode: LTTQuestAccept
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "\u0110\u1EC3 sau \u0111i"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

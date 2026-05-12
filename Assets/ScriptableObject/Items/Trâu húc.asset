@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deec2e8134dc6d04695b4d724ec0f883, type: 3}
+  m_Name: "Tr\xE2u h\xFAc"
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemName: "Tr\xE2u h\xFAc"
+  icon: {fileID: 6981451579925285949, guid: d62942631322b614dbdded0dfba2dcb0, type: 3}
+  description: "Ch\u1ED3ng u\u1ED1ng v\u1EE3 vui"
+  type: 2
+  category: 2
+  restoreHealth: 0
+  restoreEnergy: 55
+  combineWith: []

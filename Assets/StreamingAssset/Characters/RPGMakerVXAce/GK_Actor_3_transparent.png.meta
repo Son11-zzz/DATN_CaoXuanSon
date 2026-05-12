@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: a6471cdf80c89144f9f53a3238e1dc7e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1958295767880460667
+    second: GK_Actor_3_transparent_0
+  - first:
+      213: -2779512219841115829
+    second: GK_Actor_3_transparent_1
+  - first:
+      213: -2159448585386907172
+    second: GK_Actor_3_transparent_2
+  - first:
+      213: -4072039927183647187
+    second: GK_Actor_3_transparent_3
+  - first:
+      213: 2003911062651216307
+    second: GK_Actor_3_transparent_4
+  - first:
+      213: 4546399128591097573
+    second: GK_Actor_3_transparent_5
+  - first:
+      213: 8480335978521692542
+    second: GK_Actor_3_transparent_6
+  - first:
+      213: -707890061746445317
+    second: GK_Actor_3_transparent_7
+  - first:
+      213: 6171148693861779803
+    second: GK_Actor_3_transparent_8
+  - first:
+      213: -1346595387917920385
+    second: GK_Actor_3_transparent_9
+  - first:
+      213: 1380113590946583498
+    second: GK_Actor_3_transparent_10
+  - first:
+      213: 8093526540402378065
+    second: GK_Actor_3_transparent_11
+  - first:
+      213: 6033924588382160137
+    second: GK_Actor_3_transparent_12
+  - first:
+      213: -2154777375137491689
+    second: GK_Actor_3_transparent_13
+  - first:
+      213: -2111949907696876541
+    second: GK_Actor_3_transparent_14
+  - first:
+      213: -8210337050186477629
+    second: GK_Actor_3_transparent_15
+  - first:
+      213: -6450094285984219589
+    second: GK_Actor_3_transparent_16
+  - first:
+      213: 1723566551692194399
+    second: GK_Actor_3_transparent_17
+  - first:
+      213: 8460874991445223661
+    second: GK_Actor_3_transparent_18
+  - first:
+      213: 8214947042305957470
+    second: GK_Actor_3_transparent_19
+  - first:
+      213: 4218332832638732454
+    second: GK_Actor_3_transparent_20
+  - first:
+      213: 2830963954505368802
+    second: GK_Actor_3_transparent_21
+  - first:
+      213: 4472916318973858151
+    second: GK_Actor_3_transparent_22
+  - first:
+      213: 5961378043946891956
+    second: GK_Actor_3_transparent_23
+  - first:
+      213: -7020053028142920661
+    second: GK_Actor_3_transparent_24
+  - first:
+      213: -1788572526717084579
+    second: GK_Actor_3_transparent_25
+  - first:
+      213: -8027045979418568728
+    second: GK_Actor_3_transparent_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 127
+        width: 20
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5869556ef5cb2d4e0800000000000000
+      internalID: -1958295767880460667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 223
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49438fcc503d69d0800000000000000
+      internalID: -2779512219841115829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 191
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd92b4de3f81802e0800000000000000
+      internalID: -2159448585386907172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 127
+        width: 16
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ed205c2453d77c0800000000000000
+      internalID: -4072039927183647187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 192
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b12dca8e725fcb10800000000000000
+      internalID: 2003911062651216307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 223
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee51da6bed081f30800000000000000
+      internalID: 4546399128591097573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 192
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7900c744a430b570800000000000000
+      internalID: 8480335978521692542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 192
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3e2994db11d26f0800000000000000
+      internalID: -707890061746445317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 223
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b594fb97a0354a550800000000000000
+      internalID: 6171148693861779803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 191
+        width: 20
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7719f611aeef4de0800000000000000
+      internalID: -1346595387917920385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 223
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac35f02bff5272310800000000000000
+      internalID: 1380113590946583498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 191
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15541e4d18bf15070800000000000000
+      internalID: 8093526540402378065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 127
+        width: 20
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 905830ca17eccb350800000000000000
+      internalID: 6033924588382160137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 127
+        width: 16
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71591e0d461b812e0800000000000000
+      internalID: -2154777375137491689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 127
+        width: 16
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3040f40afb8d0b2e0800000000000000
+      internalID: -2111949907696876541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 127
+        width: 18
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf086df3f50f0e80800000000000000
+      internalID: -8210337050186477629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 127
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e3224cb69ac76a0800000000000000
+      internalID: -6450094285984219589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 159
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52bb5c95a65be710800000000000000
+      internalID: 1723566551692194399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 160
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de824122af01b6570800000000000000
+      internalID: 8460874991445223661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 127
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eda417fca510270800000000000000
+      internalID: 8214947042305957470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 160
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a88cc19c578a8a30800000000000000
+      internalID: 4218332832638732454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 127
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e44a30b7ba994720800000000000000
+      internalID: 2830963954505368802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 160
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7611c7e81bdf21e30800000000000000
+      internalID: 4472916318973858151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 127
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba74490fb11bb250800000000000000
+      internalID: 5961378043946891956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 127
+        width: 20
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cc229f6f2c39e90800000000000000
+      internalID: -7020053028142920661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 127
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c510263c6bd27e0800000000000000
+      internalID: -1788572526717084579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Actor_3_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 159
+        width: 15
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e75709f5343a9090800000000000000
+      internalID: -8027045979418568728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GK_Actor_3_transparent_0: -1958295767880460667
+      GK_Actor_3_transparent_1: -2779512219841115829
+      GK_Actor_3_transparent_10: 1380113590946583498
+      GK_Actor_3_transparent_11: 8093526540402378065
+      GK_Actor_3_transparent_12: 6033924588382160137
+      GK_Actor_3_transparent_13: -2154777375137491689
+      GK_Actor_3_transparent_14: -2111949907696876541
+      GK_Actor_3_transparent_15: -8210337050186477629
+      GK_Actor_3_transparent_16: -6450094285984219589
+      GK_Actor_3_transparent_17: 1723566551692194399
+      GK_Actor_3_transparent_18: 8460874991445223661
+      GK_Actor_3_transparent_19: 8214947042305957470
+      GK_Actor_3_transparent_2: -2159448585386907172
+      GK_Actor_3_transparent_20: 4218332832638732454
+      GK_Actor_3_transparent_21: 2830963954505368802
+      GK_Actor_3_transparent_22: 4472916318973858151
+      GK_Actor_3_transparent_23: 5961378043946891956
+      GK_Actor_3_transparent_24: -7020053028142920661
+      GK_Actor_3_transparent_25: -1788572526717084579
+      GK_Actor_3_transparent_26: -8027045979418568728
+      GK_Actor_3_transparent_3: -4072039927183647187
+      GK_Actor_3_transparent_4: 2003911062651216307
+      GK_Actor_3_transparent_5: 4546399128591097573
+      GK_Actor_3_transparent_6: 8480335978521692542
+      GK_Actor_3_transparent_7: -707890061746445317
+      GK_Actor_3_transparent_8: 6171148693861779803
+      GK_Actor_3_transparent_9: -1346595387917920385
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

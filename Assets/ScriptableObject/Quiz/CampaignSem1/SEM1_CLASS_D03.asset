@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D03
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 3"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 3] Ch\u1ECDn c\xE2u \u0111\xFAng v\u1EC1 'bias'
+      trong th\u1ED1ng k\xEA/h\u1ECDc m\xE1y (nh\u1EADp m\xF4n):"
+    options:
+    - "M\xF4 h\xECnh c\xF3 th\u1EC3 h\u1ECDc sai h\u1EC7 th\u1ED1ng do d\u1EEF li\u1EC7u/
+      gi\u1EA3 \u0111\u1ECBnh"
+    - "Bias lu\xF4n b\u1EB1ng 0 n\u1EBFu d\xF9ng GPU"
+    - "Bias ch\u1EC9 x\u1EA3y ra khi v\u1EBD bi\u1EC3u \u0111\u1ED3"
+    - "Bias l\xE0 l\u1ED7i c\xFA ph\xE1p"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 3] N\u1EBFu m\u1ED9t m\u1EA1ng m\xE1y t\xEDnh
+      d\xF9ng HTTPS, \xFD ch\xEDnh l\xE0 g\xEC?"
+    options:
+    - "K\xEAnh \u0111\u01B0\u1EE3c m\xE3 h\xF3a (TLS) gi\u1EEFa client v\xE0 server
+      (\xFD t\u01B0\u1EDFng)"
+    - "Kh\xF4ng c\u1EA7n DNS"
+    - "Kh\xF4ng th\u1EC3 b\u1ECB t\u1EA5n c\xF4ng"
+    - "Lu\xF4n nhanh h\u01A1n HTTP"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 3] Kh\xE1i ni\u1EC7m 'CAP' (t\xF3m t\u1EAFt)
+      trong h\u1EC7 ph\xE2n t\xE1n th\u01B0\u1EDDng nh\u1EA5n m\u1EA1nh \u0111i\u1EC1u
+      g\xEC?"
+    options:
+    - "C\xF3 s\u1EF1 \u0111\xE1nh \u0111\u1ED5i gi\u1EEFa consistency/availability/partition
+      tolerance trong th\u1EF1c t\u1EBF"
+    - "Lu\xF4n \u0111\u1EA1t c\u1EA3 3 ho\xE0n h\u1EA3o"
+    - "Ch\u1EC9 \xE1p d\u1EE5ng cho SQL"
+    - "Kh\xF4ng li\xEAn quan microservices"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 3] M\u1ED9t 'unit test' t\u1ED1t th\u01B0\u1EDDng:"
+    options:
+    - "Nhanh, \u0111\u1ED9c l\u1EADp, l\u1EB7p l\u1EA1i \u0111\u01B0\u1EE3c, ki\u1EC3m
+      tra \u0111\u01A1n v\u1ECB nh\u1ECF"
+    - "Lu\xF4n c\u1EA7n m\u1EA1ng"
+    - "Lu\xF4n ch\u1EA1y production DB"
+    - "Kh\xF4ng c\u1EA7n assert"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 3] Refactor an to\xE0n th\u01B0\u1EDDng \u0111i
+      k\xE8m g\xEC?"
+    options:
+    - "Test/lint + thay \u0111\u1ED5i nh\u1ECF t\u1EEBng b\u01B0\u1EDBc"
+    - "X\xF3a h\u1EBFt code c\u0169 m\u1ED9t l\u1EA7n"
+    - "Kh\xF4ng c\u1EA7n review"
+    - "Kh\xF4ng c\u1EA7n build"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

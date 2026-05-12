@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_EVE_D10
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "\u0110\xEAm nh\xE0 \u2014 ng\xE0y 10 (th\u01B0 gi\xE3n)"
+  intro: "\xD4n ki\u1EC3u chill: tr\u1EA3 l\u1EDDi sai c\u0169ng kh\xF4ng sao. S\xE1ng
+    mai tr\xEAn l\u1EDBp m\u1EDBi \"h\u01A1i\" g\u1EAFt h\u01A1n."
+  questions:
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 10] Khi n\xE3o b\u1EA1n b\u1EA3o '\u0111\xF3i
+      ki\u1EBFn th\u1EE9c' nh\u01B0ng mi\u1EC7ng b\u1EA3o '\u0111\xF3i m\xEC', b\u1EA1n
+      l\xE0m g\xEC?"
+    options:
+    - "Th\u1ECFa hi\u1EC7p: h\u1ECDc m\u1ED9t ch\u01B0\u01A1ng, \u0103n m\u1ED9t
+      g\xF3i"
+    - "Gi\u1EA3 v\u1EDD \u0111\u1ECDc ch\u01B0\u01A1ng 1 trong khi h\xFAp m\xEC"
+    - "\u0110\u0103ng story than th\u1EDF"
+    - "T\u1EA5t c\u1EA3 \u0111\u1EC1u \u1ED5n"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 10] V\xEC sao l\u1ECBch b\xE1o '10'
+      l\u1EA1i c\u0103ng?"
+    options:
+    - "V\xEC c\xF3 ch\u1EEF '{d}'"
+    - "V\xEC th\u1EDDi gian kh\xF4ng wait"
+    - "V\xEC messenger hay ping"
+    - "V\xEC cosmic radiation"
+    correctIndex: 1
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 10] T\u1ED1i \u0111\u1EB9p nh\u1EA5t
+      c\u1EE7a sinh vi\xEAn l\xE0 t\u1ED1i n\xE0o?"
+    options:
+    - "T\u1ED1i kh\xF4ng h\u1ECDc nh\u01B0ng t\u1EF1 tin"
+    - "T\u1ED1i h\u1ECDc 20 ph\xFAt r\u1ED3i t\u1EF1 reward 2 ti\u1EBFng"
+    - "T\u1ED1i\u2026 v\u1EABn l\xE0 t\u1ED1i"
+    - "T\u1ED1i c\xF3 snack"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 10] \u0110\xE2u l\xE0 'skill' kh\xF4ng
+      n\u1EB1m trong syllabus nh\u01B0ng l\u1EA1i h\u1ECDc \u0111\u01B0\u1EE3c?"
+    options:
+    - "\u0110\u1ECDc l\u01B0\u1EDBt PDF 400 trang"
+    - "Vi\u1EBFt mail xin deadline ki\u1EC3u professional"
+    - "Ng\u1EE5y trang tab YouTube th\xE0nh Google Docs"
+    - "T\u1EA5t c\u1EA3 \u0111\u1EC1u r\u1EA5t meta"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 10] Quiz chill: Emoji n\xE0o m\xF4 t\u1EA3
+      \u0111\xFAng t\xE2m tr\u1EA1ng tr\u01B0\u1EDBc k\u1EF3 thi?"
+    options:
+    - "\U0001F642"
+    - "\U0001FAE0"
+    - "\U0001F984"
+    - "\U0001F4C8 (\u1EA3o t\u01B0\u1EDFng)"
+    correctIndex: 1
+    explanation: 
+  passScore: 0.45
+  gpaOnPass: 0.06
+  gpaPerCorrectPercent: 0.03
+  skillOnPass: 4
+  stressOnFail: 0
+  stressPerWrong: 0
+  morningRecapGpaPenaltyPerWrong: 0
+  hoursToAdvance: 1

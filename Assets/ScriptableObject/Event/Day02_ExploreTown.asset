@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day02_ExploreTown
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 2
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 2 \u2014 L\xE0m quen th\u1ECB tr\u1EA5n"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 0
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 8
+  lateStressPenalty: 10
+  lateDialogue: {fileID: 0}
+  lateMessage: "B\u1EA1n \u0111ang \u0111i h\u1ECDc mu\u1ED9n!"
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 20
+  missStressPenalty: 15
+  missGpaPenalty: 0.2
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 1
+  letterTitle: "L\xE0m quen th\u1ECB tr\u1EA5n"
+  letterBody: "H\xF4m nay ngo\xE0i vi\u1EC7c \u0111i h\u1ECDc, h\xE3y th\u1EED d\xF9ng
+    \u0111i\u1EC7n tho\u1EA1i (ph\xEDm P) \u0111\u1EC3 xem l\u1ECBch h\u1ECDc, g\u1EB7p
+    NPC trong th\u1ECB tr\u1EA5n v\xE0 mua th\u1EEDc \u0103n \u0111\u1EC3 h\u1ED3i n\u0103ng
+    l\u01B0\u1EE3ng."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: 
+  - id: StudyMorning
+    description: "H\u1ECDc t\u1EA1i b\xE0n bu\u1ED5i s\xE1ng"
+    unlockAfterObjectiveId: AttendClass
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: StudyMorning
+  - id: BuyMeal
+    description: "(T\xF9y ch\u1ECDn) Mua th\u1EE9c \u0103n t\u1EA1i c\u1EEDa h\xE0ng"
+    unlockAfterObjectiveId: 
+    optional: 1
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 k\u1EBFt th\xFAc ng\xE0y"
+    unlockAfterObjectiveId: AttendAfternoon
+  skipClassAttendanceToday: 0
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: 58459c2826cd3914e9337c00150d7992, type: 2}
+  - {fileID: 11400000, guid: af08d42b4630376429f0c44f0f7c6fb7, type: 2}
+  - {fileID: 11400000, guid: bb3bcf49aa9e4720a7e9a1fb4f8b5744, type: 2}
+  - {fileID: 11400000, guid: ce0f021aa2e441e681a4d8a13fc844b2, type: 2}
+  questCompletionToObjective: []

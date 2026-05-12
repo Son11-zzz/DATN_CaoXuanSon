@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 5ae7e47457f583e4697726856cfee689
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1179984796893948380
+    second: '!GK_Osaka_AwningLanterns_1_0'
+  - first:
+      213: 7859450950463647820
+    second: '!GK_Osaka_AwningLanterns_1_1'
+  - first:
+      213: -4794996102702905063
+    second: '!GK_Osaka_AwningLanterns_1_2'
+  - first:
+      213: 6642309167632697920
+    second: '!GK_Osaka_AwningLanterns_1_3'
+  - first:
+      213: 2187823882914739890
+    second: '!GK_Osaka_AwningLanterns_1_4'
+  - first:
+      213: 399530871756113469
+    second: '!GK_Osaka_AwningLanterns_1_5'
+  - first:
+      213: 8392896173584927136
+    second: '!GK_Osaka_AwningLanterns_1_6'
+  - first:
+      213: 4757873716410524304
+    second: '!GK_Osaka_AwningLanterns_1_7'
+  - first:
+      213: 7824407043983060105
+    second: '!GK_Osaka_AwningLanterns_1_8'
+  - first:
+      213: -622878279910047396
+    second: '!GK_Osaka_AwningLanterns_1_9'
+  - first:
+      213: 8915836763235010906
+    second: '!GK_Osaka_AwningLanterns_1_10'
+  - first:
+      213: 4837948644127441264
+    second: '!GK_Osaka_AwningLanterns_1_11'
+  - first:
+      213: -804623831033709338
+    second: '!GK_Osaka_AwningLanterns_1_12'
+  - first:
+      213: 5231498858344145050
+    second: '!GK_Osaka_AwningLanterns_1_13'
+  - first:
+      213: 959422788972191034
+    second: '!GK_Osaka_AwningLanterns_1_14'
+  - first:
+      213: -5196340403776949398
+    second: '!GK_Osaka_AwningLanterns_1_15'
+  - first:
+      213: 4126772231279340253
+    second: '!GK_Osaka_AwningLanterns_1_16'
+  - first:
+      213: 2923472928456450724
+    second: '!GK_Osaka_AwningLanterns_1_17'
+  - first:
+      213: 6184731066424988427
+    second: '!GK_Osaka_AwningLanterns_1_18'
+  - first:
+      213: 6616803474430390303
+    second: '!GK_Osaka_AwningLanterns_1_19'
+  - first:
+      213: -731527538699240134
+    second: '!GK_Osaka_AwningLanterns_1_20'
+  - first:
+      213: -2312895190946773429
+    second: '!GK_Osaka_AwningLanterns_1_21'
+  - first:
+      213: 1684428061947399337
+    second: '!GK_Osaka_AwningLanterns_1_22'
+  - first:
+      213: 7375447624342406511
+    second: '!GK_Osaka_AwningLanterns_1_23'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_0'
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9a933cbe5206010800000000000000
+      internalID: 1179984796893948380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_1'
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40fdff8ff0621d60800000000000000
+      internalID: 7859450950463647820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_2'
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919c2071370c47db0800000000000000
+      internalID: -4794996102702905063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_3'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 234
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a4119def83e2c50800000000000000
+      internalID: 6642309167632697920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_4'
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6bf3cda36bc5e10800000000000000
+      internalID: 2187823882914739890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_5'
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 234
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3643d7063b6b8500800000000000000
+      internalID: 399530871756113469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_6'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9c3473a9e897470800000000000000
+      internalID: 8392896173584927136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_7'
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09221d0dfec570240800000000000000
+      internalID: 4757873716410524304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_8'
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 234
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98caca240c0e59c60800000000000000
+      internalID: 7824407043983060105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_9'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51c7ab21871b57f0800000000000000
+      internalID: -622878279910047396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_10'
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 234
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59cdfb4c4a6bbb70800000000000000
+      internalID: 8915836763235010906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_11'
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 235
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0718cc6c8a8d32340800000000000000
+      internalID: 4837948644127441264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_12'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecfb6583e665d4f0800000000000000
+      internalID: -804623831033709338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_13'
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90e6767e740a9840800000000000000
+      internalID: 5231498858344145050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_14'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 107
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d1a1e71fd805d00800000000000000
+      internalID: 959422788972191034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_15'
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a637dd42fe3e2e7b0800000000000000
+      internalID: -5196340403776949398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_16'
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddae952da7d354930800000000000000
+      internalID: 4126772231279340253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_17'
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a22e13a323429820800000000000000
+      internalID: 2923472928456450724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_18'
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b039595032494d550800000000000000
+      internalID: 6184731066424988427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_19'
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f107ef1e3bb93db50800000000000000
+      internalID: 6616803474430390303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_20'
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d7a60549719d5f0800000000000000
+      internalID: -731527538699240134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_21'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 107
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4688ecf312f6efd0800000000000000
+      internalID: -2312895190946773429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_22'
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 107
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac031ad56a406710800000000000000
+      internalID: 1684428061947399337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_AwningLanterns_1_23'
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 106
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f658d6c998ada5660800000000000000
+      internalID: 7375447624342406511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '!GK_Osaka_AwningLanterns_1_0': 1179984796893948380
+      '!GK_Osaka_AwningLanterns_1_1': 7859450950463647820
+      '!GK_Osaka_AwningLanterns_1_10': 8915836763235010906
+      '!GK_Osaka_AwningLanterns_1_11': 4837948644127441264
+      '!GK_Osaka_AwningLanterns_1_12': -804623831033709338
+      '!GK_Osaka_AwningLanterns_1_13': 5231498858344145050
+      '!GK_Osaka_AwningLanterns_1_14': 959422788972191034
+      '!GK_Osaka_AwningLanterns_1_15': -5196340403776949398
+      '!GK_Osaka_AwningLanterns_1_16': 4126772231279340253
+      '!GK_Osaka_AwningLanterns_1_17': 2923472928456450724
+      '!GK_Osaka_AwningLanterns_1_18': 6184731066424988427
+      '!GK_Osaka_AwningLanterns_1_19': 6616803474430390303
+      '!GK_Osaka_AwningLanterns_1_2': -4794996102702905063
+      '!GK_Osaka_AwningLanterns_1_20': -731527538699240134
+      '!GK_Osaka_AwningLanterns_1_21': -2312895190946773429
+      '!GK_Osaka_AwningLanterns_1_22': 1684428061947399337
+      '!GK_Osaka_AwningLanterns_1_23': 7375447624342406511
+      '!GK_Osaka_AwningLanterns_1_3': 6642309167632697920
+      '!GK_Osaka_AwningLanterns_1_4': 2187823882914739890
+      '!GK_Osaka_AwningLanterns_1_5': 399530871756113469
+      '!GK_Osaka_AwningLanterns_1_6': 8392896173584927136
+      '!GK_Osaka_AwningLanterns_1_7': 4757873716410524304
+      '!GK_Osaka_AwningLanterns_1_8': 7824407043983060105
+      '!GK_Osaka_AwningLanterns_1_9': -622878279910047396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

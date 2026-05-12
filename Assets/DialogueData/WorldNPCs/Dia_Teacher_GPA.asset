@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: Dia_Teacher_GPA
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "GPA ph\u1EA3n \u00E1nh chuy\xEAn c\u1EA7n v\xE0 k\u1EBFt qu\u1EA3 ki\u1EC3m
+      tra. \u0110i h\u1ECDc \u0111\xFAng gi\u1EDD, h\u1ECDc sau bu\u1ED5i s\xE1ng
+      t\u1EA1i b\xE0n, v\xE0 ho\xE0n th\xE0nh nhi\u1EC7m v\u1EE5 h\u1ECDc t\u1EADp
+      \u2014 tr\xE1nh b\u1ECF h\u1ECDc \u0111\u1EC3 kh\xF4ng b\u1ECB tr\u1EEB \u0111i\u1EC3m."
+    choices:
+    - choiceText: "Em \u0111\xE3 hi\u1EC3u \u1EA1"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: "Nhi\u1EC7m v\u1EE5 trong h\u1ECDc k\u1EF3 \u0111\u01B0\u1EE3c g\u1EAFn v\u1EDBi
+      c\u1ED1t truy\u1EC7n \u2014 l\xE0m theo m\u1EE5c ti\xEAu tr\xEAn m\xE0n h\xECnh.
+      N\u1EBFu c\u1EA7n tr\u1EE3 gi\xFAp, h\u1ECFi l\u1EA1i t\xF4i sau bu\u1ED5i
+      h\u1ECDc nh\xE9."
+    choices:
+    - choiceText: "C\u1EA3m \u01A1n th\u1EA7y \u1EA1"
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

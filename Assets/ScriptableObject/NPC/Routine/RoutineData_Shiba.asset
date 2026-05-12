@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: RoutineData_Shiba
+  m_EditorClassIdentifier: Assembly-CSharp::NpcSimpleRoutineData
+  activeSchoolDayOverride: 
+  useDynamicLunchFromPhone: 1
+  lunchCanteenPointId: 
+  lunchOfficePointId: 
+  schoolDaySlots:
+  - label: 7_9
+    startHour: 7
+    endHour: 9
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb1
+    - sb2
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 9_10
+    startHour: 9
+    endHour: 10
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb2
+    - sb3
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 10_12
+    startHour: 10
+    endHour: 13
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb3
+    - sb4
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 12_14
+    startHour: 12
+    endHour: 15
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb4
+    - sb5
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 14_17
+    startHour: 14
+    endHour: 17
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb5
+    - sb6
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 17_18
+    startHour: 17
+    endHour: 18
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb6
+    - sb5
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: 18_19
+    startHour: 18
+    endHour: 20
+    sceneName: 20_Town
+    scheduleFilter: 0
+    action: 0
+    pathPointIds:
+    - sb5
+    - sb6
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 1
+  noSchoolSlots: []
+  vendorShopOpenHour: 8
+  vendorShopCloseHour: 18
+  vendorStallPointId: 
+  vendorHomePointId: 
+  vendorPathHomePointIds: []

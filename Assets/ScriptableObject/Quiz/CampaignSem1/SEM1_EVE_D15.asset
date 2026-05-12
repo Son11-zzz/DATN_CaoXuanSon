@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_EVE_D15
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "\u0110\xEAm nh\xE0 \u2014 ng\xE0y 15 (th\u01B0 gi\xE3n)"
+  intro: "\xD4n ki\u1EC3u chill: tr\u1EA3 l\u1EDDi sai c\u0169ng kh\xF4ng sao. S\xE1ng
+    mai tr\xEAn l\u1EDBp m\u1EDBi \"h\u01A1i\" g\u1EAFt h\u01A1n."
+  questions:
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 15] B\u1EA1n '\xF4n' b\u1EB1ng c\xE1ch
+      n\xE0o sau \u0111\xE2y l\xE0\u2026 t\u1EC7 nh\u01B0ng th\u1EADt?"
+    options:
+    - "\u0110\u1ECDc l\u1EA1i d\xF2ng \u0111\u1EA7u slide 40 l\u1EA7n"
+    - "K\u1EC3 l\u1EA1i b\xE0i cho b\u1EA1n c\xF9ng ph\xF2ng\u2026 \u0111ang ng\u1EE7"
+    - "Thu \xE2m gi\u1ECDng m\xECnh r\u1ED3i kh\xF4ng bao gi\u1EDD nghe l\u1EA1i"
+    - "T\u1EA5t c\u1EA3 \u0111\u1EC1u c\xF3 th\u1EC3 x\u1EA3y ra"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 15] N\u1EBFu GPA l\xE0 boss game, v\u0169
+      kh\xED meta l\xE0 g\xEC?"
+    options:
+    - "\u0110i h\u1ECDc \u0111\xFAng gi\u1EDD + n\u1ED9p b\xE0i \u0111\xFAng h\u1EA1n"
+    - Skin laptop RGB
+    - "Nick name 'tryhard' tr\xEAn Discord"
+    - "\u1EA2nh avatar c\xFA \u0111\xEAm"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 15] M\u1ED9t 'nhi\u1EC7m v\u1EE5 ph\u1EE5'
+      h\u1EE3p l\xFD t\u1ED1i nay l\xE0 g\xEC?"
+    options:
+    - "D\u1ECDn b\xE0n (\u0111\u1EC3 mai l\u1EA1i b\u1EEBa)"
+    - "T\u01B0\u1EDBi c\xE2y\u2026 tr\xEAn wallpaper"
+    - "S\u1EAFp x\u1EBFp file Desktop th\xE0nh m\u1ED9t file t\xEAn 'sau n\xE0y'"
+    - "Backup d\u1EEF li\u1EC7u (\xFD th\u1EE9c)"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 15] T\u1EA1i sao 'mai l\xE0m' l\u1EA1i
+      viral?"
+    options:
+    - "V\xEC n\xF3 mi\u1EC5n ph\xED"
+    - "V\xEC n\xF3 scale t\u1ED1t"
+    - "V\xEC n\xF3 c\xF3 community support m\u1EA1nh"
+    - "V\xEC deadline l\xE0 illusion"
+    correctIndex: 2
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 15] Ch\u1ECDn ph\xE1t bi\u1EC3u '\u0111\xFAng
+      tinh th\u1EA7n' sinh vi\xEAn:"
+    options:
+    - "T\xF4i ch\u1EC9 c\u1EA7n 10 ph\xFAt (\xD724)"
+    - "T\xF4i l\xE0m nhanh khi\u2026 \u0111\xE3 mu\u1ED9n"
+    - "T\xF4i h\u1ECDc theo batch \u2014 m\u1ED7i h\u1ECDc k\u1EF3 m\u1ED9t batch"
+    - "T\xF4i kh\xF4ng stress, stress l\xE0\u2026 b\u1EA1n th\xE2n"
+    correctIndex: 1
+    explanation: 
+  passScore: 0.45
+  gpaOnPass: 0.06
+  gpaPerCorrectPercent: 0.03
+  skillOnPass: 4
+  stressOnFail: 0
+  stressPerWrong: 0
+  morningRecapGpaPenaltyPerWrong: 0
+  hoursToAdvance: 1

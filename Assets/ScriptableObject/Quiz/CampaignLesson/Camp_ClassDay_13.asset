@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Camp_ClassDay_13
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ch\u1EE7 \u0111\u1EC1 ng\xE0y h\u1ECDc 13"
+  intro: "N\u1ED9i dung tr\xF9ng v\u1EDBi nh\u1EEFng g\xEC \xF4n nh\xE0 v\xE0 l\xEAn
+    l\u1EDBp s\u1EBD ki\u1EC3m tra l\u1EA1i."
+  questions:
+  - prompt: "[Ng\xE0y h\u1ECDc 13] Chu\u1EA9n b\u1ECB sang ng\xE0y ti\u1EBFp theo:
+      \u01AFu ti\xEAn n\xE0o h\u1EE3p l\xFD?"
+    options:
+    - "\xD4n t\u1ED1i t\u1EA1i nh\xE0 tr\u01B0\u1EDBc + ki\u1EC3m tra l\u1EA1i s\xE1ng
+      \u1EDF l\u1EDBp"
+    - "Ch\u1EC9 l\xEAn Google l\xFAc 5 ph\xFAt \u0111\u1EA7u gi\u1EDD"
+    - "H\u1ECDc b\u1EEBa kh\xF4ng theo ch\u1EE7 \u0111\u1EC1 ng\xE0y"
+    - "B\u1ECF qua c\xE1c c\xE2u h\u1ECFi l\u1ED3ng v\xE0o storyline"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[Ng\xE0y h\u1ECDc 13] K\u1EF9 thu\u1EADt ng\u1EE7 ngh\u1EC9 h\u1ED7
+      tr\u1EE3 nh\u1EDB ki\u1EBFn th\u1EE9c ra sao?"
+    options:
+    - "Ng\u1EE7 \u0111\u1EE7 7\u20138 ti\u1EBFng, tr\xE1nh h\u1ECDc Marathon"
+    - "Lu\xF4n h\u1ECDc \u0111\u1EBFn 3h \u0111\u1EC3 \xF4n \u0111\u01B0\u1EE3c nhi\u1EC1u"
+    - "Chi\u1EC1u ch\u1EC9 caffeine"
+    - "B\u1ECF \u0103n t\u1ED1i"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[Ng\xE0y h\u1ECDc 13] Khi kh\xF4ng ch\u1EAFc \u0111\xE1p \xE1n trong
+      l\u1EDBp, b\u1EA1n n\xEAn?"
+    options:
+    - "Suy lu\u1EADn t\u1EEB b\xE0i \xF4n nh\xE0 v\xE0 lo\u1EA1i c\xE1c ph\u01B0\u01A1ng
+      \xE1n phi l\xFD nh\u1EA5t"
+    - "Ch\u1ECDn \u0111\u1EA1i"
+    - "\u0110\u1ED5i ch\u1EE7 \u0111\u1EC1 b\xE0i \xF4n kh\xF4ng li\xEAn quan"
+    - "\u0110\u1ED5 l\u1ED7i cho game"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.5
+  gpaOnPass: 0.08
+  gpaPerCorrectPercent: 0.04
+  skillOnPass: 5
+  stressOnFail: 4
+  stressPerWrong: 1.1
+  morningRecapGpaPenaltyPerWrong: 0.07
+  hoursToAdvance: 1

@@ -117,8 +117,17 @@ public class QuestGiverNPC : InteractableBase
         return string.IsNullOrWhiteSpace(npcId) ? gameObject.name.Trim() : npcId.Trim();
     }
 
+    /// <summary>Dùng cho script hệ thống (teleport/cutscene) cần tìm NPC theo id.</summary>
+    public string GetResolvedNpcId() => ResolvedNpcId();
+
     public override void Interact()
     {
+        if (StoryEventManager.Instance != null
+            && StoryEventManager.Instance.TryHandleDay3TuitionNpcInteraction(ResolvedNpcId()))
+        {
+            return;
+        }
+
         var ds = ResolveDialogueSystem();
         if (ds == null)
         {

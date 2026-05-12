@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Msg_Day12_FinalSchedule
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneMessageData
+  semester: 1
+  dayInSemester: 12
+  hour: 8
+  sender: "Ph\xF2ng \u0111\xE0o t\u1EA1o"
+  content: "Th\xF4ng b\xE1o: K\u1EF3 thi cu\u1ED1i k\u1EF3 s\u1EBD di\u1EC5n ra ng\xE0y
+    14. H\xE3y \xF4n k\u1EF9 ng\xE0y 13."
+  showPopup: 1

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D04
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 4"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 4] Trong UI/UX, 'affordance' g\u1EA7n ngh\u0129a
+      l\xE0 g\xEC?"
+    options:
+    - "G\u1EE3i \xFD c\xE1ch d\xF9ng qua h\xECnh d\u1EA1ng/nh\xE3n"
+    - "S\u1ED1 l\u01B0\u1EE3ng m\xE0u t\u1ED1i \u0111a"
+    - FPS
+    - "\u0110\u1ED9 ph\xE2n gi\u1EA3i texture"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 4] 'Accessibility' (a11y) trong game/app th\u01B0\u1EDDng
+      nh\u1EAFm t\u1EDBi:"
+    options:
+    - "Ng\u01B0\u1EDDi d\xF9ng c\xF3 nhu c\u1EA7u kh\xE1c nhau (th\u1ECB gi\xE1c/th\xEDnh
+      gi\xE1c/\u0111i\u1EC1u khi\u1EC3n\u2026)"
+    - "Ch\u1EC9 dark mode"
+    - "Ch\u1EC9 font size"
+    - "Ch\u1EC9 marketing"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 4] M\u1ED9t 'deadlock' (OS) x\u1EA3y ra khi
+      n\xE0o (\xFD t\u01B0\u1EDFng)?"
+    options:
+    - "C\xE1c ti\u1EBFn tr\xECnh ch\u1EDD l\u1EABn nhau theo v\xF2ng k\xEDn t\xE0i
+      nguy\xEAn"
+    - "CPU qu\xE1 nhanh"
+    - RAM = 0
+    - "Ch\u1EC9 x\u1EA3y ra tr\xEAn Linux"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 4] Trong Unity, 'FixedUpdate' th\u01B0\u1EDDng
+      ph\xF9 h\u1EE3p cho:"
+    options:
+    - "V\u1EADt l\xFD b\u01B0\u1EDBc c\u1ED1 \u0111\u1ECBnh (\xFD t\u01B0\u1EDFng)"
+    - "V\u1EBD UI layout m\u1ED7i frame"
+    - "Load scene b\u1EA5t \u0111\u1ED3ng b\u1ED9"
+    - "G\u1ECDi API HTTP"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 4] Ch\u1ECDn c\xE2u \u0111\xFAng v\u1EC1 'serialization'
+      (l\u01B0u tr\u1EEF tr\u1EA1ng th\xE1i):"
+    options:
+    - "Chuy\u1EC3n object th\xE0nh d\u1EA1ng c\xF3 th\u1EC3 l\u01B0u/chuy\u1EC3n
+      r\u1ED3i kh\xF4i ph\u1EE5c (\xFD t\u01B0\u1EDFng)"
+    - "Lu\xF4n an to\xE0n m\xE0 kh\xF4ng c\u1EA7n versioning"
+    - "Kh\xF4ng bao gi\u1EDD l\u1ED7i schema"
+    - "Ch\u1EC9 JSON"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

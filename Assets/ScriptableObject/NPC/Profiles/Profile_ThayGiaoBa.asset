@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f2a3b4c5d64758696a7b8c9d0e1f2a, type: 3}
+  m_Name: Profile_ThayGiaoBa
+  m_EditorClassIdentifier: Assembly-CSharp::NpcCharacterProfile
+  characterId: npc_ThayGiaoBa
+  displayName: ThayGiaoBa
+  worldSprite: {fileID: 0}
+  spriteTint: {r: 1, g: 1, b: 1, a: 1}
+  quest: {fileID: 0}
+  firstTimeDialogue: {fileID: 11400000, guid: 7f77b1742cc0ba84598cce19db1c3402, type: 2}
+  inProgressDialogue: {fileID: 11400000, guid: 7b5cd60c2d9307b499fb2bdfc9b4cc74, type: 2}
+  turnInDialogue: {fileID: 11400000, guid: 6f082a4b17907354ea78a532a05c4b24, type: 2}
+  defaultDialogue: {fileID: 11400000, guid: a91ec0a1a91ec0a1a91ec0a1a91ec0a2, type: 2}
+  routineArchetype: 1
+  routineData: {fileID: 11400000, guid: f00df00df00df00df00df00df00df002, type: 2}

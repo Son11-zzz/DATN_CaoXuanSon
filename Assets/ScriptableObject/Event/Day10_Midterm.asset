@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day10_Midterm
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 10
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 10 \u2014 Ki\u1EC3m tra gi\u1EEFa k\u1EF3"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 1
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 15
+  lateStressPenalty: 20
+  lateDialogue: {fileID: 0}
+  lateMessage: "B\u1EA1n \u0111ang tr\u1EC5 ti\u1EBFt ki\u1EC3m tra gi\u1EEFa k\u1EF3!"
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 30
+  missStressPenalty: 30
+  missGpaPenalty: 0.5
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 1
+  letterTitle: "Ki\u1EC3m tra gi\u1EEFa k\u1EF3"
+  letterBody: "H\xF4m nay l\xE0 b\xE0i ki\u1EC3m tra gi\u1EEFa k\u1EF3. Ng\u1ED3i
+    v\xE0o b\xE0n h\u1ECDc \u0111\u1EC3 b\u1EAFt \u0111\u1EA7u. K\u1EBFt qu\u1EA3 \u1EA3nh
+    h\u01B0\u1EDFng l\u1EDBn \u0111\u1EBFn \u0111i\u1EC3m cu\u1ED1i k\u1EF3."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: 
+  - id: MidtermExam
+    description: "Ho\xE0n th\xE0nh b\xE0i ki\u1EC3m tra gi\u1EEFa k\u1EF3"
+    unlockAfterObjectiveId: AttendClass
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: MidtermExam
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 ngh\u1EC9 ng\u01A1i"
+    unlockAfterObjectiveId: AttendAfternoon
+  skipClassAttendanceToday: 0
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: 8fc3eae873913d644b32b884e2cf0d4e, type: 2}
+  - {fileID: 11400000, guid: 6bf8b501ff57d0841a38fe629223de71, type: 2}
+  questCompletionToObjective: []

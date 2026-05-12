@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Quiz_Day03_Homework
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 0
+  title: "B\xE0i t\u1EADp ng\xE0y 3"
+  intro: "Tr\u1EA3 l\u1EDDi c\xE1c c\xE2u h\u1ECFi \xF4n b\xE0i."
+  questions:
+  - prompt: "\"\u0110\u1ED9 Mixi, C\u1EA3m \u01A1n anh ... \u0110\u1ED9\". \u0110i\u1EC1n
+      v\xE0o ch\u1ED7 tr\u1ED1ng"
+    options:
+    - "C\u1ED9 Kiki"
+    - "Ph\xF9ng Canh "
+    - "T\xF9 ngay"
+    - "Ph\xF9ng Thanh"
+    correctIndex: 3
+    explanation: 
+  - prompt: "\u0110\xE2u l\xE0 \u0111\u1ED9i b\xF3ng d\xE0nh nhi\u1EC1u C1 nh\u1EA5t?"
+    options:
+    - "An Thuy\xEAn"
+    - "X\xE3 \u0111\u1EA7n"
+    - "H\xE0ng Da"
+    - "Becamex B\xECnh D\u01B0\u01A1ng"
+    correctIndex: 0
+    explanation: 
+  - prompt: 18+18=?
+    options:
+    - TH
+    - 36
+    - "M\u1EA5t d\xE9p"
+    correctIndex: 1
+    explanation: 
+  - prompt: "\u0110\xE2u l\xE0 m\u1ED9t trang web ph\u1EE5c v\u1EE5 h\u1ECDc t\u1EADp"
+    options:
+    - Duolingoo
+    - 1x bet
+    - 8xb
+    - Sunbet
+    correctIndex: 0
+    explanation: 
+  - prompt: "Si thu\u1EBF hay B\u1EA3y t\u1EA1?"
+    options:
+    - "Sa t\u1ECB"
+    - "Ch\u1ECB b\u01B0\u1EDFi"
+    - "An Thuy\xEAn"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.6
+  gpaOnPass: 0.5
+  gpaPerCorrectPercent: 0.1
+  skillOnPass: 4
+  stressOnFail: 25
+  stressPerWrong: 5
+  hoursToAdvance: 1

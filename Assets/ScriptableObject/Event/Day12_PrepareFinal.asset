@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83026543379f814498698917bec7b9e, type: 3}
+  m_Name: Day12_PrepareFinal
+  m_EditorClassIdentifier: Assembly-CSharp::StoryEventDefinition
+  semester: 1
+  dayInSemester: 12
+  schedulePriority: 0
+  eventDisplayName: "Ng\xE0y 12 \u2014 Chu\u1EA9n b\u1ECB cu\u1ED1i k\u1EF3"
+  lockAutoTimeUntilComplete: 0
+  resumeAutoTimeWhenComplete: 1
+  blockSleepUntilComplete: 0
+  failEventIfDayEndsIncomplete: 0
+  applyLatePenalty: 1
+  lateHour: 10
+  lateObjectiveId: AttendClass
+  lateEnergyPenalty: 10
+  lateStressPenalty: 12
+  lateDialogue: {fileID: 0}
+  lateMessage: "B\u1EA1n \u0111ang \u0111i h\u1ECDc mu\u1ED9n!"
+  lateOkText: OK
+  failIfMissed: 1
+  missHour: 12
+  missObjectiveId: AttendClass
+  missEnergyPenalty: 20
+  missStressPenalty: 20
+  missGpaPenalty: 0.3
+  missedDialogue: {fileID: 0}
+  startDialogue: {fileID: 0}
+  completedDialogue: {fileID: 0}
+  showLetterOnStart: 1
+  letterTitle: "L\u1ECBch thi cu\u1ED1i k\u1EF3"
+  letterBody: "Gi\u1EA3ng vi\xEAn th\xF4ng b\xE1o l\u1ECBch thi cu\u1ED1i k\u1EF3.
+    H\xE3y mua s\xE1ch, n\xF3i chuy\u1EC7n v\u1EDBi NPC \u0111\u1EC3 nh\u1EADn m\u1EB9o
+    v\xE0 chu\u1EA9n b\u1ECB tinh th\u1EA7n \xF4n thi."
+  includeObjectivesInLetter: 1
+  letterCloseText: OK
+  objectives:
+  - id: AttendClass
+    description: "V\xE0o l\u1EDBp bu\u1ED5i s\xE1ng \u0111\xFAng gi\u1EDD"
+    unlockAfterObjectiveId: 
+  - id: StudyMorning
+    description: "H\u1ECDc t\u1EA1i b\xE0n bu\u1ED5i s\xE1ng"
+    unlockAfterObjectiveId: AttendClass
+  - id: AttendAfternoon
+    description: "V\xE0o l\u1EDBp bu\u1ED5i chi\u1EC1u"
+    unlockAfterObjectiveId: StudyMorning
+  - id: BuySupplies
+    description: "(T\xF9y ch\u1ECDn) Mua d\u1EE5ng c\u1EE5/s\xE1ch cho \xF4n thi"
+    unlockAfterObjectiveId: 
+    optional: 1
+  - id: GoHome
+    description: "V\u1EC1 nh\xE0 chu\u1EA9n b\u1ECB \xF4n t\u1EADp"
+    unlockAfterObjectiveId: AttendAfternoon
+  skipClassAttendanceToday: 0
+  autoAcceptQuestsOnStart:
+  - {fileID: 11400000, guid: ecba221565bfbc54eb3a3ef40ec6c42b, type: 2}
+  - {fileID: 11400000, guid: 97d66548f8447ba48b4e65f515ed08b0, type: 2}
+  questCompletionToObjective: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_EVE_D14
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "\u0110\xEAm nh\xE0 \u2014 ng\xE0y 14 (th\u01B0 gi\xE3n)"
+  intro: "\xD4n ki\u1EC3u chill: tr\u1EA3 l\u1EDDi sai c\u0169ng kh\xF4ng sao. S\xE1ng
+    mai tr\xEAn l\u1EDBp m\u1EDBi \"h\u01A1i\" g\u1EAFt h\u01A1n."
+  questions:
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 14] T\u1EA1i sao highlighter h\u1ED3ng
+      l\u1EA1i nguy hi\u1EC3m?"
+    options:
+    - "V\xEC n\xF3 qu\xE1 \u0111\u1EB9p n\xEAn b\u1EA1n highlight c\u1EA3\u2026 c\u1EA3m
+      x\xFAc"
+    - "V\xEC gi\xE1o vi\xEAn kh\xF4ng th\xEDch m\xE0u h\u1ED3ng"
+    - "V\xEC h\u1ED3ng l\xE0 warning color"
+    - "V\xEC n\xF3 l\xE0m b\u1EA1n t\u01B0\u1EDFng m\xECnh \u0111\xE3 h\u1ECDc"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 14] M\u1ED9t 'chi\xEAu' tr\xE1nh procrastination
+      (phi\xEAn b\u1EA3n meme) l\xE0 g\xEC?"
+    options:
+    - "\u0110\u1EB7t b\xE1o th\u1EE9c t\xEAn 'S\u1EE3 th\u1EA7y'"
+    - "\u0110\u1ED5i t\xEAn Wi-Fi th\xE0nh 'L\xE0m b\xE0i \u0111i'"
+    - "M\u1EDF Word tr\u01B0\u1EDBc khi m\u1EDF TikTok (hy v\u1ECDng)"
+    - "T\u1EA5t c\u1EA3 \u0111\u1EC1u\u2026 c\xF3 th\u1EC3 th\u1EED"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 14] Khi b\u1EA1n h\u1ECDc nh\xF3m online,
+      bi\u1EBFn c\u1ED1 n\xE0o hay nh\u1EA5t?"
+    options:
+    - "Qu\xEAn unmute khi ch\u1EEDi \u0111\u1EC1"
+    - "Share nh\u1EA7m m\xE0n h\xECnh tab shopping"
+    - Cat walk qua keyboard
+    - "T\u1EA5t c\u1EA3 \u0111\u1EC1u oscar-worthy"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 14] Ch\u1ECDn 'power-up' th\u1EF1c t\u1EBF
+      nh\u1EA5t:"
+    options:
+    - "N\u01B0\u1EDBc + ng\u1EE7 \u0111\u1EE7 + chia nh\u1ECF vi\u1EC7c"
+    - "N\u01B0\u1EDBc t\u0103ng l\u1EF1c v\u1ECB\u2026 lo l\u1EAFng"
+    - Podcast 3x speed
+    - "\u0110\u1ED5i avatar th\xE0nh mode serious"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 14] T\u1ED1i nay b\u1EA1n x\u1EE9ng
+      \u0111\xE1ng reward n\xE0o (vui)?"
+    options:
+    - "1 t\u1EADp phim 'd\xE0i 5 ph\xFAt'"
+    - "Scroll 10 ph\xFAt (40 ph\xFAt)"
+    - "\u0102n m\xF3n y\xEAu th\xEDch"
+    - "T\u1EA5t c\u1EA3 \u2014 theo ch\u1EBF \u0111\u1ED9 'balance'"
+    correctIndex: 2
+    explanation: 
+  passScore: 0.45
+  gpaOnPass: 0.06
+  gpaPerCorrectPercent: 0.03
+  skillOnPass: 4
+  stressOnFail: 0
+  stressPerWrong: 0
+  morningRecapGpaPenaltyPerWrong: 0
+  hoursToAdvance: 1

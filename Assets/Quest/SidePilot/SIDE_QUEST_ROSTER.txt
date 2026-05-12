@@ -1,0 +1,10 @@
+Side quest pilot — ngày 1–2 (QuestData trong thư mục này)
+================================================================================
+npcId phải khớp NpcCharacterProfile.characterId và QuestGiverNPC (sau ApplyCharacterProfile).
+
+Ngày 1 (auto nhận cùng cls/eve): Side_D01_ChatThayBa (npc_ThayGiaoBa)
+Ngày 2: Side_D02_ChatHNN (hnn), Side_D02_ChatLC (lc)
+
+Bảng mở rộng (placeholder — điền dần theo sprint):
+day | questId              | npcId              | giver / map | optional |
+----|----------------------|--------------------|-------------|----------|

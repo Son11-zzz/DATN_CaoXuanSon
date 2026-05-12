@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1234567890abcdef1234567890abcdef, type: 3}
+  m_Name: Msg_Day03_Tuition
+  m_EditorClassIdentifier: Assembly-CSharp::PhoneMessageData
+  semester: 1
+  dayInSemester: 3
+  hour: 7
+  sender: "Ph\xF2ng CTSV"
+  content: "Nh\u1EAFc h\u1ECDc sinh: h\xF4m nay b\u1EA1n c\u1EA7n \u0111\u1EBFn Ph\xF2ng C\xF4ng
+    t\xE1c Sinh vi\xEAn (\u0111i\u1EC3m g\u1EB7p/tr\xF2 ch\u01A1i theo thi\u1EBFt k\u1EBF
+    ng\xE0y 3) \u0111\u1EC3 ho\xE0n t\u1EA5t \u0111\xF3ng h\u1ECDc ph\xED 2.000.000\u0111."
+  showPopup: 1
+  teleportSpawnPointId: CTSV
+  teleportOnlyIfSceneNamed: 21_SchoolArea

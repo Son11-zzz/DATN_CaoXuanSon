@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 9fe95dbef606e4e4883421d6b1b68b93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5542106655901151745
+    second: '!GK_Osaka_RopeLanterns_1_0'
+  - first:
+      213: -1414255343491914032
+    second: '!GK_Osaka_RopeLanterns_1_1'
+  - first:
+      213: -5738835837532047774
+    second: '!GK_Osaka_RopeLanterns_1_2'
+  - first:
+      213: -54259847786504823
+    second: '!GK_Osaka_RopeLanterns_1_3'
+  - first:
+      213: 5488906749907052559
+    second: '!GK_Osaka_RopeLanterns_1_4'
+  - first:
+      213: -143978529836243585
+    second: '!GK_Osaka_RopeLanterns_1_5'
+  - first:
+      213: 5888314037518332636
+    second: '!GK_Osaka_RopeLanterns_1_6'
+  - first:
+      213: 7886215190210784428
+    second: '!GK_Osaka_RopeLanterns_1_7'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_0'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd0fab1c5b7613b0800000000000000
+      internalID: -5542106655901151745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_1'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 227
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d66775124e8f5ce0800000000000000
+      internalID: -1414255343491914032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_2'
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 226
+        width: 33
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266fe9f163f8b50b0800000000000000
+      internalID: -5738835837532047774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_3'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 228
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d5e17b4fa3f3ff0800000000000000
+      internalID: -54259847786504823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_4'
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 101
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0824798b938c2c40800000000000000
+      internalID: 5488906749907052559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_5'
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 101
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75e3d93a4c700ef0800000000000000
+      internalID: -143978529836243585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_6'
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 101
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2f9346b6e77b150800000000000000
+      internalID: 5888314037518332636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!GK_Osaka_RopeLanterns_1_7'
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 100
+        width: 33
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacadcabee6717d60800000000000000
+      internalID: 7886215190210784428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '!GK_Osaka_RopeLanterns_1_0': -5542106655901151745
+      '!GK_Osaka_RopeLanterns_1_1': -1414255343491914032
+      '!GK_Osaka_RopeLanterns_1_2': -5738835837532047774
+      '!GK_Osaka_RopeLanterns_1_3': -54259847786504823
+      '!GK_Osaka_RopeLanterns_1_4': 5488906749907052559
+      '!GK_Osaka_RopeLanterns_1_5': -143978529836243585
+      '!GK_Osaka_RopeLanterns_1_6': 5888314037518332636
+      '!GK_Osaka_RopeLanterns_1_7': 7886215190210784428
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

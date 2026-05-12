@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f6789012345678abcdef01, type: 3}
+  m_Name: RoutineData_LeToanThang
+  m_EditorClassIdentifier: 
+  activeSchoolDayOverride: 
+  useDynamicLunchFromPhone: 1
+  lunchCanteenPointId: Canteen
+  lunchOfficePointId: StudentAffairsOffice
+  schoolDaySlots:
+  - label: Town_8h_to_school_gate
+    startHour: 8
+    endHour: 10
+    sceneName: 20_Town
+    scheduleFilter: 1
+    action: 0
+    pathPointIds:
+    - 9
+    - 7
+    - 8
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 1
+  - label: In_School
+    startHour: 7
+    endHour: 9
+    sceneName: 21_SchoolArea
+    scheduleFilter: 1
+    action: 0
+    pathPointIds:
+    - 2.1
+    - 2.2
+    - 2.3
+    - 2.4
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: School_ClassTime
+    startHour: 9
+    endHour: 12
+    sceneName: 21_SchoolArea
+    scheduleFilter: 1
+    action: 2
+    pathPointIds: []
+    targetPointId: ltt_classpoint
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: Lunch
+    startHour: 12
+    endHour: 13
+    sceneName: 21_SchoolArea
+    scheduleFilter: 1
+    action: 2
+    pathPointIds: []
+    targetPointId: lttLunchSpot
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 0
+  - label: School_ClassTime_Afternoon
+    startHour: 13
+    endHour: 16
+    sceneName: 21_SchoolArea
+    scheduleFilter: 1
+    action: 2
+    pathPointIds: []
+    targetPointId: ltt_classpoint
+    moveSpeed: 1.5
+    loop: 1
+    hideWhenPathComplete: 0
+  - label: FromClassToExitSchool
+    startHour: 16
+    endHour: 18
+    sceneName: 21_SchoolArea
+    scheduleFilter: 1
+    action: 0
+    pathPointIds:
+    - lttGoHome1
+    - lttGoHome2
+    - lttGoHome3
+    - lttGoHome4
+    - lttGoHome5
+    - lttGoHome6
+    - lttGoHome7
+    - lttGoHome8
+    targetPointId: 
+    moveSpeed: 2
+    loop: 0
+    hideWhenPathComplete: 1
+  - label: Town_after_school_loop
+    startHour: 17
+    endHour: 22
+    sceneName: 20_Town
+    scheduleFilter: 1
+    action: 0
+    pathPointIds:
+    - 8
+    - 6
+    - 9
+    - 7
+    - 6
+    - 7
+    - 9
+    - 10
+    targetPointId: 
+    moveSpeed: 1.5
+    loop: 0
+    hideWhenPathComplete: 1
+  noSchoolSlots:
+  - label: No_School_Day
+    startHour: 8
+    endHour: 18
+    sceneName: 20_Town
+    scheduleFilter: 2
+    action: 2
+    pathPointIds: []
+    targetPointId: day6ArcadeNpcSpawnId
+    moveSpeed: 1.5
+    loop: 1
+    hideWhenPathComplete: 0
+  vendorShopOpenHour: 8
+  vendorShopCloseHour: 18
+  vendorStallPointId: 
+  vendorHomePointId: 
+  vendorPathHomePointIds: []

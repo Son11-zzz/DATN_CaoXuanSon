@@ -16,6 +16,10 @@ public class YSort : MonoBehaviour
     [Tooltip("Chỉ update khi object di chuyển (tối ưu performance)")]
     [SerializeField] private bool updateOnlyWhenMoving = true;
 
+    [Header("Pixel Perfect")]
+    [SerializeField] private bool pixelPerfect = true;
+    [SerializeField] private float pixelsPerUnit = 32f;
+
     private float lastY;
 
     private void Awake()
@@ -26,19 +30,23 @@ public class YSort : MonoBehaviour
 
     private float GetSortY()
     {
-        // 1. Ưu tiên collider (chuẩn nhất cho object lớn)
-        if (useCollider && col != null)
-            return col.bounds.min.y;
+        float y = useCollider && col != null ? col.bounds.min.y : transform.position.y;
+        return pixelPerfect ? SnapToPixelGrid(y) : y;
+    }
 
-        // 2. Fallback: pivot (phù hợp player, sprite pivot bottom)
-        return transform.position.y;
+    private float SnapToPixelGrid(float y)
+    {
+        if (pixelsPerUnit <= 0f)
+            return y;
+
+        float unit = 1f / pixelsPerUnit;
+        return Mathf.Round(y / unit) * unit;
     }
 
     private void LateUpdate()
     {
         float currentY = GetSortY();
 
-        // Tối ưu: chỉ update khi có thay đổi
         if (updateOnlyWhenMoving && Mathf.Approximately(currentY, lastY))
             return;
 

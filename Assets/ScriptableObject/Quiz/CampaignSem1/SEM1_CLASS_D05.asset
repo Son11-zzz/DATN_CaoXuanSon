@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D05
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 5"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 5] Ch\u1ECDn c\xE2u \u0111\xFAng v\u1EC1 'technical
+      debt' (n\u1EE3 k\u1EF9 thu\u1EADt):"
+    options:
+    - "Hy sinh ch\u1EA5t l\u01B0\u1EE3ng t\u1EA1m th\u1EDDi \u0111\u1EC3 t\u1ED1c
+      \u0111\u1ED9 \u2014 tr\u1EA3 l\xE3i sau"
+    - "Lu\xF4n t\u1ED1t"
+    - "Kh\xF4ng \u1EA3nh h\u01B0\u1EDFng maintenance"
+    - "Ch\u1EC9 x\u1EA3y ra \u1EDF startup"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 5] Logic: N\u1EBFu m\u1ECDi A \u0111\u1EC1u
+      B, v\xE0 B kh\xF4ng ph\u1EA3i C, k\u1EBFt lu\u1EADn n\xE0o c\xF3 th\u1EC3 \u0111\xFAng?"
+    options:
+    - "M\u1ED9t s\u1ED1 A c\xF3 th\u1EC3 kh\xF4ng ph\u1EA3i C"
+    - "M\u1ECDi A ch\u1EAFc ch\u1EAFn l\xE0 C"
+    - "Kh\xF4ng A n\xE0o l\xE0 B"
+    - "M\u1ECDi C \u0111\u1EC1u l\xE0 A"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 5] M\u1ED9t t\u1EADp h\u1EE3p c\xF3 10 ph\u1EA7n
+      t\u1EED ph\xE2n bi\u1EC7t. S\u1ED1 t\u1EADp con c\xF3 \u0111\xFAng 2 ph\u1EA7n
+      t\u1EED l\xE0 bao nhi\xEAu?"
+    options:
+    - 45
+    - 90
+    - 1024
+    - 20
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 5] X\xE1c su\u1EA5t \u0111\u1ED9c l\u1EADp:
+      P(A)=0.3, P(B)=0.4. P(A\u2229B) b\u1EB1ng?"
+    options:
+    - 0.12
+    - 0.7
+    - 0.1
+    - 0.34
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 5] M\u1EC7nh \u0111\u1EC1 ph\u1EE7 \u0111\u1ECBnh
+      c\u1EE7a 'M\u1ECDi x, n\u1EBFu P(x) th\xEC Q(x)' (trong logic c\u1ED5 \u0111i\u1EC3n)
+      th\u01B0\u1EDDng \u0111\u01B0\u1EE3c hi\u1EC3u l\xE0:"
+    options:
+    - "T\u1ED3n t\u1EA1i x sao cho P(x) \u0111\xFAng v\xE0 Q(x) sai"
+    - "Kh\xF4ng x n\xE0o th\u1ECFa P(x)"
+    - "M\u1ECDi x, P(x) sai"
+    - "T\u1ED3n t\u1EA1i x, Q(x) sai"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

@@ -1,0 +1,1196 @@
+fileFormatVersion: 2
+guid: 07ae81a169402c84fa4e29d1cb3f5549
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 733959317489098761
+    second: GK_Osaka_B_2_0
+  - first:
+      213: -9106944022644398558
+    second: GK_Osaka_B_2_1
+  - first:
+      213: -4887839737588803446
+    second: GK_Osaka_B_2_2
+  - first:
+      213: 4740039427137963005
+    second: GK_Osaka_B_2_3
+  - first:
+      213: 2750014280313698952
+    second: GK_Osaka_B_2_4
+  - first:
+      213: -7940123964868670699
+    second: GK_Osaka_B_2_5
+  - first:
+      213: -4028857741431888123
+    second: GK_Osaka_B_2_6
+  - first:
+      213: -1718886562638470055
+    second: GK_Osaka_B_2_7
+  - first:
+      213: -2738690132218984495
+    second: GK_Osaka_B_2_8
+  - first:
+      213: -2652726171011070084
+    second: GK_Osaka_B_2_9
+  - first:
+      213: 7751697468950872092
+    second: GK_Osaka_B_2_10
+  - first:
+      213: 5867643389224855697
+    second: GK_Osaka_B_2_11
+  - first:
+      213: -8424672291728147082
+    second: GK_Osaka_B_2_12
+  - first:
+      213: -8427491259661692902
+    second: GK_Osaka_B_2_13
+  - first:
+      213: 6045617650899474292
+    second: GK_Osaka_B_2_14
+  - first:
+      213: 1032943733438359253
+    second: GK_Osaka_B_2_15
+  - first:
+      213: -5008242792960524451
+    second: GK_Osaka_B_2_16
+  - first:
+      213: -8091101965815460110
+    second: GK_Osaka_B_2_17
+  - first:
+      213: 1813698203954758219
+    second: GK_Osaka_B_2_18
+  - first:
+      213: -7471055257715867120
+    second: GK_Osaka_B_2_19
+  - first:
+      213: 8301151982593365736
+    second: GK_Osaka_B_2_20
+  - first:
+      213: 4327520071434570581
+    second: GK_Osaka_B_2_21
+  - first:
+      213: 56510152937622389
+    second: GK_Osaka_B_2_22
+  - first:
+      213: -4738451253393471932
+    second: GK_Osaka_B_2_23
+  - first:
+      213: 4964468618945135551
+    second: GK_Osaka_B_2_24
+  - first:
+      213: 5372007127769579246
+    second: GK_Osaka_B_2_25
+  - first:
+      213: -1228953769078548093
+    second: GK_Osaka_B_2_26
+  - first:
+      213: -2245936486456536670
+    second: GK_Osaka_B_2_27
+  - first:
+      213: 7670108717871124600
+    second: GK_Osaka_B_2_28
+  - first:
+      213: -3009050108616883093
+    second: GK_Osaka_B_2_29
+  - first:
+      213: 1898116775423560293
+    second: GK_Osaka_B_2_30
+  - first:
+      213: 1069769093402223087
+    second: GK_Osaka_B_2_31
+  - first:
+      213: 6740226769342217513
+    second: GK_Osaka_B_2_32
+  - first:
+      213: -4187380831758416099
+    second: GK_Osaka_B_2_33
+  - first:
+      213: -3108536603431866763
+    second: GK_Osaka_B_2_34
+  - first:
+      213: 2726139237322014629
+    second: GK_Osaka_B_2_35
+  - first:
+      213: -1709226795735243657
+    second: GK_Osaka_B_2_36
+  - first:
+      213: 326782453188531978
+    second: GK_Osaka_B_2_37
+  - first:
+      213: 5222074559375429147
+    second: GK_Osaka_B_2_38
+  - first:
+      213: -2492331825572410956
+    second: GK_Osaka_B_2_39
+  - first:
+      213: -1893768189599783486
+    second: GK_Osaka_B_2_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 458
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900a68e4c1c8f2a00800000000000000
+      internalID: 733959317489098761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 485
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226e9ec79a2ad9180800000000000000
+      internalID: -9106944022644398558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 485
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a881bf1d7a7ea2cb0800000000000000
+      internalID: -4887839737588803446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 479
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df387e3ceb008c140800000000000000
+      internalID: 4740039427137963005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 479
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a7951fa630a2620800000000000000
+      internalID: 2750014280313698952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 415
+        width: 20
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bcf6192530fc190800000000000000
+      internalID: -7940123964868670699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 472
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507ae5fda3f9618c0800000000000000
+      internalID: -4028857741431888123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 463
+        width: 130
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954edb047c94528e0800000000000000
+      internalID: -1718886562638470055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 423
+        width: 14
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7483fb5d73ef9d0800000000000000
+      internalID: -2738690132218984495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 463
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77c08a2a9f9f2bd0800000000000000
+      internalID: -2652726171011070084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 440
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c108c1b17cf839b60800000000000000
+      internalID: 7751697468950872092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_11
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 440
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198aa6b039e0e6150800000000000000
+      internalID: 5867643389224855697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 391
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67db77ebf2d851b80800000000000000
+      internalID: -8424672291728147082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_13
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 383
+        width: 7
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10d720a9598b0b80800000000000000
+      internalID: -8427491259661692902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 383
+        width: 7
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477d1b1f83956e350800000000000000
+      internalID: 6045617650899474292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_15
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 383
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d62f805ad0c55e00800000000000000
+      internalID: 1032943733438359253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 383
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f7da0f6b52f7ab0800000000000000
+      internalID: -5008242792960524451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_17
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 383
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2feca1e61a1a6bf80800000000000000
+      internalID: -8091101965815460110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 408
+        width: 65
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42cc7838ec8b2910800000000000000
+      internalID: 1813698203954758219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_19
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 378
+        width: 161
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012088293da715890800000000000000
+      internalID: -7471055257715867120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 343
+        width: 130
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6d10d2fbd933370800000000000000
+      internalID: 8301151982593365736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 341
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b0b38a3907e0c30800000000000000
+      internalID: 4327520071434570581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 340
+        width: 34
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bcc084fa3c8c000800000000000000
+      internalID: 56510152937622389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_23
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 340
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4464affb0b3ad3eb0800000000000000
+      internalID: -4738451253393471932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 351
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb38cc2f7e555e440800000000000000
+      internalID: 4964468618945135551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 193
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee729545043d8a40800000000000000
+      internalID: 5372007127769579246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_26
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 322
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38912bcee01e1fee0800000000000000
+      internalID: -1228953769078548093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a15ba04aa4d4d0e0800000000000000
+      internalID: -2245936486456536670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_28
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 122
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870d55dad33b17a60800000000000000
+      internalID: 7670108717871124600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 33
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b644a8c6ed4bd36d0800000000000000
+      internalID: -3009050108616883093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_30
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 291
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ac45d8627775a10800000000000000
+      internalID: 1898116775423560293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_31
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 260
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe16ee3925598de00800000000000000
+      internalID: 1069769093402223087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_32
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 260
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92db83419881a8d50800000000000000
+      internalID: 6740226769342217513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_33
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 273
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1782c7b15f63e5c0800000000000000
+      internalID: -4187380831758416099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 299
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ee42dcd624cd4d0800000000000000
+      internalID: -3108536603431866763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_35
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 299
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af35d0513135d520800000000000000
+      internalID: 2726139237322014629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_36
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 299
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7742f9ff84b9748e0800000000000000
+      internalID: -1709226795735243657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a071229e8e6f88400800000000000000
+      internalID: 326782453188531978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_38
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 207
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e4d2ed429887840800000000000000
+      internalID: 5222074559375429147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 207
+        width: 129
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b90b5ad865796dd0800000000000000
+      internalID: -2492331825572410956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GK_Osaka_B_2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 201
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c568fb7ddbf7b5e0800000000000000
+      internalID: -1893768189599783486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GK_Osaka_B_2_0: 733959317489098761
+      GK_Osaka_B_2_1: -9106944022644398558
+      GK_Osaka_B_2_10: 7751697468950872092
+      GK_Osaka_B_2_11: 5867643389224855697
+      GK_Osaka_B_2_12: -8424672291728147082
+      GK_Osaka_B_2_13: -8427491259661692902
+      GK_Osaka_B_2_14: 6045617650899474292
+      GK_Osaka_B_2_15: 1032943733438359253
+      GK_Osaka_B_2_16: -5008242792960524451
+      GK_Osaka_B_2_17: -8091101965815460110
+      GK_Osaka_B_2_18: 1813698203954758219
+      GK_Osaka_B_2_19: -7471055257715867120
+      GK_Osaka_B_2_2: -4887839737588803446
+      GK_Osaka_B_2_20: 8301151982593365736
+      GK_Osaka_B_2_21: 4327520071434570581
+      GK_Osaka_B_2_22: 56510152937622389
+      GK_Osaka_B_2_23: -4738451253393471932
+      GK_Osaka_B_2_24: 4964468618945135551
+      GK_Osaka_B_2_25: 5372007127769579246
+      GK_Osaka_B_2_26: -1228953769078548093
+      GK_Osaka_B_2_27: -2245936486456536670
+      GK_Osaka_B_2_28: 7670108717871124600
+      GK_Osaka_B_2_29: -3009050108616883093
+      GK_Osaka_B_2_3: 4740039427137963005
+      GK_Osaka_B_2_30: 1898116775423560293
+      GK_Osaka_B_2_31: 1069769093402223087
+      GK_Osaka_B_2_32: 6740226769342217513
+      GK_Osaka_B_2_33: -4187380831758416099
+      GK_Osaka_B_2_34: -3108536603431866763
+      GK_Osaka_B_2_35: 2726139237322014629
+      GK_Osaka_B_2_36: -1709226795735243657
+      GK_Osaka_B_2_37: 326782453188531978
+      GK_Osaka_B_2_38: 5222074559375429147
+      GK_Osaka_B_2_39: -2492331825572410956
+      GK_Osaka_B_2_4: 2750014280313698952
+      GK_Osaka_B_2_40: -1893768189599783486
+      GK_Osaka_B_2_5: -7940123964868670699
+      GK_Osaka_B_2_6: -4028857741431888123
+      GK_Osaka_B_2_7: -1718886562638470055
+      GK_Osaka_B_2_8: -2738690132218984495
+      GK_Osaka_B_2_9: -2652726171011070084
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

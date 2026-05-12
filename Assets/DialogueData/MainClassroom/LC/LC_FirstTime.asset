@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69627ffe332a1d04e8c46adc504f0740, type: 3}
+  m_Name: LC_FirstTime
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - text: "Xin ch\xE0o!"
+    choices:
+    - choiceText: "Xin ch\xE0o"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "Kh\xF4ng c\xF3 g\xEC!"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: "T\xEAn b\u1EA1n l\xE0 g\xEC!"
+    choices:
+    - choiceText: "Xu\xE2n Son"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+    - choiceText: "T\xF4i kh\xF4ng c\xF3 t\xEAn"
+      type: 0
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 
+  - text: "R\u1EA5t vui v\xEC \u0111\u01B0\u1EE3c g\u1EB7p"
+    choices:
+    - choiceText: OK
+      type: 2
+      nextNode: 
+      rewardItem: {fileID: 0}
+      quest: {fileID: 0}
+      nextNodeOnSuccess: 
+      nextNodeOnFail: 

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_CLASS_D01
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "Ki\u1EC3m tra nhanh \u2014 ng\xE0y 1"
+  intro: "B\xE0i tr\xEAn l\u1EDBp: c\xE2u h\u1ECFi nhi\u1EC5u nhi\u1EC1u h\u01A1n.
+    Ch\u1ECDn \u0111\xE1p \xE1n ch\u1EB7t ch\u1EBD nh\u1EA5t (ki\u1EC3u event h\xE0i
+    h\u01B0\u1EDBc)."
+  questions:
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 1] 'Big-O O(n)' th\u01B0\u1EDDng m\xF4 t\u1EA3
+      \u0111i\u1EC1u g\xEC?"
+    options:
+    - "Gi\u1EDBi h\u1EA1n ti\u1EC7m c\u1EADn t\u1ED1c \u0111\u1ED9 t\u0103ng th\u1EDDi
+      gian theo k\xEDch th\u01B0\u1EDBc input"
+    - "B\u1ED9 nh\u1EDB ch\xEDnh x\xE1c t\xEDnh b\u1EB1ng byte"
+    - "S\u1ED1 v\xF2ng l\u1EB7p t\u1ED1i \u0111a lu\xF4n = n"
+    - "\u0110\u1ED9 ph\u1EE9c t\u1EA1p t\u1ED1i thi\u1EC3u c\u1EE7a m\u1ECDi thu\u1EADt
+      to\xE1n"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 1] Trong l\u1EADp tr\xECnh, 'race condition'
+      g\u1EA7n ngh\u0129a l\xE0 g\xEC?"
+    options:
+    - "K\u1EBFt qu\u1EA3 ph\u1EE5 thu\u1ED9c th\u1EE9 t\u1EF1/timing th\u1EF1c thi
+      kh\xF4ng ki\u1EC3m so\xE1t"
+    - "Ch\u1EA1y code tr\xEAn CPU qu\xE1 nhanh"
+    - "L\u1ED7i c\xFA ph\xE1p"
+    - "Thi\u1EBFu RAM"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 1] HTTP status 404 th\u01B0\u1EDDng ngh\u0129a
+      l\xE0 g\xEC?"
+    options:
+    - "Kh\xF4ng t\xECm th\u1EA5y t\xE0i nguy\xEAn"
+    - "L\u1ED7i m\xE1y ch\u1EE7 n\u1ED9i b\u1ED9"
+    - "Kh\xF4ng \u0111\u01B0\u1EE3c ph\xE9p"
+    - "Qu\xE1 nhi\u1EC1u request"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 1] JSON h\u1EE3p l\u1EC7 th\u01B0\u1EDDng l\xE0
+      lo\u1EA1i d\u1EEF li\u1EC7u n\xE0o?"
+    options:
+    - "C\xE2y c\xFA ph\xE1p (object/array/string/number/bool/null)"
+    - "B\u1EA3ng 2 c\u1ED9t duy nh\u1EA5t"
+    - "Chu\u1ED7i nh\u1ECB ph\xE2n kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c"
+    - "\u0110\u1ECBnh d\u1EA1ng \u1EA3nh"
+    correctIndex: 0
+    explanation: 
+  - prompt: "[L\u1EDBp \u2014 ng\xE0y 1] OOP: '\u0111a h\xECnh' (polymorphism) g\u1EA7n
+      v\u1EDBi \xFD n\xE0o nh\u1EA5t?"
+    options:
+    - "C\xF9ng m\u1ED9t interface, nhi\u1EC1u l\u1EDBp th\u1EC3 hi\u1EC7n h\xE0nh
+      vi kh\xE1c nhau"
+    - "\u1EA8n d\u1EEF li\u1EC7u b\u1EB1ng private"
+    - "K\u1EBF th\u1EEBa nhi\u1EC1u l\u1EDBp cha trong C# (m\u1EB7c \u0111\u1ECBnh)"
+    - "Bi\xEAn d\u1ECBch AOT"
+    correctIndex: 0
+    explanation: 
+  passScore: 0.55
+  gpaOnPass: 0.1
+  gpaPerCorrectPercent: 0.08
+  skillOnPass: 6
+  stressOnFail: 9
+  stressPerWrong: 1.2
+  morningRecapGpaPenaltyPerWrong: 0.09
+  hoursToAdvance: 1

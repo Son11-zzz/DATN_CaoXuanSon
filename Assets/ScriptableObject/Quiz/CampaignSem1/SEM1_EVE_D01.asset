@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7234567890abcdef1234567890abcdef, type: 3}
+  m_Name: SEM1_EVE_D01
+  m_EditorClassIdentifier: Assembly-CSharp::LessonQuizData
+  kind: 1
+  title: "\u0110\xEAm nh\xE0 \u2014 ng\xE0y 1 (th\u01B0 gi\xE3n)"
+  intro: "\xD4n ki\u1EC3u chill: tr\u1EA3 l\u1EDDi sai c\u0169ng kh\xF4ng sao. S\xE1ng
+    mai tr\xEAn l\u1EDBp m\u1EDBi \"h\u01A1i\" g\u1EAFt h\u01A1n."
+  questions:
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 1] T\u1ED1i nay b\u1EA1n ch\u1ECDn theme
+      h\u1ECDc t\u1EADp n\xE0o?"
+    options:
+    - "Dark mode + c\xE0 ph\xEA + self doubt"
+    - "Light mode + n\u01B0\u1EDBc l\u1ECDc + toxic positivity"
+    - Sepia + jazz + vintage suffering
+    - RGB + EDM + I'm fine
+    correctIndex: 0
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 1] C\xE2u n\xE0o l\xE0 'l\u1EDDi h\u1EE9a'
+      an to\xE0n nh\u1EA5t?"
+    options:
+    - "Mai m\xECnh d\u1EADy s\u1EDBm (c\xF3 b\u1EB1ng ch\u1EE9ng)"
+    - "T\u1ED1i nay m\xECnh l\xE0m xong (kh\xF4ng \u0111\u1ECBnh ngh\u0129a 'xong')"
+    - "M\xECnh ch\u1EC9 xem 1 video (YouTube \u0111\u1ED3ng \xFD)"
+    - "M\xECnh ng\u1EE7 s\u1EDBm (2h s\xE1ng l\xE0 s\u1EDBm so v\u1EDBi 5h s\xE1ng)"
+    correctIndex: 3
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 1] N\u1EBFu tr\xED nh\u1EDB l\xE0 RAM,
+      sinh vi\xEAn th\u01B0\u1EDDng c\xF3 bao nhi\xEAu GB?"
+    options:
+    - "16GB nh\u01B0ng cache \u0111\u1EA7y meme"
+    - "32GB nh\u01B0ng swap sang \u0111i\u1EC7n tho\u1EA1i"
+    - "8GB nh\u01B0ng Chrome"
+    - "Kh\xF4ng \u0111o \u0111\u01B0\u1EE3c \u2014 random access"
+    correctIndex: 2
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 1] Khi b\u1EA1n n\xF3i 'hi\u1EC3u r\u1ED3i'
+      nh\u01B0ng m\u1EAFt tr\u1ED1ng r\u1ED7ng, ngh\u0129a l\xE0?"
+    options:
+    - "B\u1EA1n hi\u1EC3u\u2026 ph\u1EA7n \u0111\u1EA7u c\xE2u"
+    - "B\u1EA1n hi\u1EC3u vibe"
+    - "B\u1EA1n hi\u1EC3u l\xE0 ph\u1EA3i h\u1ECFi l\u1EA1i"
+    - "B\u1EA1n hi\u1EC3u life"
+    correctIndex: 2
+    explanation: 
+  - prompt: "[\xD4n ch\u01A1i \u2014 ng\xE0y 1] Ch\u1ECDn 'boss' kh\xF3 nh\u1EA5t
+      trong \u0111\u1EDDi sinh vi\xEAn:"
+    options:
+    - "M\xF4n c\xF3 3 \u0111\u1ED3 \xE1n + 2 quiz + 1 vibe check"
+    - "T\xECm ch\u1ED7 ng\u1ED3i \u1EDF th\u01B0 vi\u1EC7n"
+    - "Hi\u1EC3u \u0111\u1EC1 b\xE0i"
+    - "T\u1EA5t c\u1EA3 boss \u0111\u1EC1u scale theo tu\u1EA7n"
+    correctIndex: 3
+    explanation: 
+  passScore: 0.45
+  gpaOnPass: 0.06
+  gpaPerCorrectPercent: 0.03
+  skillOnPass: 4
+  stressOnFail: 0
+  stressPerWrong: 0
+  morningRecapGpaPenaltyPerWrong: 0
+  hoursToAdvance: 1

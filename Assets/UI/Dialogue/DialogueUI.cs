@@ -13,6 +13,11 @@ public class DialogueUI : MonoBehaviour
     public GameObject panel;
     public TextMeshProUGUI text;
 
+    [Header("Canvas Scaling")]
+    [SerializeField] private bool enforceCanvasScaler = true;
+    [SerializeField] private Vector2 referenceResolution = new Vector2(1920f, 1080f);
+    [SerializeField, Range(0f, 1f)] private float matchWidthOrHeight = 0.5f;
+
     [Header("Choices")]
     public Transform choiceContainer;
     public GameObject choiceButtonPrefab;
@@ -20,6 +25,7 @@ public class DialogueUI : MonoBehaviour
     private void Awake()
     {
         EnsureEventSystem();
+        ConfigureCanvasScaler();
     }
 
     public void Start()
@@ -42,6 +48,44 @@ public class DialogueUI : MonoBehaviour
 #else
         go.AddComponent<StandaloneInputModule>();
 #endif
+    }
+
+    private void ConfigureCanvasScaler()
+    {
+        if (!enforceCanvasScaler)
+        {
+            return;
+        }
+
+        Canvas canvas = null;
+        if (panel != null)
+        {
+            canvas = panel.GetComponentInParent<Canvas>();
+        }
+
+        if (canvas == null)
+        {
+            canvas = GetComponentInParent<Canvas>();
+        }
+
+        if (canvas == null)
+        {
+            return;
+        }
+
+        var scaler = canvas.GetComponent<CanvasScaler>();
+        if (scaler == null)
+        {
+            return;
+        }
+
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        if (referenceResolution.x > 0f && referenceResolution.y > 0f)
+        {
+            scaler.referenceResolution = referenceResolution;
+        }
+
+        scaler.matchWidthOrHeight = matchWidthOrHeight;
     }
 
     private void Update()

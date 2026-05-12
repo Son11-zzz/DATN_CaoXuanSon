@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate; // Fix camera jitter when following
 
         if (animator == null)
         {

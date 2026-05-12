@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0375a396be895cf4285148d3285c91fd, type: 3}
+  m_Name: GS36
+  m_EditorClassIdentifier: Assembly-CSharp::ShopCatalog
+  shopName: GS36
+  items:
+  - item: {fileID: 11400000, guid: d0d949a62bafa3641be63fe9c93f8f96, type: 2}
+    price: 60000
+    amount: 1
+  - item: {fileID: 11400000, guid: 4e7ac100ebe0dd446bf2baa3d10d7498, type: 2}
+    price: 15000
+    amount: 1
+  - item: {fileID: 11400000, guid: b4b9284af1260ec4eb47f38a16369944, type: 2}
+    price: 3600
+    amount: 1
+  - item: {fileID: 11400000, guid: 5c669f8f916786846b3fa0fa5bf4020b, type: 2}
+    price: 5000
+    amount: 1
+  - item: {fileID: 11400000, guid: e4c9dcc79e2d322429ac45eabaa38ab5, type: 2}
+    price: 10000
+    amount: 1
+  - item: {fileID: 11400000, guid: 255fddb901fe8804aaaf9aeb675719c9, type: 2}
+    price: 25000
+    amount: 1
+  - item: {fileID: 11400000, guid: a7bce469ee380a04f8e6fa15faee7f5c, type: 2}
+    price: 15000
+    amount: 1
+  - item: {fileID: 11400000, guid: 355e0f70ab684584389ff431c630a03d, type: 2}
+    price: 15000
+    amount: 1

@@ -8331,9 +8331,9 @@ MonoBehaviour:
   showObjectiveCompletedDialogue: 0
   objectiveCompletedText: Da hoan thanh muc tieu.
   requireConfirm: 1
-  confirmText: Go out?
-  confirmYesText: Yes
-  confirmNoText: No
+  confirmText: "\u0110i ra ngo\xE0i\t\t"
+  confirmYesText: "C\xF3 "
+  confirmNoText: "Kh\xF4ng"
   portalSfx: {fileID: 8300000, guid: 92964a19b2f667d47ae3f849bdd8d3cf, type: 3}
   portalCooldownSeconds: 1
   stayObjectiveRetryInterval: 0.4

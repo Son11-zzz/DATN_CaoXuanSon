@@ -12259,9 +12259,9 @@ MonoBehaviour:
   showObjectiveCompletedDialogue: 0
   objectiveCompletedText: Da hoan thanh muc tieu.
   requireConfirm: 1
-  confirmText: Do you want to travel?
-  confirmYesText: Yes
-  confirmNoText: No
+  confirmText: "B\u1EA1n c\xF3 mu\u1ED1n \u0111i ra ngo\xE0i"
+  confirmYesText: "C\xF3"
+  confirmNoText: "Kh\xF4ng"
   portalSfx: {fileID: 8300000, guid: 92964a19b2f667d47ae3f849bdd8d3cf, type: 3}
   portalCooldownSeconds: 1
   stayObjectiveRetryInterval: 0.4

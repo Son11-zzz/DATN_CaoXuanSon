@@ -198,9 +198,9 @@ public class InventorySystem : MonoBehaviour
             return false;
         }
 
-        if (item.restoreHealth <= 0f && item.restoreEnergy <= 0f)
+        if (item.restoreHealth <= 0f && item.restoreEnergy <= 0f && item.damageHealth <= 0f)
         {
-            reason = "Chua gan gia tri hoi phuc.";
+            reason = "Chua gan gia tri hoi phuc hoac sat thuong.";
             return false;
         }
 
@@ -228,6 +228,14 @@ public class InventorySystem : MonoBehaviour
                 clampTop);
         }
 
+        if (item.damageHealth > 0f)
+        {
+            StatManager.Instance.health = Mathf.Clamp(
+                StatManager.Instance.health - item.damageHealth,
+                0f,
+                clampTop);
+        }
+
         if (item.restoreEnergy > 0f)
         {
             StatManager.Instance.energy = Mathf.Clamp(
@@ -237,6 +245,9 @@ public class InventorySystem : MonoBehaviour
         }
 
         EventManager.Instance?.NotifyStatChanged();
+
+        // Nếu health về 0 sau khi dùng consumable → xử lý nhập viện
+        StatManager.Instance.CheckHealthZero();
     }
 
     public bool TryCombine(ItemData first, ItemData second, out ItemData resultItem)

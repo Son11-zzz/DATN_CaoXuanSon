@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ItemData", menuName = "Scriptable Objects/ItemData")]
@@ -15,6 +15,9 @@ public class ItemData : ScriptableObject
 
     [Tooltip("HP restored when this food/drink consumable is used from inventory.")]
     public float restoreHealth;
+
+    [Tooltip("HP removed when this consumable is used (e.g. poison, spoiled food). Enter a positive value.")]
+    public float damageHealth;
 
     [Tooltip("Energy restored when this consumable food/drink is used from inventory.")]
     public float restoreEnergy;

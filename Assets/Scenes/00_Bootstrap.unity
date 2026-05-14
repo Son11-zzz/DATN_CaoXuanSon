@@ -546,10 +546,14 @@ MonoBehaviour:
   missGpaPenalty: 0.3
   noStudyByNoonGpaPenalty: 0.3
   classReminderHoursBeforeStart: 1
-  morningClassSoonReminderText: Sap den gio hoc buoi sang. Hay vao lop dung gio.
-  morningClassDueReminderText: Da den gio hoc buoi sang. Hay vao lop.
-  afternoonClassSoonReminderText: Sap den gio hoc buoi chieu. Hay vao lop dung gio.
-  afternoonClassDueReminderText: Da den gio hoc buoi chieu. Hay vao lop.
+  morningClassSoonReminderText: "S\u1EAFp \u0111\u1EBFn gi\u1EDD h\u1ECDc bu\u1ED5i
+    s\xE1ng."
+  morningClassDueReminderText: "\u0110\xE3 \u0111\u1EBFn gi\u1EDD h\u1ECDc bu\u1ED5i
+    s\xE1ng"
+  afternoonClassSoonReminderText: "S\u1EAFp \u0111\u1EBFn gi\u1EDD h\u1ECDc bu\u1ED5i
+    chi\u1EC1u. H\xE3y v\xE0o l\u1EDBp"
+  afternoonClassDueReminderText: "\u0110\xE3 \u0111\u1EBFn gi\u1EDD h\u1ECDc bu\u1ED5i
+    chi\u1EC1u!"
   requireEveningHomeStudyBeforeSleep: 1
   eveningStudyHomeSceneName: 22_PlayerHouse
   eveningStudyReminderStartHour: 20
@@ -766,7 +770,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2.8125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1085,6 +1089,11 @@ MonoBehaviour:
   energy: 100
   social: 0
   skill: 0
+  hospitalBedSpawnId: HospitalBed
+  hospitalSceneName: 21_SchoolArea
+  hospitalFee: 200000
+  hospitalHealthRestorePercent: 0.25
+  hospitalNoticeDelay: 0.5
 --- !u!1 &2100100100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,17 +1151,17 @@ MonoBehaviour:
     minTotalMissed: -1
     maxTotalMissed: -1
   - enabled: 1
-    ending: 5
+    ending: 8
     priority: 3
     minGpa: 0
-    maxGpa: 4
+    maxGpa: 0
     minStress: 0
-    maxStress: -1
-    minHealth: 0
-    maxHealth: -1
+    maxStress: 0
+    minHealth: 1
+    maxHealth: 0
     minSocial: 0
-    maxSocial: -1
-    minTotalMissed: 8
+    maxSocial: 0
+    minTotalMissed: -1
     maxTotalMissed: -1
   - enabled: 1
     ending: 1
@@ -1259,6 +1268,7 @@ MonoBehaviour:
   dropoutTitle: "B\u1EA1n b\u1ECB bu\u1ED9c th\xF4i h\u1ECDc"
   stressTitle: "Ki\u1EC7t s\u1EE9c!"
   badHabitTitle: "B\u1EA1n \u0111\xE3 sa ng\xE3"
+  hospitalizedTitle: "B\u1EC7nh n\u1EB7ng"
   useLetterForExcellent: 1
   excellentLetterTitleOverride: "B\u1EA1n ho\xE0n th\xE0nh xu\u1EA5t s\u1EAFc k\u1EF3
     h\u1ECDc"
@@ -1288,11 +1298,19 @@ MonoBehaviour:
     s\u1EE5p. B\u1EA1n quy\u1EBFt \u0111\u1ECBnh b\u1ECF h\u1ECDc v\xE0 tr\u1EDD
     th\xE0nh \xF4ng vua t\xE0i x\u1EC9u"
   stressLetterCloseText: ....
+  useLetterForHospitalized: 1
+  hospitalizedLetterTitleOverride: 
+  hospitalizedLetterBodyOverride: "S\u1EE9c kh\u1ECFe c\u1EE7a b\u1EA1n \u0111\xE3
+    xu\u1ED1ng m\u1EE9c nguy hi\u1EC3m v\xE0 b\u1EA1n kh\xF4ng c\xF3 \u0111\u1EE7
+    ti\u1EC1n \u0111\u1EC3 ch\u1EEFa tr\u1ECB. B\u1EA1n \u0111\xE3 ph\u1EA3i ngh\u1EC9
+    h\u1ECDc v\xEC b\u1EC7nh n\u1EB7ng."
+  hospitalizedLetterCloseText: "K\u1EBFt th\xFAc"
   endingCreditsDelayRealtime: 0.5
   disableAutoTickOnEnding: 1
   endingDialogueClearWaitSeconds: 30
   exitToMainMenuOnDropout: 1
   exitToMainMenuOnStressBreakdown: 1
+  exitToMainMenuOnHospitalized: 1
 --- !u!4 &2100100202
 Transform:
   m_ObjectHideFlags: 0

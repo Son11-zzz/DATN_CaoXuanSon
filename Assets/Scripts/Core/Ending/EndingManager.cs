@@ -19,6 +19,7 @@ public class EndingManager : MonoBehaviour
     [SerializeField] private string dropoutTitle = "Buộc thôi học";
     [SerializeField] private string stressTitle = "Kiệt sức tinh thần";
     [SerializeField] private string badHabitTitle = "Sa ngã";
+    [SerializeField] private string hospitalizedTitle = "Bệnh nặng";
 
     [Header("Ending Letters")]
     [SerializeField] private bool useLetterForExcellent = true;
@@ -46,6 +47,11 @@ public class EndingManager : MonoBehaviour
     [SerializeField, TextArea] private string stressLetterBodyOverride = "Áp lực quá lớn khiến bạn suy sụp. Kỳ học kết thúc sớm.";
     [SerializeField] private string stressLetterCloseText = "Được";
 
+    [SerializeField] private bool useLetterForHospitalized = true;
+    [SerializeField] private string hospitalizedLetterTitleOverride = "";
+    [SerializeField, TextArea] private string hospitalizedLetterBodyOverride = "Sức khỏe của bạn đã xuống mức nguy hiểm và bạn không có đủ tiền để chữa trị. Nhân vật chính đã phải nghỉ học vì bệnh nặng.";
+    [SerializeField] private string hospitalizedLetterCloseText = "Kết thúc";
+
     [SerializeField] private float endingCreditsDelayRealtime = 0.5f;
 
     [Header("Runtime")]
@@ -56,6 +62,7 @@ public class EndingManager : MonoBehaviour
     [Header("Exit flow")]
     [SerializeField] private bool exitToMainMenuOnDropout = true;
     [SerializeField] private bool exitToMainMenuOnStressBreakdown = true;
+    [SerializeField] private bool exitToMainMenuOnHospitalized = true;
 
     private float storedTimeScale = 1f;
 
@@ -112,6 +119,8 @@ public class EndingManager : MonoBehaviour
                 return exitToMainMenuOnDropout;
             case EndingType.StressBreakdown:
                 return exitToMainMenuOnStressBreakdown;
+            case EndingType.Hospitalized:
+                return exitToMainMenuOnHospitalized;
             default:
                 return false;
         }
@@ -256,6 +265,7 @@ public class EndingManager : MonoBehaviour
             case EndingType.Dropout: return dropoutTitle;
             case EndingType.StressBreakdown: return stressTitle;
             case EndingType.BadHabit: return badHabitTitle;
+            case EndingType.Hospitalized: return hospitalizedTitle;
         }
         return "Kết thúc";
     }
@@ -269,6 +279,7 @@ public class EndingManager : MonoBehaviour
             case EndingType.Average: return averageLetterBodyOverride;
             case EndingType.Dropout: return dropoutLetterBodyOverride;
             case EndingType.StressBreakdown: return stressLetterBodyOverride;
+            case EndingType.Hospitalized: return hospitalizedLetterBodyOverride;
         }
         return string.Empty;
     }
@@ -282,6 +293,7 @@ public class EndingManager : MonoBehaviour
             case EndingType.Average: return useLetterForAverage;
             case EndingType.Dropout: return useLetterForDropout;
             case EndingType.StressBreakdown: return useLetterForStress;
+            case EndingType.Hospitalized: return useLetterForHospitalized;
         }
 
         return false;
@@ -319,6 +331,11 @@ public class EndingManager : MonoBehaviour
                 title = string.IsNullOrWhiteSpace(stressLetterTitleOverride) ? title : stressLetterTitleOverride;
                 body = string.IsNullOrWhiteSpace(stressLetterBodyOverride) ? string.Empty : stressLetterBodyOverride;
                 closeText = string.IsNullOrWhiteSpace(stressLetterCloseText) ? closeText : stressLetterCloseText;
+                return;
+            case EndingType.Hospitalized:
+                title = string.IsNullOrWhiteSpace(hospitalizedLetterTitleOverride) ? title : hospitalizedLetterTitleOverride;
+                body = string.IsNullOrWhiteSpace(hospitalizedLetterBodyOverride) ? string.Empty : hospitalizedLetterBodyOverride;
+                closeText = string.IsNullOrWhiteSpace(hospitalizedLetterCloseText) ? closeText : hospitalizedLetterCloseText;
                 return;
         }
     }

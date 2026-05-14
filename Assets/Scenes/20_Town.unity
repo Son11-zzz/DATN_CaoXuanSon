@@ -6940,8 +6940,8 @@ MonoBehaviour:
   requirePlayerTag: 1
   requiredItems:
   - {fileID: 11400000, guid: 5c669f8f916786846b3fa0fa5bf4020b, type: 2}
-  - {fileID: 11400000, guid: 255fddb901fe8804aaaf9aeb675719c9, type: 2}
-  missingItemsText: 'You need to buy: {0}'
+  - {fileID: 11400000, guid: 355e0f70ab684584389ff431c630a03d, type: 2}
+  missingItemsText: "B\u1EA1n c\u1EA7n c\xF3: {0}"
   okText: OK
   completeObjectiveWhenRequirementsMet: 1
   objectiveIdToComplete: BuySupplies

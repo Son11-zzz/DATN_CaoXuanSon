@@ -575,6 +575,9 @@ public partial class StoryEventManager : MonoBehaviour
         if (EndingManager.Instance == null || EndingManager.Instance.HasEnded) return;
         if (SemesterProgressManager.Instance == null) return;
 
+        // StatManager xử lý health=0 bằng hospital flow — không trigger Dropout.
+        if (StatManager.Instance != null && StatManager.Instance.IsHandlingHealthZero) return;
+
         dropoutEndingCheckCooldown -= Time.deltaTime;
         if (dropoutEndingCheckCooldown > 0f) return;
         dropoutEndingCheckCooldown = 1f;

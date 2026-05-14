@@ -70,13 +70,6 @@ public class SemesterProgressManager : MonoBehaviour
         new StatEndingMilestone
         {
             enabled = true,
-            ending = EndingType.Dropout,
-            priority = 1,
-            maxHealth = 0f
-        },
-        new StatEndingMilestone
-        {
-            enabled = true,
             ending = EndingType.StressBreakdown,
             priority = 2,
             minStress = 90f
@@ -271,6 +264,13 @@ public class SemesterProgressManager : MonoBehaviour
         var sm = StatManager.Instance;
         if (sm == null) return false;
 
+        // Health=0 → bệnh viện/hospitalized được StatManager xử lý riêng.
+        // Bỏ qua milestone Dropout dựa trên health (maxHealth >= 0) khi health <= 0.
+        if (m.ending == EndingType.Dropout && m.maxHealth >= 0f && sm.health <= m.maxHealth)
+        {
+            return false;
+        }
+
         if (m.minGpa >= 0f && sm.gpa < m.minGpa) return false;
         if (m.maxGpa >= 0f && sm.gpa > m.maxGpa) return false;
 
@@ -349,6 +349,9 @@ public class SemesterProgressManager : MonoBehaviour
     public bool TryTriggerDropout()
     {
         if (EndingManager.Instance == null) return false;
+
+        // StatManager xử lý health=0 bằng hospital flow riêng — không trigger Dropout ở đây.
+        if (StatManager.Instance != null && StatManager.Instance.IsHandlingHealthZero) return false;
 
         if (TryEvaluateSpecificEnding(EndingType.Dropout))
         {

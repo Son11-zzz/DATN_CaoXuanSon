@@ -7,5 +7,6 @@ public enum EndingType
     AcademicFail,
     Dropout,
     StressBreakdown,
-    BadHabit
+    BadHabit,
+    Hospitalized
 }

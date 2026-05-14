@@ -18,5 +18,6 @@ MonoBehaviour:
   type: 2
   category: 2
   restoreHealth: 0
-  restoreEnergy: 55
+  damageHealth: 10
+  restoreEnergy: 35
   combineWith: []
